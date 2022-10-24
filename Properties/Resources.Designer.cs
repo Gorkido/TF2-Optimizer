@@ -63,9 +63,9 @@ namespace TF2_Mod_Installer.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap _1391651763_preview_TF2_Pybro_Emblem {
+        internal static System.Drawing.Bitmap automated {
             get {
-                object obj = ResourceManager.GetObject("1391651763_preview_TF2 Pybro Emblem", resourceCulture);
+                object obj = ResourceManager.GetObject("automated", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,16 +96,6 @@ namespace TF2_Mod_Installer.Properties {
         internal static System.Drawing.Bitmap mastercomfig_logo {
             get {
                 object obj = ResourceManager.GetObject("mastercomfig_logo", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Sniper_emblem_RED {
-            get {
-                object obj = ResourceManager.GetObject("Sniper_emblem_RED", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

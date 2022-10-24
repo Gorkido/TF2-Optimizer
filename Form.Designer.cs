@@ -29,12 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation4 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation6 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form));
             this.panelTransition = new Guna.UI2.WinForms.Guna2Transition();
             this.AnimateTF_Icon = new System.Windows.Forms.Timer(this.components);
             this.Back_Panel = new Guna.UI2.WinForms.Guna2CustomGradientPanel();
             this.Left_Panel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.CustomMod_Button = new Guna.UI2.WinForms.Guna2Button();
             this.Useful_Mods_Button = new Guna.UI2.WinForms.Guna2Button();
             this.PopHUDs_Button = new Guna.UI2.WinForms.Guna2Button();
@@ -51,22 +52,22 @@
             // 
             this.panelTransition.AnimationType = Guna.UI2.AnimatorNS.AnimationType.Transparent;
             this.panelTransition.Cursor = null;
-            animation4.AnimateOnlyDifferences = true;
-            animation4.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.BlindCoeff")));
-            animation4.LeafCoeff = 0F;
-            animation4.MaxTime = 1F;
-            animation4.MinTime = 0F;
-            animation4.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicCoeff")));
-            animation4.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation4.MosaicShift")));
-            animation4.MosaicSize = 0;
-            animation4.Padding = new System.Windows.Forms.Padding(0);
-            animation4.RotateCoeff = 0F;
-            animation4.RotateLimit = 0F;
-            animation4.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.ScaleCoeff")));
-            animation4.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation4.SlideCoeff")));
-            animation4.TimeCoeff = 0F;
-            animation4.TransparencyCoeff = 1F;
-            this.panelTransition.DefaultAnimation = animation4;
+            animation6.AnimateOnlyDifferences = true;
+            animation6.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.BlindCoeff")));
+            animation6.LeafCoeff = 0F;
+            animation6.MaxTime = 1F;
+            animation6.MinTime = 0F;
+            animation6.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicCoeff")));
+            animation6.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation6.MosaicShift")));
+            animation6.MosaicSize = 0;
+            animation6.Padding = new System.Windows.Forms.Padding(0);
+            animation6.RotateCoeff = 0F;
+            animation6.RotateLimit = 0F;
+            animation6.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.ScaleCoeff")));
+            animation6.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation6.SlideCoeff")));
+            animation6.TimeCoeff = 0F;
+            animation6.TransparencyCoeff = 1F;
+            this.panelTransition.DefaultAnimation = animation6;
             this.panelTransition.Interval = 1;
             // 
             // AnimateTF_Icon
@@ -101,6 +102,7 @@
             // Left_Panel
             // 
             this.Left_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Left_Panel.Controls.Add(this.guna2Button1);
             this.Left_Panel.Controls.Add(this.CustomMod_Button);
             this.Left_Panel.Controls.Add(this.Useful_Mods_Button);
             this.Left_Panel.Controls.Add(this.PopHUDs_Button);
@@ -120,6 +122,34 @@
             this.Left_Panel.Size = new System.Drawing.Size(320, 726);
             this.Left_Panel.TabIndex = 0;
             // 
+            // guna2Button1
+            // 
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.BorderColor = System.Drawing.Color.Transparent;
+            this.panelTransition.SetDecoration(this.guna2Button1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.guna2Button1.FillColor = System.Drawing.Color.Transparent;
+            this.guna2Button1.Font = new System.Drawing.Font("Hack", 14.25F);
+            this.guna2Button1.ForeColor = System.Drawing.Color.White;
+            this.guna2Button1.Image = global::TF2_Mod_Installer.Properties.Resources.automated;
+            this.guna2Button1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.guna2Button1.ImageOffset = new System.Drawing.Point(5, 0);
+            this.guna2Button1.ImageSize = new System.Drawing.Size(50, 50);
+            this.guna2Button1.Location = new System.Drawing.Point(25, 494);
+            this.guna2Button1.Margin = new System.Windows.Forms.Padding(0);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.guna2Button1.PressedDepth = 1;
+            this.guna2Button1.Size = new System.Drawing.Size(270, 75);
+            this.guna2Button1.TabIndex = 46;
+            this.guna2Button1.Text = "Automated Optimization";
+            this.guna2Button1.TextOffset = new System.Drawing.Point(51, 0);
+            this.guna2Button1.UseTransparentBackground = true;
+            // 
             // CustomMod_Button
             // 
             this.CustomMod_Button.Animated = true;
@@ -135,8 +165,8 @@
             this.CustomMod_Button.ForeColor = System.Drawing.Color.White;
             this.CustomMod_Button.Image = global::TF2_Mod_Installer.Properties.Resources.Custom;
             this.CustomMod_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.CustomMod_Button.ImageOffset = new System.Drawing.Point(9, 0);
-            this.CustomMod_Button.ImageSize = new System.Drawing.Size(43, 43);
+            this.CustomMod_Button.ImageOffset = new System.Drawing.Point(10, 0);
+            this.CustomMod_Button.ImageSize = new System.Drawing.Size(42, 42);
             this.CustomMod_Button.Location = new System.Drawing.Point(25, 419);
             this.CustomMod_Button.Margin = new System.Windows.Forms.Padding(0);
             this.CustomMod_Button.Name = "CustomMod_Button";
@@ -161,7 +191,6 @@
             this.Useful_Mods_Button.FillColor = System.Drawing.Color.Transparent;
             this.Useful_Mods_Button.Font = new System.Drawing.Font("Hack", 14.25F);
             this.Useful_Mods_Button.ForeColor = System.Drawing.Color.White;
-            this.Useful_Mods_Button.Image = global::TF2_Mod_Installer.Properties.Resources.Sniper_emblem_RED;
             this.Useful_Mods_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Useful_Mods_Button.ImageOffset = new System.Drawing.Point(3, 0);
             this.Useful_Mods_Button.ImageSize = new System.Drawing.Size(55, 55);
@@ -189,7 +218,6 @@
             this.PopHUDs_Button.FillColor = System.Drawing.Color.Transparent;
             this.PopHUDs_Button.Font = new System.Drawing.Font("Hack", 14.25F);
             this.PopHUDs_Button.ForeColor = System.Drawing.Color.White;
-            this.PopHUDs_Button.Image = global::TF2_Mod_Installer.Properties.Resources._1391651763_preview_TF2_Pybro_Emblem;
             this.PopHUDs_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.PopHUDs_Button.ImageOffset = new System.Drawing.Point(3, 0);
             this.PopHUDs_Button.ImageSize = new System.Drawing.Size(55, 55);
@@ -200,7 +228,7 @@
             this.PopHUDs_Button.PressedDepth = 1;
             this.PopHUDs_Button.Size = new System.Drawing.Size(270, 75);
             this.PopHUDs_Button.TabIndex = 43;
-            this.PopHUDs_Button.Text = "Populer HUDs";
+            this.PopHUDs_Button.Text = "Fresh HUDs";
             this.PopHUDs_Button.TextOffset = new System.Drawing.Point(51, 0);
             this.PopHUDs_Button.UseTransparentBackground = true;
             // 
@@ -327,6 +355,7 @@
         private Guna.UI2.WinForms.Guna2Button PopHUDs_Button;
         private Guna.UI2.WinForms.Guna2Button Useful_Mods_Button;
         private Guna.UI2.WinForms.Guna2Button CustomMod_Button;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
     }
 }
 

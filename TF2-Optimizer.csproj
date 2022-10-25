@@ -86,7 +86,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\settings.png" />
+    <None Include="images\settings.png" />
     <None Include="images\information.png" />
     <None Include="images\Custom.png" />
     <None Include="images\automated.png" />

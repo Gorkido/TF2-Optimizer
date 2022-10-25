@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{67475FB2-1038-4971-893E-BC651AF0828B}</ProjectGuid>
     <OutputType>WinExe</OutputType>
-    <RootNamespace>TF2_Mod_Installer</RootNamespace>
-    <AssemblyName>TF2-Mod-Installer</AssemblyName>
+    <RootNamespace>TF2_Optimizer</RootNamespace>
+    <AssemblyName>TF2-Optimizer</AssemblyName>
     <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -24,13 +24,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup />
   <ItemGroup>
     <Reference Include="Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4, processorArchitecture=MSIL">
       <HintPath>packages\Guna.UI2.WinForms.2.0.3.5\lib\net40\Guna.UI2.dll</HintPath>
-    </Reference>
-    <Reference Include="MetroFramework, Version=1.4.0.0, Culture=neutral, PublicKeyToken=5f91a84759bf584a, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>bin\Release\MetroFramework.dll</HintPath>
     </Reference>
     <Reference Include="Octokit, Version=4.0.1.0, Culture=neutral, PublicKeyToken=0be8860aee462442, processorArchitecture=MSIL">
       <HintPath>packages\Octokit.4.0.1\lib\netstandard2.0\Octokit.dll</HintPath>
@@ -61,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form.resx">
       <DependentUpon>Form.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -82,21 +80,24 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="tf2build.ttf" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\information.png" />
-    <None Include="Resources\Custom.png" />
-    <None Include="Resources\automated.png" />
-    <Content Include="Resources\tf2_logo.png" />
+    <None Include="Resources\settings.png" />
+    <None Include="images\information.png" />
+    <None Include="images\Custom.png" />
+    <None Include="images\automated.png" />
+    <Content Include="images\tf2_logo.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\tf2_background.png" />
+    <None Include="images\tf2_background.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\mastercomfig_logo.png" />
+    <None Include="images\mastercomfig_logo.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

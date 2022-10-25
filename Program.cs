@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace TF2_Mod_Installer
+namespace TF2_Optimizer
 {
     internal static class Program
     {

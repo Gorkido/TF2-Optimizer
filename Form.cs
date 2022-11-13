@@ -48,7 +48,7 @@ namespace TF2_Optimizer
         private readonly string hitkillsounds = "C:\\Steam\\steamapps\\common\\Team Fortress 2\\tf\\custom\\hitsound\\sound\\ui";
         private readonly string customcfg = "C:\\Steam\\steamapps\\common\\Team Fortress 2\\tf\\cfg";
         private readonly string downloadstring = "https://gamebanana.com/dl/";
-        private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
+        private readonly GitHubClient client = new(new ProductHeaderValue("LatestRelease"));
         private bool LPanel_Expand;
 
         private readonly string[] MasterComfig =

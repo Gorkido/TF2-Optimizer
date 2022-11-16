@@ -343,22 +343,22 @@ namespace TF2_Optimizer
 
         private void ResetTF2_Button_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("             Are you sure you want to reset TF2?\n      This will delete tf/cfg and tf/custom folders.", "Reset Team Fortress 2", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            if (MessageBox.Show("Are you sure you want to reset TF2?", "Reset Team Fortress 2", MessageBoxButtons.YesNo) == DialogResult.Yes)
             {
                 try
                 {
                     if (isTF2Running == false)
                     { // https://docs.mastercomfig.com/latest/setup/clean_up/
-                        Directory.Delete(TF2_Location.Text + "\\tf\\custom");
-                        Directory.Delete(TF2_Location.Text + "\\tf\\cfg");
-                        _ = Process.Start(TF2_Location.Text + "\\hl2.exe -game tf -novid -autoconfig -default +host_writeconfig config.cfg full +mat_savechanges +quit");
+                        Directory.Delete(TF2_Location.Text + "\\tf\\custom", true);
+                        Directory.Delete(TF2_Location.Text + "\\tf\\cfg", true);
+                        _ = Process.Start(TF2_Location.Text + "\\hl2.exe", "-game tf -steam -novid -autoconfig -default +host_writeconfig config.cfg full +mat_savechanges +quit");
                     }
                     else
                     {
                         _ = MessageBox.Show("Close Team Fortress 2 before you reset Team Fortress 2.");
                     }
                 }
-                catch (Exception ex) { _ = MessageBox.Show(ex.Message); }
+                catch (Exception) { }
             }
         }
 

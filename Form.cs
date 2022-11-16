@@ -319,6 +319,7 @@ namespace TF2_Optimizer
         {
             using (FolderBrowserDialog dialog = new FolderBrowserDialog())
             {
+                dialog.RootFolder = Environment.SpecialFolder.MyComputer;
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     string path = dialog.SelectedPath;
@@ -331,6 +332,7 @@ namespace TF2_Optimizer
         {
             using (FolderBrowserDialog dialog = new FolderBrowserDialog())
             {
+                dialog.RootFolder = Environment.SpecialFolder.MyComputer;
                 if (dialog.ShowDialog() == DialogResult.OK)
                 {
                     string path = dialog.SelectedPath;
@@ -358,6 +360,21 @@ namespace TF2_Optimizer
                 }
                 catch (Exception ex) { _ = MessageBox.Show(ex.Message); }
             }
+        }
+
+        private void Discord_Link_Click(object sender, EventArgs e)
+        {
+            _ = Process.Start("https://discord.gg/UvQqsuQzXG");
+        }
+
+        private void Youtube_Link_Click(object sender, EventArgs e)
+        {
+            _ = Process.Start("https://www.youtube.com/@Gorkid0");
+        }
+
+        private void Github_Link_Click(object sender, EventArgs e)
+        {
+            _ = Process.Start("https://github.com/Gorkido");
         }
     }
 }

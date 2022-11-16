@@ -42,6 +42,14 @@
             this.MenuLabel = new System.Windows.Forms.Label();
             this.Main_Panel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.Settings_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.ResetTF2_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Separator1 = new Guna.UI2.WinForms.Guna2Separator();
+            this.set_label5 = new System.Windows.Forms.Label();
+            this.set_label4 = new System.Windows.Forms.Label();
+            this.set_label3 = new System.Windows.Forms.Label();
+            this.set_label2 = new System.Windows.Forms.Label();
+            this.TF2_Location = new Guna.UI2.WinForms.Guna2TextBox();
+            this.Steam_Location = new Guna.UI2.WinForms.Guna2TextBox();
             this.set_label1 = new System.Windows.Forms.Label();
             this.About_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.SubTitle = new System.Windows.Forms.Label();
@@ -57,12 +65,9 @@
             this.ci_label2 = new System.Windows.Forms.Label();
             this.ci_label1 = new System.Windows.Forms.Label();
             this.AnimateTF_Icon = new System.Windows.Forms.Timer(this.components);
-            this.set_label3 = new System.Windows.Forms.Label();
-            this.set_label2 = new System.Windows.Forms.Label();
-            this.TF2_Location = new Guna.UI2.WinForms.Guna2TextBox();
-            this.Steam_Location = new Guna.UI2.WinForms.Guna2TextBox();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.set_label6 = new System.Windows.Forms.Label();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).BeginInit();
             this.Main_Panel.SuspendLayout();
@@ -336,10 +341,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.Main_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Main_Panel.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.Main_Panel.Controls.Add(this.Mastercomfig_Panel);
             this.Main_Panel.Controls.Add(this.Custom_Install_Panel);
             this.Main_Panel.Controls.Add(this.Settings_Panel);
             this.Main_Panel.Controls.Add(this.About_Panel);
+            this.Main_Panel.Controls.Add(this.Mastercomfig_Panel);
             this.Main_Panel.FillColor = System.Drawing.Color.DimGray;
             this.Main_Panel.FillColor2 = System.Drawing.Color.Transparent;
             this.Main_Panel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -353,6 +358,11 @@
             // Settings_Panel
             // 
             this.Settings_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Settings_Panel.Controls.Add(this.set_label6);
+            this.Settings_Panel.Controls.Add(this.ResetTF2_Button);
+            this.Settings_Panel.Controls.Add(this.guna2Separator1);
+            this.Settings_Panel.Controls.Add(this.set_label5);
+            this.Settings_Panel.Controls.Add(this.set_label4);
             this.Settings_Panel.Controls.Add(this.set_label3);
             this.Settings_Panel.Controls.Add(this.set_label2);
             this.Settings_Panel.Controls.Add(this.TF2_Location);
@@ -362,16 +372,145 @@
             this.Settings_Panel.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Settings_Panel.Location = new System.Drawing.Point(0, 0);
             this.Settings_Panel.Name = "Settings_Panel";
+            this.Settings_Panel.Padding = new System.Windows.Forms.Padding(10, 0, 10, 10);
             this.Settings_Panel.Size = new System.Drawing.Size(902, 726);
             this.Settings_Panel.TabIndex = 5;
+            // 
+            // ResetTF2_Button
+            // 
+            this.ResetTF2_Button.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.ResetTF2_Button.Animated = true;
+            this.ResetTF2_Button.BorderColor = System.Drawing.Color.White;
+            this.ResetTF2_Button.BorderThickness = 1;
+            this.ResetTF2_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.ResetTF2_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.ResetTF2_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.ResetTF2_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.ResetTF2_Button.FillColor = System.Drawing.Color.Transparent;
+            this.ResetTF2_Button.Font = new System.Drawing.Font("Hack", 14.25F);
+            this.ResetTF2_Button.ForeColor = System.Drawing.Color.White;
+            this.ResetTF2_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.ResetTF2_Button.ImageSize = new System.Drawing.Size(0, 0);
+            this.ResetTF2_Button.Location = new System.Drawing.Point(269, 585);
+            this.ResetTF2_Button.Margin = new System.Windows.Forms.Padding(0);
+            this.ResetTF2_Button.Name = "ResetTF2_Button";
+            this.ResetTF2_Button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.ResetTF2_Button.PressedDepth = 1;
+            this.ResetTF2_Button.ShadowDecoration.BorderRadius = 0;
+            this.ResetTF2_Button.ShadowDecoration.Depth = 0;
+            this.ResetTF2_Button.Size = new System.Drawing.Size(364, 61);
+            this.ResetTF2_Button.TabIndex = 72;
+            this.ResetTF2_Button.Text = "Reset TF2";
+            this.ResetTF2_Button.Click += new System.EventHandler(this.ResetTF2_Button_Click);
+            // 
+            // guna2Separator1
+            // 
+            this.guna2Separator1.Location = new System.Drawing.Point(14, 358);
+            this.guna2Separator1.Name = "guna2Separator1";
+            this.guna2Separator1.Size = new System.Drawing.Size(875, 10);
+            this.guna2Separator1.TabIndex = 71;
+            // 
+            // set_label5
+            // 
+            this.set_label5.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.set_label5.Font = new System.Drawing.Font("Hack", 14.25F);
+            this.set_label5.Location = new System.Drawing.Point(0, 400);
+            this.set_label5.Name = "set_label5";
+            this.set_label5.Size = new System.Drawing.Size(902, 30);
+            this.set_label5.TabIndex = 68;
+            this.set_label5.Text = "Sets all TF2 settings to default.";
+            this.set_label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // set_label4
+            // 
+            this.set_label4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.set_label4.Font = new System.Drawing.Font("Hack", 14.25F);
+            this.set_label4.Location = new System.Drawing.Point(0, 366);
+            this.set_label4.Name = "set_label4";
+            this.set_label4.Size = new System.Drawing.Size(902, 30);
+            this.set_label4.TabIndex = 65;
+            this.set_label4.Text = "Reset Team Fortress 2";
+            this.set_label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // set_label3
+            // 
+            this.set_label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.set_label3.AutoSize = true;
+            this.set_label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.set_label3.Location = new System.Drawing.Point(75, 203);
+            this.set_label3.Name = "set_label3";
+            this.set_label3.Size = new System.Drawing.Size(294, 32);
+            this.set_label3.TabIndex = 64;
+            this.set_label3.Text = "Team Fortress 2\'s Location";
+            // 
+            // set_label2
+            // 
+            this.set_label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.set_label2.AutoSize = true;
+            this.set_label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.set_label2.Location = new System.Drawing.Point(75, 67);
+            this.set_label2.Name = "set_label2";
+            this.set_label2.Size = new System.Drawing.Size(193, 32);
+            this.set_label2.TabIndex = 63;
+            this.set_label2.Text = "Steam\'s Location";
+            // 
+            // TF2_Location
+            // 
+            this.TF2_Location.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.TF2_Location.Animated = true;
+            this.TF2_Location.BorderColor = System.Drawing.Color.DarkOrange;
+            this.TF2_Location.BorderRadius = 2;
+            this.TF2_Location.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.TF2_Location.DefaultText = "";
+            this.TF2_Location.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.TF2_Location.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.TF2_Location.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TF2_Location.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.TF2_Location.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TF2_Location.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TF2_Location.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.TF2_Location.Location = new System.Drawing.Point(81, 235);
+            this.TF2_Location.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.TF2_Location.Name = "TF2_Location";
+            this.TF2_Location.PasswordChar = '\0';
+            this.TF2_Location.PlaceholderText = "";
+            this.TF2_Location.SelectedText = "";
+            this.TF2_Location.Size = new System.Drawing.Size(746, 48);
+            this.TF2_Location.TabIndex = 62;
+            this.TF2_Location.Click += new System.EventHandler(this.TF2_Location_Click);
+            // 
+            // Steam_Location
+            // 
+            this.Steam_Location.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.Steam_Location.Animated = true;
+            this.Steam_Location.BorderColor = System.Drawing.Color.DarkOrange;
+            this.Steam_Location.BorderRadius = 2;
+            this.Steam_Location.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Steam_Location.DefaultText = "";
+            this.Steam_Location.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.Steam_Location.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.Steam_Location.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Steam_Location.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.Steam_Location.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Steam_Location.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Steam_Location.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.Steam_Location.Location = new System.Drawing.Point(81, 99);
+            this.Steam_Location.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Steam_Location.Name = "Steam_Location";
+            this.Steam_Location.PasswordChar = '\0';
+            this.Steam_Location.PlaceholderText = "";
+            this.Steam_Location.SelectedText = "";
+            this.Steam_Location.Size = new System.Drawing.Size(746, 48);
+            this.Steam_Location.TabIndex = 61;
+            this.Steam_Location.Click += new System.EventHandler(this.Steam_Location_Click);
             // 
             // set_label1
             // 
             this.set_label1.Dock = System.Windows.Forms.DockStyle.Top;
             this.set_label1.Font = new System.Drawing.Font("Hack", 14.25F);
-            this.set_label1.Location = new System.Drawing.Point(0, 0);
+            this.set_label1.Location = new System.Drawing.Point(10, 0);
             this.set_label1.Name = "set_label1";
-            this.set_label1.Size = new System.Drawing.Size(902, 30);
+            this.set_label1.Size = new System.Drawing.Size(882, 30);
             this.set_label1.TabIndex = 2;
             this.set_label1.Text = "Settings";
             this.set_label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -504,6 +643,7 @@
             // 
             // OpenFileDI
             // 
+            this.OpenFileDI.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.OpenFileDI.Animated = true;
             this.OpenFileDI.BorderColor = System.Drawing.Color.Transparent;
             this.OpenFileDI.CustomBorderColor = System.Drawing.Color.White;
@@ -600,81 +740,22 @@
             this.AnimateTF_Icon.Interval = 1;
             this.AnimateTF_Icon.Tick += new System.EventHandler(this.AnimateTF_Icon_Tick);
             // 
-            // set_label3
-            // 
-            this.set_label3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.set_label3.AutoSize = true;
-            this.set_label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.set_label3.Location = new System.Drawing.Point(65, 391);
-            this.set_label3.Name = "set_label3";
-            this.set_label3.Size = new System.Drawing.Size(294, 32);
-            this.set_label3.TabIndex = 64;
-            this.set_label3.Text = "Team Fortress 2\'s Location";
-            // 
-            // set_label2
-            // 
-            this.set_label2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.set_label2.AutoSize = true;
-            this.set_label2.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.set_label2.Location = new System.Drawing.Point(65, 255);
-            this.set_label2.Name = "set_label2";
-            this.set_label2.Size = new System.Drawing.Size(193, 32);
-            this.set_label2.TabIndex = 63;
-            this.set_label2.Text = "Steam\'s Location";
-            // 
-            // TF2_Location
-            // 
-            this.TF2_Location.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.TF2_Location.Animated = true;
-            this.TF2_Location.BorderColor = System.Drawing.Color.DarkOrange;
-            this.TF2_Location.BorderRadius = 2;
-            this.TF2_Location.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.TF2_Location.DefaultText = "";
-            this.TF2_Location.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.TF2_Location.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.TF2_Location.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TF2_Location.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.TF2_Location.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TF2_Location.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TF2_Location.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.TF2_Location.Location = new System.Drawing.Point(71, 423);
-            this.TF2_Location.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.TF2_Location.Name = "TF2_Location";
-            this.TF2_Location.PasswordChar = '\0';
-            this.TF2_Location.PlaceholderText = "";
-            this.TF2_Location.SelectedText = "";
-            this.TF2_Location.Size = new System.Drawing.Size(766, 48);
-            this.TF2_Location.TabIndex = 62;
-            this.TF2_Location.Click += new System.EventHandler(this.TF2_Location_Click);
-            // 
-            // Steam_Location
-            // 
-            this.Steam_Location.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.Steam_Location.Animated = true;
-            this.Steam_Location.BorderColor = System.Drawing.Color.DarkOrange;
-            this.Steam_Location.BorderRadius = 2;
-            this.Steam_Location.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.Steam_Location.DefaultText = "";
-            this.Steam_Location.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.Steam_Location.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.Steam_Location.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Steam_Location.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.Steam_Location.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Steam_Location.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Steam_Location.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.Steam_Location.Location = new System.Drawing.Point(71, 287);
-            this.Steam_Location.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
-            this.Steam_Location.Name = "Steam_Location";
-            this.Steam_Location.PasswordChar = '\0';
-            this.Steam_Location.PlaceholderText = "";
-            this.Steam_Location.SelectedText = "";
-            this.Steam_Location.Size = new System.Drawing.Size(766, 48);
-            this.Steam_Location.TabIndex = 61;
-            this.Steam_Location.Click += new System.EventHandler(this.Steam_Location_Click);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // set_label6
+            // 
+            this.set_label6.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.set_label6.Font = new System.Drawing.Font("Hack", 14.25F);
+            this.set_label6.Location = new System.Drawing.Point(0, 431);
+            this.set_label6.Name = "set_label6";
+            this.set_label6.Size = new System.Drawing.Size(902, 85);
+            this.set_label6.TabIndex = 73;
+            this.set_label6.Text = "Detailed Explanation: Deletes tf/cfg and tf/custom folders in order to reset all " +
+    "game configs, restores video and performance settings to default for the current" +
+    " hardware detected.";
+            this.set_label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form
             // 
@@ -741,6 +822,11 @@
         private Guna.UI2.WinForms.Guna2TextBox Steam_Location;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.FolderBrowserDialog folderBrowserDialog1;
+        private System.Windows.Forms.Label set_label5;
+        private System.Windows.Forms.Label set_label4;
+        private Guna.UI2.WinForms.Guna2Separator guna2Separator1;
+        private Guna.UI2.WinForms.Guna2Button ResetTF2_Button;
+        private System.Windows.Forms.Label set_label6;
     }
 }
 

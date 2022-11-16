@@ -5,6 +5,7 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
 using System.IO;
+using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
@@ -15,9 +16,9 @@ namespace TF2_Optimizer
 {
     public partial class Form : System.Windows.Forms.Form
     {
-        [System.Runtime.InteropServices.DllImport("gdi32.dll")]
+        [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
-        IntPtr pdv, [System.Runtime.InteropServices.In] ref uint pcFonts);
+        IntPtr pdv, [In] ref uint pcFonts);
 
         [DllImport("kernel32.dll")]
         [return: MarshalAs(UnmanagedType.Bool)]
@@ -65,15 +66,19 @@ namespace TF2_Optimizer
             set_label1.Font = tf2_font_bold;
             set_label2.Font = tf2_font_regular;
             set_label3.Font = tf2_font_regular;
+            set_label4.Font = tf2_font_bold;
+            set_label5.Font = tf2_font_regular;
+            set_label6.Font = tf2_font_regular;
             Steam_Location.Font = tf2_font_regular;
             TF2_Location.Font = tf2_font_regular;
+            ResetTF2_Button.Font = tf2_font_regular;
         }
 
         #region Strings
-        private static readonly string custom = GetTF2Directory() + "\\tf\\custom\\";
-        private static readonly string hitkillsounds = GetTF2Directory() + "\\tf\\custom\\hitsound\\sound\\ui\\";
-        private static readonly string cfg = GetTF2Directory() + "\\tf\\cfg\\";
+        //private static readonly string hitkillsounds = GetTF2Directory() + "\\tf\\custom\\hitsound\\sound\\ui\\";
+        //private static readonly string cfg = GetTF2Directory() + "\\tf\\cfg\\";
         private readonly string downloadstring = "https://gamebanana.com/dl/";
+        private readonly bool isTF2Running = Process.GetProcessesByName("hl2.exe").Any();
         private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
         private readonly WebClient WClient = new WebClient();
 
@@ -102,13 +107,12 @@ namespace TF2_Optimizer
 
         private void Form_Load(object sender, EventArgs e)
         {
-            Steam_Location.Text = GetSteamDirectory();
-            TF2_Location.Text = GetTF2Directory();
+            GetSteamDirectory();
+            GetTF2Directory();
         }
 
-        private static string GetSteamDirectory()
+        private void GetSteamDirectory()
         {
-            string Result = "";
             try
             {
                 RegistryKey key = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Valve\\Steam");
@@ -117,22 +121,20 @@ namespace TF2_Optimizer
                     object o = key.GetValue("SteamPath");
                     if (o != null)
                     {
-                        Result = o.ToString().Replace("/", "\\");
+                        Steam_Location.Text = o.ToString().Replace("/", "\\");
                     }
                 }
             }
             catch (Exception) { }
-            return Result;
         }
 
-        public static string GetTF2Directory()
+        private void GetTF2Directory()
         {
-            string result = "";
             string TF2Dir = "\\steamapps\\common\\Team Fortress 2";
-            string libfile = GetSteamDirectory() + "\\steamapps\\libraryfolders.vdf";
-            if (Directory.Exists(GetSteamDirectory() + TF2Dir))
+            string libfile = Steam_Location.Text + "\\steamapps\\libraryfolders.vdf";
+            if (Directory.Exists(Steam_Location.Text + TF2Dir))
             {
-                result = GetSteamDirectory() + TF2Dir;
+                TF2_Location.Text = Steam_Location.Text + TF2Dir;
             }
             else
             {
@@ -149,10 +151,10 @@ namespace TF2_Optimizer
                                 {
                                     if (new Regex(@"path").IsMatch(line))
                                     {
-                                        string path = line.Substring(line.LastIndexOf("-") + 1).Replace("\"path\"", " ").Replace("\"", "").Normalize().Trim();
+                                        string path = line.Substring(line.LastIndexOf("-") + 1).Replace("\"path\"", " ").Replace("\"", "").Replace(":\\\\", ":\\").Normalize().Trim();
                                         if (Directory.Exists(path + TF2Dir))
                                         {
-                                            result = path + TF2Dir;
+                                            TF2_Location.Text = path + TF2Dir;
                                         }
                                     }
                                 }
@@ -169,12 +171,6 @@ namespace TF2_Optimizer
                     _ = MessageBox.Show("No other steam libraries found.");
                 }
             }
-            return result;
-        }
-
-        private void ResetTF2()
-        {
-
         }
 
         private void AnimateTF_Icon_Tick(object sender, EventArgs e)
@@ -233,8 +229,6 @@ namespace TF2_Optimizer
 
         private void Settings_Button_Click(object sender, EventArgs e)
         {
-            Steam_Location.Text = GetSteamDirectory();
-            TF2_Location.Text = GetTF2Directory();
             Mastercomfig_Panel.Hide();
             About_Panel.Hide();
             Custom_Install_Panel.Hide();
@@ -243,6 +237,7 @@ namespace TF2_Optimizer
 
         private void Configure_mastercomf_Click(object sender, EventArgs e)
         {
+            string custom = TF2_Location.Text + "\\tf\\custom\\";
             if (msconf_preset_combo.SelectedItem != null)
             {
                 if (MessageBox.Show($"Are you sure you want to install mastercomfig preset: {msconf_preset_combo.SelectedItem}?", "Install mastercomfig", MessageBoxButtons.YesNo) == DialogResult.Yes)
@@ -341,6 +336,27 @@ namespace TF2_Optimizer
                     string path = dialog.SelectedPath;
                     TF2_Location.Text = path;
                 }
+            }
+        }
+
+        private void ResetTF2_Button_Click(object sender, EventArgs e)
+        {
+            if (MessageBox.Show("             Are you sure you want to reset TF2?\n      This will delete tf/cfg and tf/custom folders.", "Reset Team Fortress 2", MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    if (isTF2Running == false)
+                    { // https://docs.mastercomfig.com/latest/setup/clean_up/
+                        Directory.Delete(TF2_Location.Text + "\\tf\\custom");
+                        Directory.Delete(TF2_Location.Text + "\\tf\\cfg");
+                        _ = Process.Start(TF2_Location.Text + "\\hl2.exe -game tf -novid -autoconfig -default +host_writeconfig config.cfg full +mat_savechanges +quit");
+                    }
+                    else
+                    {
+                        _ = MessageBox.Show("Close Team Fortress 2 before you reset Team Fortress 2.");
+                    }
+                }
+                catch (Exception ex) { _ = MessageBox.Show(ex.Message); }
             }
         }
     }

@@ -4,12 +4,14 @@ using System;
 using System.Diagnostics;
 using System.Drawing;
 using System.Drawing.Text;
+using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows.Forms;
 
 namespace TF2_Optimizer
@@ -25,53 +27,11 @@ namespace TF2_Optimizer
         private static extern bool GetPhysicallyInstalledSystemMemory(out long TotalMemoryInKilobytes);
 
         private readonly PrivateFontCollection fonts = new PrivateFontCollection();
-        private readonly Font tf2_font_regular;
-        private readonly Font tf2_font_small;
-        private readonly Font tf2_font_bold;
 
         public Form()
         {
             InitializeComponent();
-
-            byte[] fontData = Properties.Resources.tf2build;
-            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
-            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
-            uint dummy = 0;
-            fonts.AddMemoryFont(fontPtr, Properties.Resources.tf2build.Length);
-            _ = AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.tf2build.Length, IntPtr.Zero, ref dummy);
-            Marshal.FreeCoTaskMem(fontPtr);
-
-            tf2_font_regular = new Font(fonts.Families[0], 14.25F, FontStyle.Regular);
-            tf2_font_small = new Font(fonts.Families[0], 12.25F, FontStyle.Regular);
-            tf2_font_bold = new Font(fonts.Families[0], 20.25F, FontStyle.Bold);
-
-            msconfig_pre_label.Font = tf2_font_bold;
-            MenuLabel.Font = tf2_font_bold;
-            Title.Font = tf2_font_bold;
-            SubTitle.Font = tf2_font_small;
-            About_Button.Font = tf2_font_regular;
-            mastercomfig_Button.Font = tf2_font_regular;
-            msconf_preset_combo.Font = tf2_font_regular;
-            Configure_mastercomf.Font = tf2_font_regular;
-            PopHUDs_Button.Font = tf2_font_regular;
-            Useful_Mods_Button.Font = tf2_font_regular;
-            CustomMod_Button.Font = tf2_font_regular;
-            ci_label1.Font = tf2_font_bold;
-            ci_label2.Font = tf2_font_regular;
-            OpenFileDI.Font = tf2_font_regular;
-            DropInstall.Font = tf2_font_regular;
-            Custom_Install.Font = tf2_font_regular;
-            Auto_Opti_Button.Font = tf2_font_regular;
-            Settings_Button.Font = tf2_font_regular;
-            set_label1.Font = tf2_font_bold;
-            set_label2.Font = tf2_font_regular;
-            set_label3.Font = tf2_font_regular;
-            set_label4.Font = tf2_font_bold;
-            set_label5.Font = tf2_font_regular;
-            set_label6.Font = tf2_font_regular;
-            Steam_Location.Font = tf2_font_regular;
-            TF2_Location.Font = tf2_font_regular;
-            ResetTF2_Button.Font = tf2_font_regular;
+            UI();
         }
 
         #region Strings
@@ -109,6 +69,50 @@ namespace TF2_Optimizer
         {
             GetSteamDirectory();
             GetTF2Directory();
+        }
+
+        private void UI()
+        {
+            byte[] fontData = Properties.Resources.tf2build;
+            IntPtr fontPtr = Marshal.AllocCoTaskMem(fontData.Length);
+            Marshal.Copy(fontData, 0, fontPtr, fontData.Length);
+            uint dummy = 0;
+            fonts.AddMemoryFont(fontPtr, Properties.Resources.tf2build.Length);
+            _ = AddFontMemResourceEx(fontPtr, (uint)Properties.Resources.tf2build.Length, IntPtr.Zero, ref dummy);
+            Marshal.FreeCoTaskMem(fontPtr);
+
+            Font tf2_font_regular = new Font(fonts.Families[0], 14.25F, FontStyle.Regular);
+            Font tf2_font_small = new Font(fonts.Families[0], 12.25F, FontStyle.Regular);
+            Font tf2_font_bold = new Font(fonts.Families[0], 20.25F, FontStyle.Bold);
+
+            msconfig_pre_label.Font = tf2_font_bold;
+            MenuLabel.Font = tf2_font_bold;
+            Title.Font = tf2_font_bold;
+            SubTitle.Font = tf2_font_small;
+            About_Button.Font = tf2_font_regular;
+            mastercomfig_Button.Font = tf2_font_regular;
+            msconf_preset_combo.Font = tf2_font_regular;
+            Configure_mastercomf.Font = tf2_font_regular;
+            PopHUDs_Button.Font = tf2_font_regular;
+            Useful_Mods_Button.Font = tf2_font_regular;
+            CustomMod_Button.Font = tf2_font_regular;
+            ci_label1.Font = tf2_font_bold;
+            ci_label2.Font = tf2_font_regular;
+            OpenFileDI.Font = tf2_font_regular;
+            DropInstall.Font = tf2_font_regular;
+            Custom_Install.Font = tf2_font_regular;
+            Auto_Opti_Button.Font = tf2_font_regular;
+            Settings_Button.Font = tf2_font_regular;
+            set_label1.Font = tf2_font_bold;
+            set_label2.Font = tf2_font_regular;
+            set_label3.Font = tf2_font_regular;
+            set_label4.Font = tf2_font_bold;
+            set_label5.Font = tf2_font_regular;
+            set_label6.Font = tf2_font_regular;
+            set_label7.Font = tf2_font_regular;
+            Steam_Location.Font = tf2_font_regular;
+            TF2_Location.Font = tf2_font_regular;
+            ResetTF2_Button.Font = tf2_font_regular;
         }
 
         private void GetSteamDirectory()
@@ -235,49 +239,70 @@ namespace TF2_Optimizer
             Settings_Panel.Show();
         }
 
+        #region Progress Bar
+        private void Client_DownloadFileCompleted(object sender, System.ComponentModel.AsyncCompletedEventArgs e)
+        {
+            _ = MessageBox.Show("mastercomfig has been installed.");
+            progressBar.Hide();
+        }
+
+        private void Client_DownloadProgressChanged(object sender, DownloadProgressChangedEventArgs e)
+        {
+            progressBar.Value = e.ProgressPercentage;
+        }
+        #endregion
+
         private void Configure_mastercomf_Click(object sender, EventArgs e)
         {
             string custom = TF2_Location.Text + "\\tf\\custom\\";
+            if (!Directory.Exists(custom))
+            {
+                _ = Directory.CreateDirectory(custom);
+            }
+
             if (msconf_preset_combo.SelectedItem != null)
             {
                 if (MessageBox.Show($"Are you sure you want to install mastercomfig preset: {msconf_preset_combo.SelectedItem}?", "Install mastercomfig", MessageBoxButtons.YesNo) == DialogResult.Yes)
                 {
+                    progressBar.Show();
                     if (Directory.Exists(custom))
                     {
                         if (msconf_preset_combo.SelectedIndex == 0) // Very Low
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 0), custom + "mastercomfig-very-low-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 0)), custom + "mastercomfig-very-low-preset.vpk");
                             _ = GetPhysicallyInstalledSystemMemory(out long memKb);
                             long totalram = memKb / 1024 / 1024;
                             if (totalram < 4)
                             {
-                                WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 7), custom + "mastercomfig-lowmem-addon.vpk");
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 7)), custom + "mastercomfig-lowmem-addon.vpk");
                             }
                         }
                         if (msconf_preset_combo.SelectedIndex == 1) // Low
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 1), custom + "mastercomfig-low-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 1)), custom + "mastercomfig-low-preset.vpk");
                         }
                         if (msconf_preset_combo.SelectedIndex == 2) // Medium Low
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 2), custom + "mastercomfig-medium-low-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 2)), custom + "mastercomfig-medium-low-preset.vpk");
                         }
                         if (msconf_preset_combo.SelectedIndex == 3) // Medium
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 3), custom + "mastercomfig-medium-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 3)), custom + "mastercomfig-medium-preset.vpk");
                         }
                         if (msconf_preset_combo.SelectedIndex == 4) // Medium High
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 4), custom + "mastercomfig-medium-high-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 4)), custom + "mastercomfig-medium-high-preset.vpk");
                         }
                         if (msconf_preset_combo.SelectedIndex == 5) // High
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 5), custom + "mastercomfig-high-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 5)), custom + "mastercomfig-high-preset.vpk");
                         }
                         if (msconf_preset_combo.SelectedIndex == 6) // Ultra
                         {
-                            WClient.DownloadFile(GetLatestMCRelease("mastercomfig", "mastercomfig", 6), custom + "mastercomfig-ultra-preset.vpk");
+                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 6)), custom + "mastercomfig-ultra-preset.vpk");
                         }
+                        WClient.DownloadFileCompleted += Client_DownloadFileCompleted;
+                        WClient.DownloadProgressChanged += Client_DownloadProgressChanged;
                     }
                 }
             }
@@ -375,6 +400,22 @@ namespace TF2_Optimizer
         private void Github_Link_Click(object sender, EventArgs e)
         {
             _ = Process.Start("https://github.com/Gorkido");
+        }
+
+        private void languageChanger_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            switch (languageChanger.SelectedIndex)
+            {
+                case 0:
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("en");
+                    break;
+                case 1:
+                    Thread.CurrentThread.CurrentUICulture = new CultureInfo("tr");
+                    break;
+            }
+            Controls.Clear();
+            InitializeComponent();
+            UI();
         }
     }
 }

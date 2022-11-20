@@ -85,13 +85,6 @@ namespace TF2_Optimizer
 
         private void Form_Load(object sender, EventArgs e)
         {
-            Process[] ps = Process.GetProcessesByName("TF2.Optimizer.exe");
-            File.Delete(ExecPath + "\\TF2.Optimizer.exe");
-            foreach (Process p in ps)
-            {
-                p.Kill();
-            }
-
             GetSteamDirectory();
             GetTF2Directory();
 
@@ -665,23 +658,12 @@ namespace TF2_Optimizer
             OptimizerContMenuStrip.Show(Control.MousePosition);
         }
 
-        private new void Update()
-        {
-            WClient.DownloadFile(GetLatestGitRelease("Gorkido", "TF2-Optimizer", 2), ExecPath + "\\TF2 Optimizer.exe");
-            _ = Process.Start(ExecPath + "\\TF2 Optimizer.exe");
-        }
-
         private void OptimizerContMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
         {
             string itemText = e.ClickedItem.Text;
 
-
             switch (itemText)
             {
-                case "Update":
-                    //do stuff
-                    break;
-
                 case "Exit":
                     Environment.Exit(0);
                     break;

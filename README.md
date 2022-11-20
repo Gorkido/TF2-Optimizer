@@ -7,8 +7,8 @@
 
 
 <p align="center">
-  <img src="https://img.shields.io/github/license/Gorkido/TF2-Optimizer?style=for-the-badge">
-  <img src="https://img.shields.io/github/stars/Gorkido/TF2-Optimizer?style=for-the-badge">
+  <img src="https://img.shields.io/github/license/Gorkido/TF2-Optimizer?style=for-the-badge&logo=appveyor">
+  <img src="https://img.shields.io/github/stars/Gorkido/TF2-Optimizer?style=for-the-badge&logo=appveyor">
 </p>
 
 ## Preview

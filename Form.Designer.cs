@@ -294,12 +294,12 @@
             // 
             resources.ApplyResources(this.Main_Panel, "Main_Panel");
             this.Main_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.Controls.Add(this.About_Panel);
             this.Main_Panel.Controls.Add(this.Mastercomfig_Panel);
             this.Main_Panel.Controls.Add(this.Custom_Install_Panel);
             this.Main_Panel.Controls.Add(this.Settings_Panel);
             this.Main_Panel.Controls.Add(this.Huds_Panel);
+            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.FillColor = System.Drawing.Color.DimGray;
             this.Main_Panel.FillColor2 = System.Drawing.Color.Transparent;
             this.Main_Panel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;

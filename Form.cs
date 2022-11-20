@@ -1,4 +1,5 @@
-﻿using Microsoft.Win32;
+﻿using Aspose.Zip.SevenZip;
+using Microsoft.Win32;
 using Octokit;
 using System;
 using System.Diagnostics;
@@ -6,6 +7,7 @@ using System.Drawing;
 using System.Drawing.Text;
 using System.Globalization;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Net;
 using System.Runtime.InteropServices;
@@ -41,6 +43,7 @@ namespace TF2_Optimizer
         private readonly bool isTF2Running = Process.GetProcessesByName("hl2.exe").Any();
         private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
         private readonly WebClient WClient = new WebClient();
+        private string Custom => TF2_Location.Text + "\\tf\\custom\\";
 
         private readonly string[] MasterComfig =
         {
@@ -50,8 +53,21 @@ namespace TF2_Optimizer
             "/mastercomfig-medium-preset.vpk",
             "/mastercomfig-medium-high-preset.vpk",
             "/mastercomfig-high-preset.vpk",
-            "/mastercomfig-ultra-preset.vpk",
-            "/mastercomfig-lowmem-addon.vpk"
+            "/mastercomfig-ultra-preset.vpk"
+        };
+
+        private readonly string[] MasterComfigAddons =
+        {
+            "/mastercomfig-lowmem-addon.vpk",
+            "/mastercomfig-no-tutorial-addon.vpk",
+            "/mastercomfig-no-soundscapes-addon.vpk",
+            "/mastercomfig-null-canceling-movement-addon.vpk"
+        };
+
+        private readonly string[] HudGitRepoRelease =
+        {
+            "/RenHUD.7z",
+            "/flawhud-centered.zip"
         };
 
         private string GetLatestMCRelease(string RepoOwner, string RepoName, byte MCFG)
@@ -59,16 +75,27 @@ namespace TF2_Optimizer
             return (client.Repository.Release.GetLatest(RepoOwner, RepoName).Result.HtmlUrl + MasterComfig[MCFG]).Replace("tag", "download");
         }
 
-        private readonly string[] AllHUDs =
+        private string GetLatestGitRelease(string RepoOwner, string RepoName, byte GHRP)
         {
-
-        };
+            return (client.Repository.Release.GetLatest(RepoOwner, RepoName).Result.HtmlUrl + HudGitRepoRelease[GHRP]).Replace("tag", "download");
+        }
         #endregion
 
         private void Form_Load(object sender, EventArgs e)
         {
             GetSteamDirectory();
             GetTF2Directory();
+
+            renhud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/6339e7d4b3917.jpg";
+            sunsethud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/6375462ecf1ac.jpg";
+            warsawhud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/632a6be255007.jpg";
+            hyphud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/60b699676dda0.jpg";
+            hexhud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/62d0499459997.jpg";
+            flawhud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/635dde90c8837.jpg";
+            quakehud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/530-90_621d0fe12349b.jpg";
+            quakehud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/530-90_621d0fe12349b.jpg";
+            m0rehud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/60b6a0ef32f9d.jpg";
+            toonhud_pic.ImageLocation = "https://images.gamebanana.com/img/ss/mods/5abfcec9e21ce.jpg";
         }
 
         private void UI()
@@ -93,15 +120,23 @@ namespace TF2_Optimizer
             mastercomfig_Button.Font = tf2_font_regular;
             msconf_preset_combo.Font = tf2_font_regular;
             Configure_mastercomf.Font = tf2_font_regular;
-            PopHUDs_Button.Font = tf2_font_regular;
-            Useful_Mods_Button.Font = tf2_font_regular;
+            HUDs_Button.Font = tf2_font_regular;
+            hud_lab1.Font = tf2_font_regular;
+            hud_lab2.Font = tf2_font_regular;
+            hud_lab3.Font = tf2_font_regular;
+            hud_lab4.Font = tf2_font_regular;
+            hud_lab5.Font = tf2_font_regular;
+            hud_lab6.Font = tf2_font_regular;
+            hud_lab7.Font = tf2_font_regular;
+            hud_lab8.Font = tf2_font_regular;
+            hud_lab9.Font = tf2_font_regular;
+            Mods_Button.Font = tf2_font_regular;
             CustomMod_Button.Font = tf2_font_regular;
             ci_label1.Font = tf2_font_bold;
             ci_label2.Font = tf2_font_regular;
             OpenFileDI.Font = tf2_font_regular;
             DropInstall.Font = tf2_font_regular;
             Custom_Install.Font = tf2_font_regular;
-            Auto_Opti_Button.Font = tf2_font_regular;
             Settings_Button.Font = tf2_font_regular;
             set_label1.Font = tf2_font_bold;
             set_label2.Font = tf2_font_regular;
@@ -195,6 +230,8 @@ namespace TF2_Optimizer
         private void About_Button_Click(object sender, EventArgs e)
         {
             Mastercomfig_Panel.Hide();
+            Huds_Panel.Hide();
+            Mods_Panel.Hide();
             Custom_Install_Panel.Hide();
             Settings_Panel.Hide();
             About_Panel.Show();
@@ -203,24 +240,38 @@ namespace TF2_Optimizer
         private void mastercomfig_Button_Click(object sender, EventArgs e)
         {
             About_Panel.Hide();
+            Huds_Panel.Hide();
+            Mods_Panel.Hide();
             Custom_Install_Panel.Hide();
             Settings_Panel.Hide();
             Mastercomfig_Panel.Show();
         }
 
-        private void PopHUDs_Button_Click(object sender, EventArgs e)
+        private void HUDs_Button_Click(object sender, EventArgs e)
         {
-
+            About_Panel.Hide();
+            Custom_Install_Panel.Hide();
+            Mods_Panel.Hide();
+            Settings_Panel.Hide();
+            Mastercomfig_Panel.Hide();
+            Huds_Panel.Show();
         }
 
-        private void Useful_Mods_Button_Click(object sender, EventArgs e)
+        private void Mods_Button_Click(object sender, EventArgs e)
         {
-
+            Mastercomfig_Panel.Hide();
+            Huds_Panel.Hide();
+            About_Panel.Hide();
+            Settings_Panel.Hide();
+            Custom_Install_Panel.Hide();
+            Mods_Panel.Show();
         }
 
         private void CustomMod_Button_Click(object sender, EventArgs e)
         {
             Mastercomfig_Panel.Hide();
+            Huds_Panel.Hide();
+            Mods_Panel.Hide();
             About_Panel.Hide();
             Settings_Panel.Hide();
             Custom_Install_Panel.Show();
@@ -234,6 +285,8 @@ namespace TF2_Optimizer
         private void Settings_Button_Click(object sender, EventArgs e)
         {
             Mastercomfig_Panel.Hide();
+            Huds_Panel.Hide();
+            Mods_Panel.Hide();
             About_Panel.Hide();
             Custom_Install_Panel.Hide();
             Settings_Panel.Show();
@@ -254,62 +307,76 @@ namespace TF2_Optimizer
 
         private void Configure_mastercomf_Click(object sender, EventArgs e)
         {
-            string custom = TF2_Location.Text + "\\tf\\custom\\";
-            if (!Directory.Exists(custom))
+            try
             {
-                _ = Directory.CreateDirectory(custom);
-            }
-
-            if (msconf_preset_combo.SelectedItem != null)
-            {
-                if (MessageBox.Show($"Are you sure you want to install mastercomfig preset: {msconf_preset_combo.SelectedItem}?", "Install mastercomfig", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                if (!Directory.Exists(Custom))
                 {
-                    progressBar.Show();
-                    if (Directory.Exists(custom))
+                    _ = Directory.CreateDirectory(Custom);
+                }
+
+                if (msconf_preset_combo.SelectedItem != null)
+                {
+                    if (MessageBox.Show($"Are you sure you want to install mastercomfig preset: {msconf_preset_combo.SelectedItem}?", "Install mastercomfig", MessageBoxButtons.YesNo) == DialogResult.Yes)
                     {
-                        if (msconf_preset_combo.SelectedIndex == 0) // Very Low
+                        progressBar.Show();
+                        if (Directory.Exists(Custom))
                         {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 0)), custom + "mastercomfig-very-low-preset.vpk");
-                            _ = GetPhysicallyInstalledSystemMemory(out long memKb);
-                            long totalram = memKb / 1024 / 1024;
-                            if (totalram < 4)
+                            foreach (string vpks in MasterComfig)
                             {
-                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 7)), custom + "mastercomfig-lowmem-addon.vpk");
+                                if (File.Exists(Custom + vpks.Replace("/", "")))
+                                {
+                                    File.Delete(Custom + vpks.Replace("/", ""));
+                                }
                             }
+                            foreach (string item in MasterComfigAddons)
+                            {
+                                WClient.DownloadFile((client.Repository.Release.GetLatest("mastercomfig", "mastercomfig").Result.HtmlUrl + item).Replace("tag", "download"), Custom + item);
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 0) // Very Low
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 0)), Custom + "mastercomfig-very-low-preset.vpk");
+                                _ = GetPhysicallyInstalledSystemMemory(out long memKb);
+                                long totalram = memKb / 1024 / 1024;
+                                if (totalram < 4)
+                                {
+                                    WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 7)), Custom + "mastercomfig-lowmem-addon.vpk");
+                                }
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 1) // Low
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 1)), Custom + "mastercomfig-low-preset.vpk");
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 2) // Medium Low
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 2)), Custom + "mastercomfig-medium-low-preset.vpk");
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 3) // Medium
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 3)), Custom + "mastercomfig-medium-preset.vpk");
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 4) // Medium High
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 4)), Custom + "mastercomfig-medium-high-preset.vpk");
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 5) // High
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 5)), Custom + "mastercomfig-high-preset.vpk");
+                            }
+                            if (msconf_preset_combo.SelectedIndex == 6) // Ultra
+                            {
+                                WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 6)), Custom + "mastercomfig-ultra-preset.vpk");
+                            }
+                            WClient.DownloadFileCompleted += Client_DownloadFileCompleted;
+                            WClient.DownloadProgressChanged += Client_DownloadProgressChanged;
                         }
-                        if (msconf_preset_combo.SelectedIndex == 1) // Low
-                        {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 1)), custom + "mastercomfig-low-preset.vpk");
-                        }
-                        if (msconf_preset_combo.SelectedIndex == 2) // Medium Low
-                        {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 2)), custom + "mastercomfig-medium-low-preset.vpk");
-                        }
-                        if (msconf_preset_combo.SelectedIndex == 3) // Medium
-                        {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 3)), custom + "mastercomfig-medium-preset.vpk");
-                        }
-                        if (msconf_preset_combo.SelectedIndex == 4) // Medium High
-                        {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 4)), custom + "mastercomfig-medium-high-preset.vpk");
-                        }
-                        if (msconf_preset_combo.SelectedIndex == 5) // High
-                        {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 5)), custom + "mastercomfig-high-preset.vpk");
-                        }
-                        if (msconf_preset_combo.SelectedIndex == 6) // Ultra
-                        {
-                            WClient.DownloadFileAsync(new Uri(GetLatestMCRelease("mastercomfig", "mastercomfig", 6)), custom + "mastercomfig-ultra-preset.vpk");
-                        }
-                        WClient.DownloadFileCompleted += Client_DownloadFileCompleted;
-                        WClient.DownloadProgressChanged += Client_DownloadProgressChanged;
                     }
                 }
+                else
+                {
+                    _ = MessageBox.Show("You didn't choose any preset.", "Error");
+                }
             }
-            else
-            {
-                _ = MessageBox.Show("You didn't choose any preset.", "Error");
-            }
+            catch (Exception) { }
         }
 
         private void DropInstall_DragDrop(object sender, DragEventArgs e)
@@ -416,6 +483,152 @@ namespace TF2_Optimizer
             Controls.Clear();
             InitializeComponent();
             UI();
+        }
+
+        private void renhud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "RenHud-V2";
+            string User = "LunaXCBN";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile(GetLatestGitRelease(User, HUDName, 0), Custom + HUDName + ".7z");
+                    _ = Directory.CreateDirectory(Custom + "RenHUD-V2");
+                    using (SevenZipArchive archive = new SevenZipArchive(Custom + HUDName + ".7z"))
+                    {
+                        archive.ExtractToDirectory(Custom + "RenHUD-V2\\");
+                    }
+                    File.Delete(Custom + HUDName + ".7z");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void sunsethud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "SunsetHUD";
+            string User = "Hypnootize";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void warsavhud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "WarsawHUD";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile("https://github.com/p3tr1ch0r/warsawhud/archive/refs/heads/master.zip", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void hyphud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "hypnotizehud";
+            string User = "Hypnootize";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void flawhud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "flawhud";
+            string User = "CriticalFlaw";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile(GetLatestGitRelease(User, HUDName, 1), Custom + HUDName + ".zip");
+                    _ = Directory.CreateDirectory(Custom + HUDName);
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void hexhud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "hexhud";
+            string User = "Hypnootize";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void toonhud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "toonhud";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile("https://gamebanana.com/dl/683760", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void quakehud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "WarsawHUD";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile("https://github.com/quickkennedy/quakehud/archive/refs/heads/master.zip", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
+        }
+
+        private void m0rehud_pic_Click(object sender, EventArgs e)
+        {
+            string HUDName = "m0rehud";
+            string User = "Hypnootize";
+            if (MessageBox.Show($"Are you sure you want to install {HUDName}?", "Install " + HUDName, MessageBoxButtons.YesNo) == DialogResult.Yes)
+            {
+                try
+                {
+                    WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
+                    File.Delete(Custom + HUDName + ".zip");
+                }
+                catch (Exception) { }
+            }
         }
     }
 }

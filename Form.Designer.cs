@@ -33,14 +33,16 @@
             this.Left_Panel = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.TF2_Icon = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.Settings_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.Auto_Opti_Button = new Guna.UI2.WinForms.Guna2Button();
             this.CustomMod_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.Useful_Mods_Button = new Guna.UI2.WinForms.Guna2Button();
-            this.PopHUDs_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.Mods_Button = new Guna.UI2.WinForms.Guna2Button();
+            this.HUDs_Button = new Guna.UI2.WinForms.Guna2Button();
             this.mastercomfig_Button = new Guna.UI2.WinForms.Guna2Button();
             this.About_Button = new Guna.UI2.WinForms.Guna2Button();
             this.MenuLabel = new System.Windows.Forms.Label();
             this.Main_Panel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.Mods_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.install_sel_mods = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.About_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Discord_Link = new System.Windows.Forms.PictureBox();
             this.Github_Link = new System.Windows.Forms.PictureBox();
@@ -71,12 +73,32 @@
             this.TF2_Location = new Guna.UI2.WinForms.Guna2TextBox();
             this.Steam_Location = new Guna.UI2.WinForms.Guna2TextBox();
             this.set_label1 = new System.Windows.Forms.Label();
+            this.Huds_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.hud_lab5 = new System.Windows.Forms.Label();
+            this.hud_lab6 = new System.Windows.Forms.Label();
+            this.hud_lab4 = new System.Windows.Forms.Label();
+            this.hexhud_pic = new System.Windows.Forms.PictureBox();
+            this.flawhud_pic = new System.Windows.Forms.PictureBox();
+            this.hyphud_pic = new System.Windows.Forms.PictureBox();
+            this.hud_lab8 = new System.Windows.Forms.Label();
+            this.hud_lab2 = new System.Windows.Forms.Label();
+            this.hud_lab9 = new System.Windows.Forms.Label();
+            this.hud_lab7 = new System.Windows.Forms.Label();
+            this.hud_lab3 = new System.Windows.Forms.Label();
+            this.hud_lab1 = new System.Windows.Forms.Label();
+            this.m0rehud_pic = new System.Windows.Forms.PictureBox();
+            this.quakehud_pic = new System.Windows.Forms.PictureBox();
+            this.toonhud_pic = new System.Windows.Forms.PictureBox();
+            this.warsawhud_pic = new System.Windows.Forms.PictureBox();
+            this.sunsethud_pic = new System.Windows.Forms.PictureBox();
+            this.renhud_pic = new System.Windows.Forms.PictureBox();
             this.AnimateTF_Icon = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).BeginInit();
             this.Main_Panel.SuspendLayout();
+            this.Mods_Panel.SuspendLayout();
             this.About_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Discord_Link)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Github_Link)).BeginInit();
@@ -84,6 +106,16 @@
             this.Mastercomfig_Panel.SuspendLayout();
             this.Custom_Install_Panel.SuspendLayout();
             this.Settings_Panel.SuspendLayout();
+            this.Huds_Panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hexhud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flawhud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyphud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m0rehud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quakehud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toonhud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warsawhud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sunsethud_pic)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.renhud_pic)).BeginInit();
             this.SuspendLayout();
             // 
             // Left_Panel
@@ -92,10 +124,9 @@
             this.Left_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Left_Panel.Controls.Add(this.TF2_Icon);
             this.Left_Panel.Controls.Add(this.Settings_Button);
-            this.Left_Panel.Controls.Add(this.Auto_Opti_Button);
             this.Left_Panel.Controls.Add(this.CustomMod_Button);
-            this.Left_Panel.Controls.Add(this.Useful_Mods_Button);
-            this.Left_Panel.Controls.Add(this.PopHUDs_Button);
+            this.Left_Panel.Controls.Add(this.Mods_Button);
+            this.Left_Panel.Controls.Add(this.HUDs_Button);
             this.Left_Panel.Controls.Add(this.mastercomfig_Button);
             this.Left_Panel.Controls.Add(this.About_Button);
             this.Left_Panel.Controls.Add(this.MenuLabel);
@@ -106,8 +137,8 @@
             // 
             // TF2_Icon
             // 
-            resources.ApplyResources(this.TF2_Icon, "TF2_Icon");
             this.TF2_Icon.BackColor = System.Drawing.Color.Transparent;
+            resources.ApplyResources(this.TF2_Icon, "TF2_Icon");
             this.TF2_Icon.ImageRotate = 354F;
             this.TF2_Icon.Name = "TF2_Icon";
             this.TF2_Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -117,13 +148,13 @@
             // 
             // Settings_Button
             // 
-            resources.ApplyResources(this.Settings_Button, "Settings_Button");
             this.Settings_Button.Animated = true;
             this.Settings_Button.BorderColor = System.Drawing.Color.Transparent;
             this.Settings_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.Settings_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Settings_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Settings_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.Settings_Button, "Settings_Button");
             this.Settings_Button.FillColor = System.Drawing.Color.Transparent;
             this.Settings_Button.ForeColor = System.Drawing.Color.White;
             this.Settings_Button.Image = global::TF2_Optimizer.Properties.Resources.Settings;
@@ -138,38 +169,15 @@
             this.Settings_Button.TextOffset = new System.Drawing.Point(51, 0);
             this.Settings_Button.Click += new System.EventHandler(this.Settings_Button_Click);
             // 
-            // Auto_Opti_Button
-            // 
-            resources.ApplyResources(this.Auto_Opti_Button, "Auto_Opti_Button");
-            this.Auto_Opti_Button.Animated = true;
-            this.Auto_Opti_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Auto_Opti_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Auto_Opti_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Auto_Opti_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Auto_Opti_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Auto_Opti_Button.FillColor = System.Drawing.Color.Transparent;
-            this.Auto_Opti_Button.ForeColor = System.Drawing.Color.White;
-            this.Auto_Opti_Button.Image = global::TF2_Optimizer.Properties.Resources.Automated;
-            this.Auto_Opti_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Auto_Opti_Button.ImageOffset = new System.Drawing.Point(5, 0);
-            this.Auto_Opti_Button.ImageSize = new System.Drawing.Size(50, 50);
-            this.Auto_Opti_Button.Name = "Auto_Opti_Button";
-            this.Auto_Opti_Button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.Auto_Opti_Button.PressedDepth = 1;
-            this.Auto_Opti_Button.ShadowDecoration.BorderRadius = 0;
-            this.Auto_Opti_Button.ShadowDecoration.Depth = 0;
-            this.Auto_Opti_Button.TextOffset = new System.Drawing.Point(51, 0);
-            this.Auto_Opti_Button.Click += new System.EventHandler(this.Auto_Opti_Button_Click);
-            // 
             // CustomMod_Button
             // 
-            resources.ApplyResources(this.CustomMod_Button, "CustomMod_Button");
             this.CustomMod_Button.Animated = true;
             this.CustomMod_Button.BorderColor = System.Drawing.Color.Transparent;
             this.CustomMod_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.CustomMod_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.CustomMod_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.CustomMod_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.CustomMod_Button, "CustomMod_Button");
             this.CustomMod_Button.FillColor = System.Drawing.Color.Transparent;
             this.CustomMod_Button.ForeColor = System.Drawing.Color.White;
             this.CustomMod_Button.Image = global::TF2_Optimizer.Properties.Resources.Custom;
@@ -184,59 +192,61 @@
             this.CustomMod_Button.TextOffset = new System.Drawing.Point(51, 0);
             this.CustomMod_Button.Click += new System.EventHandler(this.CustomMod_Button_Click);
             // 
-            // Useful_Mods_Button
+            // Mods_Button
             // 
-            resources.ApplyResources(this.Useful_Mods_Button, "Useful_Mods_Button");
-            this.Useful_Mods_Button.Animated = true;
-            this.Useful_Mods_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.Useful_Mods_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Useful_Mods_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Useful_Mods_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Useful_Mods_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.Useful_Mods_Button.FillColor = System.Drawing.Color.Transparent;
-            this.Useful_Mods_Button.ForeColor = System.Drawing.Color.White;
-            this.Useful_Mods_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Useful_Mods_Button.ImageOffset = new System.Drawing.Point(3, 0);
-            this.Useful_Mods_Button.ImageSize = new System.Drawing.Size(55, 55);
-            this.Useful_Mods_Button.Name = "Useful_Mods_Button";
-            this.Useful_Mods_Button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.Useful_Mods_Button.PressedDepth = 1;
-            this.Useful_Mods_Button.ShadowDecoration.BorderRadius = 0;
-            this.Useful_Mods_Button.ShadowDecoration.Depth = 0;
-            this.Useful_Mods_Button.TextOffset = new System.Drawing.Point(51, 0);
-            this.Useful_Mods_Button.Click += new System.EventHandler(this.Useful_Mods_Button_Click);
+            this.Mods_Button.Animated = true;
+            this.Mods_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.Mods_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.Mods_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.Mods_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.Mods_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.Mods_Button, "Mods_Button");
+            this.Mods_Button.FillColor = System.Drawing.Color.Transparent;
+            this.Mods_Button.ForeColor = System.Drawing.Color.White;
+            this.Mods_Button.Image = global::TF2_Optimizer.Properties.Resources.gamebanana_logo;
+            this.Mods_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.Mods_Button.ImageOffset = new System.Drawing.Point(1, 0);
+            this.Mods_Button.ImageSize = new System.Drawing.Size(60, 55);
+            this.Mods_Button.Name = "Mods_Button";
+            this.Mods_Button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.Mods_Button.PressedDepth = 1;
+            this.Mods_Button.ShadowDecoration.BorderRadius = 0;
+            this.Mods_Button.ShadowDecoration.Depth = 0;
+            this.Mods_Button.TextOffset = new System.Drawing.Point(51, 0);
+            this.Mods_Button.Click += new System.EventHandler(this.Mods_Button_Click);
             // 
-            // PopHUDs_Button
+            // HUDs_Button
             // 
-            resources.ApplyResources(this.PopHUDs_Button, "PopHUDs_Button");
-            this.PopHUDs_Button.Animated = true;
-            this.PopHUDs_Button.BorderColor = System.Drawing.Color.Transparent;
-            this.PopHUDs_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.PopHUDs_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.PopHUDs_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.PopHUDs_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.PopHUDs_Button.FillColor = System.Drawing.Color.Transparent;
-            this.PopHUDs_Button.ForeColor = System.Drawing.Color.White;
-            this.PopHUDs_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.PopHUDs_Button.ImageOffset = new System.Drawing.Point(3, 0);
-            this.PopHUDs_Button.ImageSize = new System.Drawing.Size(55, 55);
-            this.PopHUDs_Button.Name = "PopHUDs_Button";
-            this.PopHUDs_Button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.PopHUDs_Button.PressedDepth = 1;
-            this.PopHUDs_Button.ShadowDecoration.BorderRadius = 0;
-            this.PopHUDs_Button.ShadowDecoration.Depth = 0;
-            this.PopHUDs_Button.TextOffset = new System.Drawing.Point(51, 0);
-            this.PopHUDs_Button.Click += new System.EventHandler(this.PopHUDs_Button_Click);
+            this.HUDs_Button.Animated = true;
+            this.HUDs_Button.BorderColor = System.Drawing.Color.Transparent;
+            this.HUDs_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.HUDs_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.HUDs_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.HUDs_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.HUDs_Button, "HUDs_Button");
+            this.HUDs_Button.FillColor = System.Drawing.Color.Transparent;
+            this.HUDs_Button.ForeColor = System.Drawing.Color.White;
+            this.HUDs_Button.Image = global::TF2_Optimizer.Properties.Resources.hud;
+            this.HUDs_Button.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.HUDs_Button.ImageOffset = new System.Drawing.Point(4, 0);
+            this.HUDs_Button.ImageSize = new System.Drawing.Size(50, 50);
+            this.HUDs_Button.Name = "HUDs_Button";
+            this.HUDs_Button.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.HUDs_Button.PressedDepth = 1;
+            this.HUDs_Button.ShadowDecoration.BorderRadius = 0;
+            this.HUDs_Button.ShadowDecoration.Depth = 0;
+            this.HUDs_Button.TextOffset = new System.Drawing.Point(51, 0);
+            this.HUDs_Button.Click += new System.EventHandler(this.HUDs_Button_Click);
             // 
             // mastercomfig_Button
             // 
-            resources.ApplyResources(this.mastercomfig_Button, "mastercomfig_Button");
             this.mastercomfig_Button.Animated = true;
             this.mastercomfig_Button.BorderColor = System.Drawing.Color.Transparent;
             this.mastercomfig_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.mastercomfig_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.mastercomfig_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.mastercomfig_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.mastercomfig_Button, "mastercomfig_Button");
             this.mastercomfig_Button.FillColor = System.Drawing.Color.Transparent;
             this.mastercomfig_Button.ForeColor = System.Drawing.Color.White;
             this.mastercomfig_Button.Image = ((System.Drawing.Image)(resources.GetObject("mastercomfig_Button.Image")));
@@ -253,13 +263,13 @@
             // 
             // About_Button
             // 
-            resources.ApplyResources(this.About_Button, "About_Button");
             this.About_Button.Animated = true;
             this.About_Button.BorderColor = System.Drawing.Color.Transparent;
             this.About_Button.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
             this.About_Button.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.About_Button.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.About_Button.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.About_Button, "About_Button");
             this.About_Button.FillColor = System.Drawing.Color.Transparent;
             this.About_Button.ForeColor = System.Drawing.Color.White;
             this.About_Button.Image = global::TF2_Optimizer.Properties.Resources.Information;
@@ -284,24 +294,59 @@
             // 
             resources.ApplyResources(this.Main_Panel, "Main_Panel");
             this.Main_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.Controls.Add(this.About_Panel);
             this.Main_Panel.Controls.Add(this.Mastercomfig_Panel);
             this.Main_Panel.Controls.Add(this.Custom_Install_Panel);
             this.Main_Panel.Controls.Add(this.Settings_Panel);
+            this.Main_Panel.Controls.Add(this.Huds_Panel);
             this.Main_Panel.FillColor = System.Drawing.Color.DimGray;
             this.Main_Panel.FillColor2 = System.Drawing.Color.Transparent;
             this.Main_Panel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.Main_Panel.Name = "Main_Panel";
             // 
+            // Mods_Panel
+            // 
+            this.Mods_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Mods_Panel.Controls.Add(this.install_sel_mods);
+            this.Mods_Panel.Controls.Add(this.label2);
+            resources.ApplyResources(this.Mods_Panel, "Mods_Panel");
+            this.Mods_Panel.Name = "Mods_Panel";
+            // 
+            // install_sel_mods
+            // 
+            this.install_sel_mods.Animated = true;
+            this.install_sel_mods.BorderColor = System.Drawing.Color.White;
+            this.install_sel_mods.BorderThickness = 1;
+            this.install_sel_mods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.install_sel_mods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.install_sel_mods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.install_sel_mods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.install_sel_mods, "install_sel_mods");
+            this.install_sel_mods.FillColor = System.Drawing.Color.Transparent;
+            this.install_sel_mods.ForeColor = System.Drawing.Color.White;
+            this.install_sel_mods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.install_sel_mods.ImageSize = new System.Drawing.Size(0, 0);
+            this.install_sel_mods.Name = "install_sel_mods";
+            this.install_sel_mods.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.install_sel_mods.PressedDepth = 1;
+            this.install_sel_mods.ShadowDecoration.BorderRadius = 0;
+            this.install_sel_mods.ShadowDecoration.Depth = 0;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // About_Panel
             // 
-            resources.ApplyResources(this.About_Panel, "About_Panel");
             this.About_Panel.BackColor = System.Drawing.Color.Transparent;
             this.About_Panel.Controls.Add(this.Discord_Link);
             this.About_Panel.Controls.Add(this.Github_Link);
             this.About_Panel.Controls.Add(this.Youtube_Link);
             this.About_Panel.Controls.Add(this.SubTitle);
             this.About_Panel.Controls.Add(this.Title);
+            resources.ApplyResources(this.About_Panel, "About_Panel");
             this.About_Panel.Name = "About_Panel";
             // 
             // Discord_Link
@@ -340,9 +385,9 @@
             // 
             // Mastercomfig_Panel
             // 
-            resources.ApplyResources(this.Mastercomfig_Panel, "Mastercomfig_Panel");
             this.Mastercomfig_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Mastercomfig_Panel.BackgroundImage = global::TF2_Optimizer.Properties.Resources.cp_badlands01;
+            resources.ApplyResources(this.Mastercomfig_Panel, "Mastercomfig_Panel");
             this.Mastercomfig_Panel.Controls.Add(this.progressBar);
             this.Mastercomfig_Panel.Controls.Add(this.msconfig_pre_label);
             this.Mastercomfig_Panel.Controls.Add(this.msconf_preset_combo);
@@ -390,7 +435,6 @@
             // 
             // Configure_mastercomf
             // 
-            resources.ApplyResources(this.Configure_mastercomf, "Configure_mastercomf");
             this.Configure_mastercomf.Animated = true;
             this.Configure_mastercomf.BorderColor = System.Drawing.Color.White;
             this.Configure_mastercomf.BorderThickness = 1;
@@ -398,6 +442,7 @@
             this.Configure_mastercomf.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Configure_mastercomf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Configure_mastercomf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.Configure_mastercomf, "Configure_mastercomf");
             this.Configure_mastercomf.FillColor = System.Drawing.Color.Transparent;
             this.Configure_mastercomf.ForeColor = System.Drawing.Color.White;
             this.Configure_mastercomf.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -411,13 +456,13 @@
             // 
             // Custom_Install_Panel
             // 
-            resources.ApplyResources(this.Custom_Install_Panel, "Custom_Install_Panel");
             this.Custom_Install_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Custom_Install_Panel.Controls.Add(this.OpenFileDI);
             this.Custom_Install_Panel.Controls.Add(this.DropInstall);
             this.Custom_Install_Panel.Controls.Add(this.Custom_Install);
             this.Custom_Install_Panel.Controls.Add(this.ci_label2);
             this.Custom_Install_Panel.Controls.Add(this.ci_label1);
+            resources.ApplyResources(this.Custom_Install_Panel, "Custom_Install_Panel");
             this.Custom_Install_Panel.Name = "Custom_Install_Panel";
             // 
             // OpenFileDI
@@ -444,9 +489,9 @@
             // 
             // DropInstall
             // 
-            resources.ApplyResources(this.DropInstall, "DropInstall");
             this.DropInstall.AllowDrop = true;
             this.DropInstall.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            resources.ApplyResources(this.DropInstall, "DropInstall");
             this.DropInstall.ForeColor = System.Drawing.Color.DarkOrange;
             this.DropInstall.FormattingEnabled = true;
             this.DropInstall.Name = "DropInstall";
@@ -455,7 +500,6 @@
             // 
             // Custom_Install
             // 
-            resources.ApplyResources(this.Custom_Install, "Custom_Install");
             this.Custom_Install.Animated = true;
             this.Custom_Install.BorderColor = System.Drawing.Color.White;
             this.Custom_Install.BorderThickness = 1;
@@ -463,6 +507,7 @@
             this.Custom_Install.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.Custom_Install.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.Custom_Install.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.Custom_Install, "Custom_Install");
             this.Custom_Install.FillColor = System.Drawing.Color.Transparent;
             this.Custom_Install.ForeColor = System.Drawing.Color.White;
             this.Custom_Install.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -486,7 +531,6 @@
             // 
             // Settings_Panel
             // 
-            resources.ApplyResources(this.Settings_Panel, "Settings_Panel");
             this.Settings_Panel.BackColor = System.Drawing.Color.Transparent;
             this.Settings_Panel.Controls.Add(this.set_label7);
             this.Settings_Panel.Controls.Add(this.languageChanger);
@@ -500,6 +544,7 @@
             this.Settings_Panel.Controls.Add(this.TF2_Location);
             this.Settings_Panel.Controls.Add(this.Steam_Location);
             this.Settings_Panel.Controls.Add(this.set_label1);
+            resources.ApplyResources(this.Settings_Panel, "Settings_Panel");
             this.Settings_Panel.Name = "Settings_Panel";
             // 
             // set_label7
@@ -509,10 +554,10 @@
             // 
             // languageChanger
             // 
-            resources.ApplyResources(this.languageChanger, "languageChanger");
             this.languageChanger.BackColor = System.Drawing.Color.Transparent;
             this.languageChanger.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.languageChanger.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            resources.ApplyResources(this.languageChanger, "languageChanger");
             this.languageChanger.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.languageChanger.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.languageChanger.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
@@ -618,6 +663,147 @@
             resources.ApplyResources(this.set_label1, "set_label1");
             this.set_label1.Name = "set_label1";
             // 
+            // Huds_Panel
+            // 
+            this.Huds_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Huds_Panel.Controls.Add(this.hud_lab5);
+            this.Huds_Panel.Controls.Add(this.hud_lab6);
+            this.Huds_Panel.Controls.Add(this.hud_lab4);
+            this.Huds_Panel.Controls.Add(this.hexhud_pic);
+            this.Huds_Panel.Controls.Add(this.flawhud_pic);
+            this.Huds_Panel.Controls.Add(this.hyphud_pic);
+            this.Huds_Panel.Controls.Add(this.hud_lab8);
+            this.Huds_Panel.Controls.Add(this.hud_lab2);
+            this.Huds_Panel.Controls.Add(this.hud_lab9);
+            this.Huds_Panel.Controls.Add(this.hud_lab7);
+            this.Huds_Panel.Controls.Add(this.hud_lab3);
+            this.Huds_Panel.Controls.Add(this.hud_lab1);
+            this.Huds_Panel.Controls.Add(this.m0rehud_pic);
+            this.Huds_Panel.Controls.Add(this.quakehud_pic);
+            this.Huds_Panel.Controls.Add(this.toonhud_pic);
+            this.Huds_Panel.Controls.Add(this.warsawhud_pic);
+            this.Huds_Panel.Controls.Add(this.sunsethud_pic);
+            this.Huds_Panel.Controls.Add(this.renhud_pic);
+            resources.ApplyResources(this.Huds_Panel, "Huds_Panel");
+            this.Huds_Panel.Name = "Huds_Panel";
+            // 
+            // hud_lab5
+            // 
+            resources.ApplyResources(this.hud_lab5, "hud_lab5");
+            this.hud_lab5.Name = "hud_lab5";
+            // 
+            // hud_lab6
+            // 
+            resources.ApplyResources(this.hud_lab6, "hud_lab6");
+            this.hud_lab6.Name = "hud_lab6";
+            // 
+            // hud_lab4
+            // 
+            resources.ApplyResources(this.hud_lab4, "hud_lab4");
+            this.hud_lab4.Name = "hud_lab4";
+            // 
+            // hexhud_pic
+            // 
+            resources.ApplyResources(this.hexhud_pic, "hexhud_pic");
+            this.hexhud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hexhud_pic.Name = "hexhud_pic";
+            this.hexhud_pic.TabStop = false;
+            this.hexhud_pic.Click += new System.EventHandler(this.hexhud_pic_Click);
+            // 
+            // flawhud_pic
+            // 
+            resources.ApplyResources(this.flawhud_pic, "flawhud_pic");
+            this.flawhud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.flawhud_pic.Name = "flawhud_pic";
+            this.flawhud_pic.TabStop = false;
+            this.flawhud_pic.Click += new System.EventHandler(this.flawhud_pic_Click);
+            // 
+            // hyphud_pic
+            // 
+            resources.ApplyResources(this.hyphud_pic, "hyphud_pic");
+            this.hyphud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hyphud_pic.Name = "hyphud_pic";
+            this.hyphud_pic.TabStop = false;
+            this.hyphud_pic.Click += new System.EventHandler(this.hyphud_pic_Click);
+            // 
+            // hud_lab8
+            // 
+            resources.ApplyResources(this.hud_lab8, "hud_lab8");
+            this.hud_lab8.Name = "hud_lab8";
+            // 
+            // hud_lab2
+            // 
+            resources.ApplyResources(this.hud_lab2, "hud_lab2");
+            this.hud_lab2.Name = "hud_lab2";
+            // 
+            // hud_lab9
+            // 
+            resources.ApplyResources(this.hud_lab9, "hud_lab9");
+            this.hud_lab9.Name = "hud_lab9";
+            // 
+            // hud_lab7
+            // 
+            resources.ApplyResources(this.hud_lab7, "hud_lab7");
+            this.hud_lab7.Name = "hud_lab7";
+            // 
+            // hud_lab3
+            // 
+            resources.ApplyResources(this.hud_lab3, "hud_lab3");
+            this.hud_lab3.Name = "hud_lab3";
+            // 
+            // hud_lab1
+            // 
+            resources.ApplyResources(this.hud_lab1, "hud_lab1");
+            this.hud_lab1.Name = "hud_lab1";
+            // 
+            // m0rehud_pic
+            // 
+            resources.ApplyResources(this.m0rehud_pic, "m0rehud_pic");
+            this.m0rehud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.m0rehud_pic.Name = "m0rehud_pic";
+            this.m0rehud_pic.TabStop = false;
+            this.m0rehud_pic.Click += new System.EventHandler(this.m0rehud_pic_Click);
+            // 
+            // quakehud_pic
+            // 
+            resources.ApplyResources(this.quakehud_pic, "quakehud_pic");
+            this.quakehud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.quakehud_pic.Name = "quakehud_pic";
+            this.quakehud_pic.TabStop = false;
+            this.quakehud_pic.Click += new System.EventHandler(this.quakehud_pic_Click);
+            // 
+            // toonhud_pic
+            // 
+            resources.ApplyResources(this.toonhud_pic, "toonhud_pic");
+            this.toonhud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.toonhud_pic.Name = "toonhud_pic";
+            this.toonhud_pic.TabStop = false;
+            this.toonhud_pic.Click += new System.EventHandler(this.toonhud_pic_Click);
+            // 
+            // warsawhud_pic
+            // 
+            resources.ApplyResources(this.warsawhud_pic, "warsawhud_pic");
+            this.warsawhud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.warsawhud_pic.Name = "warsawhud_pic";
+            this.warsawhud_pic.TabStop = false;
+            this.warsawhud_pic.Click += new System.EventHandler(this.warsavhud_pic_Click);
+            // 
+            // sunsethud_pic
+            // 
+            resources.ApplyResources(this.sunsethud_pic, "sunsethud_pic");
+            this.sunsethud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.sunsethud_pic.Name = "sunsethud_pic";
+            this.sunsethud_pic.TabStop = false;
+            this.sunsethud_pic.Click += new System.EventHandler(this.sunsethud_pic_Click);
+            // 
+            // renhud_pic
+            // 
+            this.renhud_pic.Cursor = System.Windows.Forms.Cursors.Hand;
+            resources.ApplyResources(this.renhud_pic, "renhud_pic");
+            this.renhud_pic.Name = "renhud_pic";
+            this.renhud_pic.TabStop = false;
+            this.renhud_pic.Click += new System.EventHandler(this.renhud_pic_Click);
+            // 
             // AnimateTF_Icon
             // 
             this.AnimateTF_Icon.Interval = 1;
@@ -626,11 +812,6 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
-            resources.ApplyResources(this.openFileDialog1, "openFileDialog1");
-            // 
-            // folderBrowserDialog1
-            // 
-            resources.ApplyResources(this.folderBrowserDialog1, "folderBrowserDialog1");
             // 
             // Form
             // 
@@ -647,6 +828,7 @@
             this.Left_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).EndInit();
             this.Main_Panel.ResumeLayout(false);
+            this.Mods_Panel.ResumeLayout(false);
             this.About_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Discord_Link)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Github_Link)).EndInit();
@@ -655,16 +837,26 @@
             this.Custom_Install_Panel.ResumeLayout(false);
             this.Settings_Panel.ResumeLayout(false);
             this.Settings_Panel.PerformLayout();
+            this.Huds_Panel.ResumeLayout(false);
+            this.Huds_Panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.hexhud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.flawhud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hyphud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.m0rehud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.quakehud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.toonhud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.warsawhud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.sunsethud_pic)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.renhud_pic)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
         private Guna.UI2.WinForms.Guna2GradientPanel Left_Panel;
-        private Guna.UI2.WinForms.Guna2Button Auto_Opti_Button;
         private Guna.UI2.WinForms.Guna2Button CustomMod_Button;
-        private Guna.UI2.WinForms.Guna2Button Useful_Mods_Button;
-        private Guna.UI2.WinForms.Guna2Button PopHUDs_Button;
+        private Guna.UI2.WinForms.Guna2Button Mods_Button;
+        private Guna.UI2.WinForms.Guna2Button HUDs_Button;
         private Guna.UI2.WinForms.Guna2Button mastercomfig_Button;
         private Guna.UI2.WinForms.Guna2Button About_Button;
         private Guna.UI2.WinForms.Guna2GradientPanel Main_Panel;
@@ -704,6 +896,28 @@
         private Guna.UI2.WinForms.Guna2CircleProgressBar progressBar;
         private System.Windows.Forms.Label set_label7;
         private Guna.UI2.WinForms.Guna2ComboBox languageChanger;
+        private Guna.UI2.WinForms.Guna2Panel Huds_Panel;
+        private System.Windows.Forms.PictureBox renhud_pic;
+        private System.Windows.Forms.PictureBox warsawhud_pic;
+        private System.Windows.Forms.PictureBox sunsethud_pic;
+        private System.Windows.Forms.PictureBox m0rehud_pic;
+        private System.Windows.Forms.PictureBox quakehud_pic;
+        private System.Windows.Forms.PictureBox toonhud_pic;
+        private System.Windows.Forms.Label hud_lab1;
+        private System.Windows.Forms.Label hud_lab3;
+        private System.Windows.Forms.Label hud_lab9;
+        private System.Windows.Forms.Label hud_lab7;
+        private System.Windows.Forms.Label hud_lab2;
+        private System.Windows.Forms.Label hud_lab8;
+        private System.Windows.Forms.Label hud_lab5;
+        private System.Windows.Forms.Label hud_lab6;
+        private System.Windows.Forms.Label hud_lab4;
+        private System.Windows.Forms.PictureBox hexhud_pic;
+        private System.Windows.Forms.PictureBox flawhud_pic;
+        private System.Windows.Forms.PictureBox hyphud_pic;
+        private Guna.UI2.WinForms.Guna2Panel Mods_Panel;
+        private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button install_sel_mods;
     }
 }
 

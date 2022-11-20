@@ -2542,65 +2542,704 @@
   <data name="Main_Panel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
   </data>
-  <data name="&gt;&gt;About_Panel.Name" xml:space="preserve">
-    <value>About_Panel</value>
+  <data name="mods_lab16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;About_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  <data name="mods_lab16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;About_Panel.Parent" xml:space="preserve">
-    <value>Main_Panel</value>
+  <data name="mods_lab16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;About_Panel.ZOrder" xml:space="preserve">
+  <data name="mods_lab16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 251</value>
+  </data>
+  <data name="mods_lab16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 21</value>
+  </data>
+  <data name="mods_lab16.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="mods_lab16.Text" xml:space="preserve">
+    <value>No Robot Heads On Weapons</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.Name" xml:space="preserve">
+    <value>mods_lab16</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.Name" xml:space="preserve">
-    <value>Mastercomfig_Panel</value>
+  <data name="mods_lab15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  <data name="mods_lab15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.Parent" xml:space="preserve">
-    <value>Main_Panel</value>
+  <data name="mods_lab15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.ZOrder" xml:space="preserve">
+  <data name="mods_lab15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 230</value>
+  </data>
+  <data name="mods_lab15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 21</value>
+  </data>
+  <data name="mods_lab15.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="mods_lab15.Text" xml:space="preserve">
+    <value>No Christmas Lights</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.Name" xml:space="preserve">
+    <value>mods_lab15</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.Name" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
+  <data name="mods_lab14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  <data name="mods_lab14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.Parent" xml:space="preserve">
-    <value>Main_Panel</value>
+  <data name="mods_lab14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.ZOrder" xml:space="preserve">
+  <data name="mods_lab14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 209</value>
+  </data>
+  <data name="mods_lab14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="mods_lab14.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="mods_lab14.Text" xml:space="preserve">
+    <value>No Skins</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.Name" xml:space="preserve">
+    <value>mods_lab14</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.Name" xml:space="preserve">
-    <value>Settings_Panel</value>
+  <data name="mods_lab13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  <data name="mods_lab13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.Parent" xml:space="preserve">
-    <value>Main_Panel</value>
+  <data name="mods_lab13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.ZOrder" xml:space="preserve">
+  <data name="mods_lab13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 188</value>
+  </data>
+  <data name="mods_lab13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 21</value>
+  </data>
+  <data name="mods_lab13.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="mods_lab13.Text" xml:space="preserve">
+    <value>No Zombie Skin</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.Name" xml:space="preserve">
+    <value>mods_lab13</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.Name" xml:space="preserve">
-    <value>Huds_Panel</value>
+  <data name="mods_lab12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  <data name="mods_lab12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.Parent" xml:space="preserve">
-    <value>Main_Panel</value>
+  <data name="mods_lab12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.ZOrder" xml:space="preserve">
+  <data name="mods_lab12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 167</value>
+  </data>
+  <data name="mods_lab12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 21</value>
+  </data>
+  <data name="mods_lab12.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="mods_lab12.Text" xml:space="preserve">
+    <value>No Unusuals</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.Name" xml:space="preserve">
+    <value>mods_lab12</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="mods_lab11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 146</value>
+  </data>
+  <data name="mods_lab11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 21</value>
+  </data>
+  <data name="mods_lab11.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="mods_lab11.Text" xml:space="preserve">
+    <value>No Hats</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.Name" xml:space="preserve">
+    <value>mods_lab11</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="nohats_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 139</value>
+  </data>
+  <data name="nohats_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="nohats_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="nohats_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox11</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.Name" xml:space="preserve">
+    <value>nohats_checkb</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mods_lab10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 96</value>
+  </data>
+  <data name="mods_lab10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 21</value>
+  </data>
+  <data name="mods_lab10.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="mods_lab10.Text" xml:space="preserve">
+    <value>Remove Sniper Scope</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.Name" xml:space="preserve">
+    <value>mods_lab10</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="removesnioperscope_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 90</value>
+  </data>
+  <data name="removesnioperscope_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="removesnioperscope_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="removesnioperscope_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox12</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.Name" xml:space="preserve">
+    <value>removesnioperscope_checkb</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mods_lab7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>526, 199</value>
+  </data>
+  <data name="mods_lab7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="mods_lab7.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="mods_lab7.Text" xml:space="preserve">
+    <value>Realistic Skybox</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.Name" xml:space="preserve">
+    <value>mods_lab7</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="realisticskybox_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>492, 193</value>
+  </data>
+  <data name="realisticskybox_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="realisticskybox_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="realisticskybox_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox7</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.Name" xml:space="preserve">
+    <value>realisticskybox_checkb</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="mods_lab6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 149</value>
+  </data>
+  <data name="mods_lab6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 21</value>
+  </data>
+  <data name="mods_lab6.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="mods_lab6.Text" xml:space="preserve">
+    <value>Unique Rockets</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.Name" xml:space="preserve">
+    <value>mods_lab6</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="uniquerockets_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 142</value>
+  </data>
+  <data name="uniquerockets_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="uniquerockets_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="uniquerockets_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox4</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.Name" xml:space="preserve">
+    <value>uniquerockets_checkb</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="mods_lab5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 99</value>
+  </data>
+  <data name="mods_lab5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 21</value>
+  </data>
+  <data name="mods_lab5.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="mods_lab5.Text" xml:space="preserve">
+    <value>Transparent Arms</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.Name" xml:space="preserve">
+    <value>mods_lab5</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="transparentarms_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 93</value>
+  </data>
+  <data name="transparentarms_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="transparentarms_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="transparentarms_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox3</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.Name" xml:space="preserve">
+    <value>transparentarms_checkb</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="mods_lab4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 49</value>
+  </data>
+  <data name="mods_lab4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 21</value>
+  </data>
+  <data name="mods_lab4.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="mods_lab4.Text" xml:space="preserve">
+    <value>Ultimate Visual Fix</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.Name" xml:space="preserve">
+    <value>mods_lab4</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="mods_lab3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 48</value>
+  </data>
+  <data name="mods_lab3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 21</value>
+  </data>
+  <data name="mods_lab3.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="mods_lab3.Text" xml:space="preserve">
+    <value>Flat Textures</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.Name" xml:space="preserve">
+    <value>mods_lab3</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 43</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox2</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.Name" xml:space="preserve">
+    <value>ultimatevisualfix_checkb</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="flattextures_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 43</value>
+  </data>
+  <data name="flattextures_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="flattextures_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="flattextures_checkb.Text" xml:space="preserve">
+    <value>guna2CustomCheckBox1</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.Name" xml:space="preserve">
+    <value>flattextures_checkb</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="mods_lab2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="mods_lab2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="mods_lab2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 0</value>
+  </data>
+  <data name="mods_lab2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 30</value>
+  </data>
+  <data name="mods_lab2.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="mods_lab2.Text" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="mods_lab2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.Name" xml:space="preserve">
+    <value>mods_lab2</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="mods_lab1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="mods_lab1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mods_lab1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 31</value>
+  </data>
+  <data name="mods_lab1.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="mods_lab1.Text" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="mods_lab1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.Name" xml:space="preserve">
+    <value>mods_lab1</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="guna2VSeparator1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="guna2VSeparator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 8</value>
+  </data>
+  <data name="guna2VSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 640</value>
+  </data>
+  <data name="guna2VSeparator1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.Name" xml:space="preserve">
+    <value>guna2VSeparator1</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2VSeparator, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="install_sel_mods.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="install_sel_mods.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Hack, 14.25pt</value>
+  </data>
+  <data name="install_sel_mods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 654</value>
+  </data>
+  <data name="install_sel_mods.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="install_sel_mods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 72</value>
+  </data>
+  <data name="install_sel_mods.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="install_sel_mods.Text" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.Name" xml:space="preserve">
+    <value>install_sel_mods</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="Mods_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="Mods_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Mods_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 726</value>
+  </data>
+  <data name="Mods_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="Mods_Panel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;Mods_Panel.Name" xml:space="preserve">
     <value>Mods_Panel</value>
@@ -2612,117 +3251,6 @@
     <value>Main_Panel</value>
   </data>
   <data name="&gt;&gt;Mods_Panel.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="Main_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>362, 20</value>
-  </data>
-  <data name="Main_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="Main_Panel.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>902, 726</value>
-  </data>
-  <data name="Main_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 726</value>
-  </data>
-  <data name="Main_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Main_Panel.Name" xml:space="preserve">
-    <value>Main_Panel</value>
-  </data>
-  <data name="&gt;&gt;Main_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2GradientPanel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;Main_Panel.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Main_Panel.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.Name" xml:space="preserve">
-    <value>Discord_Link</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.Name" xml:space="preserve">
-    <value>Github_Link</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.Name" xml:space="preserve">
-    <value>Youtube_Link</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.Name" xml:space="preserve">
-    <value>SubTitle</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;Title.Name" xml:space="preserve">
-    <value>Title</value>
-  </data>
-  <data name="&gt;&gt;Title.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Title.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Title.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="About_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Fill</value>
-  </data>
-  <data name="About_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="About_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 726</value>
-  </data>
-  <data name="About_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;About_Panel.Name" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;About_Panel.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;About_Panel.Parent" xml:space="preserve">
-    <value>Main_Panel</value>
-  </data>
-  <data name="&gt;&gt;About_Panel.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
   <data name="Discord_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -2872,83 +3400,32 @@
   <data name="&gt;&gt;Title.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="Mastercomfig_Panel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Name" xml:space="preserve">
-    <value>progressBar</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;progressBar.Parent" xml:space="preserve">
-    <value>Mastercomfig_Panel</value>
-  </data>
-  <data name="&gt;&gt;progressBar.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;msconfig_pre_label.Name" xml:space="preserve">
-    <value>msconfig_pre_label</value>
-  </data>
-  <data name="&gt;&gt;msconfig_pre_label.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;msconfig_pre_label.Parent" xml:space="preserve">
-    <value>Mastercomfig_Panel</value>
-  </data>
-  <data name="&gt;&gt;msconfig_pre_label.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;msconf_preset_combo.Name" xml:space="preserve">
-    <value>msconf_preset_combo</value>
-  </data>
-  <data name="&gt;&gt;msconf_preset_combo.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;msconf_preset_combo.Parent" xml:space="preserve">
-    <value>Mastercomfig_Panel</value>
-  </data>
-  <data name="&gt;&gt;msconf_preset_combo.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;Configure_mastercomf.Name" xml:space="preserve">
-    <value>Configure_mastercomf</value>
-  </data>
-  <data name="&gt;&gt;Configure_mastercomf.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;Configure_mastercomf.Parent" xml:space="preserve">
-    <value>Mastercomfig_Panel</value>
-  </data>
-  <data name="&gt;&gt;Configure_mastercomf.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Mastercomfig_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="About_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Mastercomfig_Panel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="About_Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="Mastercomfig_Panel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="About_Panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 726</value>
   </data>
-  <data name="Mastercomfig_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="About_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
   </data>
-  <data name="Mastercomfig_Panel.Visible" type="System.Boolean, mscorlib">
-    <value>False</value>
+  <data name="&gt;&gt;About_Panel.Name" xml:space="preserve">
+    <value>About_Panel</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.Name" xml:space="preserve">
-    <value>Mastercomfig_Panel</value>
-  </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;About_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;About_Panel.Parent" xml:space="preserve">
     <value>Main_Panel</value>
   </data>
-  <data name="&gt;&gt;Mastercomfig_Panel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;About_Panel.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Mastercomfig_Panel.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="progressBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Left, Right</value>
@@ -3100,97 +3577,31 @@
   <data name="&gt;&gt;Configure_mastercomf.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;OpenFileDI.Name" xml:space="preserve">
-    <value>OpenFileDI</value>
-  </data>
-  <data name="&gt;&gt;OpenFileDI.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;OpenFileDI.Parent" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
-  </data>
-  <data name="&gt;&gt;OpenFileDI.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;DropInstall.Name" xml:space="preserve">
-    <value>DropInstall</value>
-  </data>
-  <data name="&gt;&gt;DropInstall.Type" xml:space="preserve">
-    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;DropInstall.Parent" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
-  </data>
-  <data name="&gt;&gt;DropInstall.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;Custom_Install.Name" xml:space="preserve">
-    <value>Custom_Install</value>
-  </data>
-  <data name="&gt;&gt;Custom_Install.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;Custom_Install.Parent" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
-  </data>
-  <data name="&gt;&gt;Custom_Install.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ci_label2.Name" xml:space="preserve">
-    <value>ci_label2</value>
-  </data>
-  <data name="&gt;&gt;ci_label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_label2.Parent" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
-  </data>
-  <data name="&gt;&gt;ci_label2.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;ci_label1.Name" xml:space="preserve">
-    <value>ci_label1</value>
-  </data>
-  <data name="&gt;&gt;ci_label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;ci_label1.Parent" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
-  </data>
-  <data name="&gt;&gt;ci_label1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Custom_Install_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Mastercomfig_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Custom_Install_Panel.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
-  <data name="Custom_Install_Panel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Mastercomfig_Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="Custom_Install_Panel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 10, 10, 10</value>
-  </data>
-  <data name="Custom_Install_Panel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Mastercomfig_Panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 726</value>
   </data>
-  <data name="Custom_Install_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
+  <data name="Mastercomfig_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
-  <data name="Custom_Install_Panel.Visible" type="System.Boolean, mscorlib">
+  <data name="Mastercomfig_Panel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.Name" xml:space="preserve">
-    <value>Custom_Install_Panel</value>
+  <data name="&gt;&gt;Mastercomfig_Panel.Name" xml:space="preserve">
+    <value>Mastercomfig_Panel</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;Mastercomfig_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Mastercomfig_Panel.Parent" xml:space="preserve">
     <value>Main_Panel</value>
   </data>
-  <data name="&gt;&gt;Custom_Install_Panel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Mastercomfig_Panel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="OpenFileDI.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -3355,181 +3766,37 @@
   <data name="&gt;&gt;ci_label1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;set_label7.Name" xml:space="preserve">
-    <value>set_label7</value>
-  </data>
-  <data name="&gt;&gt;set_label7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label7.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label7.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;languageChanger.Name" xml:space="preserve">
-    <value>languageChanger</value>
-  </data>
-  <data name="&gt;&gt;languageChanger.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2ComboBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;languageChanger.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;languageChanger.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;set_label6.Name" xml:space="preserve">
-    <value>set_label6</value>
-  </data>
-  <data name="&gt;&gt;set_label6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label6.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label6.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;ResetTF2_Button.Name" xml:space="preserve">
-    <value>ResetTF2_Button</value>
-  </data>
-  <data name="&gt;&gt;ResetTF2_Button.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;ResetTF2_Button.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;ResetTF2_Button.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator1.Name" xml:space="preserve">
-    <value>guna2Separator1</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Separator, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator1.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;guna2Separator1.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;set_label5.Name" xml:space="preserve">
-    <value>set_label5</value>
-  </data>
-  <data name="&gt;&gt;set_label5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label5.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label5.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;set_label4.Name" xml:space="preserve">
-    <value>set_label4</value>
-  </data>
-  <data name="&gt;&gt;set_label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label4.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label4.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;set_label3.Name" xml:space="preserve">
-    <value>set_label3</value>
-  </data>
-  <data name="&gt;&gt;set_label3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label3.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label3.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;set_label2.Name" xml:space="preserve">
-    <value>set_label2</value>
-  </data>
-  <data name="&gt;&gt;set_label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label2.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label2.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;TF2_Location.Name" xml:space="preserve">
-    <value>TF2_Location</value>
-  </data>
-  <data name="&gt;&gt;TF2_Location.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;TF2_Location.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;TF2_Location.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;Steam_Location.Name" xml:space="preserve">
-    <value>Steam_Location</value>
-  </data>
-  <data name="&gt;&gt;Steam_Location.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2TextBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;Steam_Location.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;Steam_Location.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;set_label1.Name" xml:space="preserve">
-    <value>set_label1</value>
-  </data>
-  <data name="&gt;&gt;set_label1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;set_label1.Parent" xml:space="preserve">
-    <value>Settings_Panel</value>
-  </data>
-  <data name="&gt;&gt;set_label1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="Settings_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Custom_Install_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Settings_Panel.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="Settings_Panel.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Settings_Panel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>10, 0, 10, 10</value>
-  </data>
-  <data name="Settings_Panel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 726</value>
-  </data>
-  <data name="Settings_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
-  <data name="Settings_Panel.Visible" type="System.Boolean, mscorlib">
+  <data name="Custom_Install_Panel.Enabled" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.Name" xml:space="preserve">
-    <value>Settings_Panel</value>
+  <data name="Custom_Install_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.Type" xml:space="preserve">
+  <data name="Custom_Install_Panel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 10, 10, 10</value>
+  </data>
+  <data name="Custom_Install_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 726</value>
+  </data>
+  <data name="Custom_Install_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="Custom_Install_Panel.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;Custom_Install_Panel.Name" xml:space="preserve">
+    <value>Custom_Install_Panel</value>
+  </data>
+  <data name="&gt;&gt;Custom_Install_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Custom_Install_Panel.Parent" xml:space="preserve">
     <value>Main_Panel</value>
   </data>
-  <data name="&gt;&gt;Settings_Panel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Custom_Install_Panel.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="set_label7.AutoSize" type="System.Boolean, mscorlib">
@@ -3907,247 +4174,37 @@
   <data name="&gt;&gt;set_label1.ZOrder" xml:space="preserve">
     <value>11</value>
   </data>
-  <data name="&gt;&gt;hud_lab5.Name" xml:space="preserve">
-    <value>hud_lab5</value>
-  </data>
-  <data name="&gt;&gt;hud_lab5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab5.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab5.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;hud_lab6.Name" xml:space="preserve">
-    <value>hud_lab6</value>
-  </data>
-  <data name="&gt;&gt;hud_lab6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab6.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab6.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="&gt;&gt;hud_lab4.Name" xml:space="preserve">
-    <value>hud_lab4</value>
-  </data>
-  <data name="&gt;&gt;hud_lab4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab4.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab4.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;hexhud_pic.Name" xml:space="preserve">
-    <value>hexhud_pic</value>
-  </data>
-  <data name="&gt;&gt;hexhud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hexhud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hexhud_pic.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="&gt;&gt;flawhud_pic.Name" xml:space="preserve">
-    <value>flawhud_pic</value>
-  </data>
-  <data name="&gt;&gt;flawhud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;flawhud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;flawhud_pic.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="&gt;&gt;hyphud_pic.Name" xml:space="preserve">
-    <value>hyphud_pic</value>
-  </data>
-  <data name="&gt;&gt;hyphud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hyphud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hyphud_pic.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="&gt;&gt;hud_lab8.Name" xml:space="preserve">
-    <value>hud_lab8</value>
-  </data>
-  <data name="&gt;&gt;hud_lab8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab8.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab8.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="&gt;&gt;hud_lab2.Name" xml:space="preserve">
-    <value>hud_lab2</value>
-  </data>
-  <data name="&gt;&gt;hud_lab2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab2.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab2.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="&gt;&gt;hud_lab9.Name" xml:space="preserve">
-    <value>hud_lab9</value>
-  </data>
-  <data name="&gt;&gt;hud_lab9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab9.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab9.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;hud_lab7.Name" xml:space="preserve">
-    <value>hud_lab7</value>
-  </data>
-  <data name="&gt;&gt;hud_lab7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab7.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab7.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="&gt;&gt;hud_lab3.Name" xml:space="preserve">
-    <value>hud_lab3</value>
-  </data>
-  <data name="&gt;&gt;hud_lab3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab3.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab3.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="&gt;&gt;hud_lab1.Name" xml:space="preserve">
-    <value>hud_lab1</value>
-  </data>
-  <data name="&gt;&gt;hud_lab1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;hud_lab1.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;hud_lab1.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="&gt;&gt;m0rehud_pic.Name" xml:space="preserve">
-    <value>m0rehud_pic</value>
-  </data>
-  <data name="&gt;&gt;m0rehud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;m0rehud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;m0rehud_pic.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;quakehud_pic.Name" xml:space="preserve">
-    <value>quakehud_pic</value>
-  </data>
-  <data name="&gt;&gt;quakehud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;quakehud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;quakehud_pic.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;toonhud_pic.Name" xml:space="preserve">
-    <value>toonhud_pic</value>
-  </data>
-  <data name="&gt;&gt;toonhud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;toonhud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;toonhud_pic.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;warsawhud_pic.Name" xml:space="preserve">
-    <value>warsawhud_pic</value>
-  </data>
-  <data name="&gt;&gt;warsawhud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;warsawhud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;warsawhud_pic.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="&gt;&gt;sunsethud_pic.Name" xml:space="preserve">
-    <value>sunsethud_pic</value>
-  </data>
-  <data name="&gt;&gt;sunsethud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;sunsethud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;sunsethud_pic.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="&gt;&gt;renhud_pic.Name" xml:space="preserve">
-    <value>renhud_pic</value>
-  </data>
-  <data name="&gt;&gt;renhud_pic.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;renhud_pic.Parent" xml:space="preserve">
-    <value>Huds_Panel</value>
-  </data>
-  <data name="&gt;&gt;renhud_pic.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="Huds_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Settings_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Huds_Panel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Settings_Panel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="Settings_Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="Huds_Panel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Settings_Panel.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>10, 0, 10, 10</value>
+  </data>
+  <data name="Settings_Panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 726</value>
   </data>
-  <data name="Huds_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="Settings_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
   </data>
-  <data name="Huds_Panel.Visible" type="System.Boolean, mscorlib">
+  <data name="Settings_Panel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.Name" xml:space="preserve">
-    <value>Huds_Panel</value>
+  <data name="&gt;&gt;Settings_Panel.Name" xml:space="preserve">
+    <value>Settings_Panel</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;Settings_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Settings_Panel.Parent" xml:space="preserve">
     <value>Main_Panel</value>
   </data>
-  <data name="&gt;&gt;Huds_Panel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Settings_Panel.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="hud_lab5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
@@ -4732,125 +4789,59 @@
   <data name="&gt;&gt;renhud_pic.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
-  <data name="&gt;&gt;install_sel_mods.Name" xml:space="preserve">
-    <value>install_sel_mods</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
-  </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Mods_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+  <data name="Huds_Panel.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Fill</value>
   </data>
-  <data name="Mods_Panel.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="Huds_Panel.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
   </data>
-  <data name="Mods_Panel.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="Huds_Panel.Size" type="System.Drawing.Size, System.Drawing">
     <value>902, 726</value>
   </data>
-  <data name="Mods_Panel.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+  <data name="Huds_Panel.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
-  <data name="Mods_Panel.Visible" type="System.Boolean, mscorlib">
+  <data name="Huds_Panel.Visible" type="System.Boolean, mscorlib">
     <value>False</value>
   </data>
-  <data name="&gt;&gt;Mods_Panel.Name" xml:space="preserve">
-    <value>Mods_Panel</value>
+  <data name="&gt;&gt;Huds_Panel.Name" xml:space="preserve">
+    <value>Huds_Panel</value>
   </data>
-  <data name="&gt;&gt;Mods_Panel.Type" xml:space="preserve">
+  <data name="&gt;&gt;Huds_Panel.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;Mods_Panel.Parent" xml:space="preserve">
+  <data name="&gt;&gt;Huds_Panel.Parent" xml:space="preserve">
     <value>Main_Panel</value>
   </data>
-  <data name="&gt;&gt;Mods_Panel.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;Huds_Panel.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="install_sel_mods.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
+  <data name="Main_Panel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>362, 20</value>
   </data>
-  <data name="install_sel_mods.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Hack, 14.25pt</value>
-  </data>
-  <data name="install_sel_mods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 654</value>
-  </data>
-  <data name="install_sel_mods.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="Main_Panel.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>0, 0, 0, 0</value>
   </data>
-  <data name="install_sel_mods.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 72</value>
+  <data name="Main_Panel.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>902, 726</value>
   </data>
-  <data name="install_sel_mods.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
+  <data name="Main_Panel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 726</value>
   </data>
-  <data name="install_sel_mods.Text" xml:space="preserve">
-    <value>Install</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Name" xml:space="preserve">
-    <value>install_sel_mods</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="label2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Hack, 14.25pt</value>
-  </data>
-  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 30</value>
-  </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+  <data name="Main_Panel.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Mods</value>
+  <data name="&gt;&gt;Main_Panel.Name" xml:space="preserve">
+    <value>Main_Panel</value>
   </data>
-  <data name="label2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
+  <data name="&gt;&gt;Main_Panel.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2GradientPanel, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
   </data>
-  <data name="&gt;&gt;label2.Name" xml:space="preserve">
-    <value>label2</value>
+  <data name="&gt;&gt;Main_Panel.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;label2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>1</value>
+  <data name="&gt;&gt;Main_Panel.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <metadata name="AnimateTF_Icon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>15, 17</value>
@@ -4868,19 +4859,19 @@
     <value>618, 17</value>
   </metadata>
   <data name="updateToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>112, 22</value>
   </data>
   <data name="updateToolStripMenuItem.Text" xml:space="preserve">
     <value>Update</value>
   </data>
   <data name="exitToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>180, 22</value>
+    <value>112, 22</value>
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
   </data>
   <data name="OptimizerContMenuStrip.Size" type="System.Drawing.Size, System.Drawing">
-    <value>181, 70</value>
+    <value>113, 48</value>
   </data>
   <data name="&gt;&gt;OptimizerContMenuStrip.Name" xml:space="preserve">
     <value>OptimizerContMenuStrip</value>

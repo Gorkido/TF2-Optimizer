@@ -40,6 +40,30 @@
             this.About_Button = new Guna.UI2.WinForms.Guna2Button();
             this.MenuLabel = new System.Windows.Forms.Label();
             this.Main_Panel = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.Mods_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.mods_lab16 = new System.Windows.Forms.Label();
+            this.mods_lab15 = new System.Windows.Forms.Label();
+            this.mods_lab14 = new System.Windows.Forms.Label();
+            this.mods_lab13 = new System.Windows.Forms.Label();
+            this.mods_lab12 = new System.Windows.Forms.Label();
+            this.mods_lab11 = new System.Windows.Forms.Label();
+            this.nohats_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab10 = new System.Windows.Forms.Label();
+            this.removesnioperscope_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab7 = new System.Windows.Forms.Label();
+            this.realisticskybox_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab6 = new System.Windows.Forms.Label();
+            this.uniquerockets_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab5 = new System.Windows.Forms.Label();
+            this.transparentarms_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab4 = new System.Windows.Forms.Label();
+            this.mods_lab3 = new System.Windows.Forms.Label();
+            this.ultimatevisualfix_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.flattextures_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab2 = new System.Windows.Forms.Label();
+            this.mods_lab1 = new System.Windows.Forms.Label();
+            this.guna2VSeparator1 = new Guna.UI2.WinForms.Guna2VSeparator();
+            this.install_sel_mods = new Guna.UI2.WinForms.Guna2Button();
             this.About_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Discord_Link = new System.Windows.Forms.PictureBox();
             this.Github_Link = new System.Windows.Forms.PictureBox();
@@ -89,9 +113,6 @@
             this.warsawhud_pic = new System.Windows.Forms.PictureBox();
             this.sunsethud_pic = new System.Windows.Forms.PictureBox();
             this.renhud_pic = new System.Windows.Forms.PictureBox();
-            this.Mods_Panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.install_sel_mods = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.AnimateTF_Icon = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
@@ -102,6 +123,7 @@
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).BeginInit();
             this.Main_Panel.SuspendLayout();
+            this.Mods_Panel.SuspendLayout();
             this.About_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Discord_Link)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Github_Link)).BeginInit();
@@ -119,7 +141,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.warsawhud_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sunsethud_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.renhud_pic)).BeginInit();
-            this.Mods_Panel.SuspendLayout();
             this.OptimizerContMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -299,16 +320,241 @@
             // 
             resources.ApplyResources(this.Main_Panel, "Main_Panel");
             this.Main_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.Controls.Add(this.About_Panel);
             this.Main_Panel.Controls.Add(this.Mastercomfig_Panel);
             this.Main_Panel.Controls.Add(this.Custom_Install_Panel);
             this.Main_Panel.Controls.Add(this.Settings_Panel);
             this.Main_Panel.Controls.Add(this.Huds_Panel);
-            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.FillColor = System.Drawing.Color.DimGray;
             this.Main_Panel.FillColor2 = System.Drawing.Color.Transparent;
             this.Main_Panel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.Main_Panel.Name = "Main_Panel";
+            // 
+            // Mods_Panel
+            // 
+            this.Mods_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Mods_Panel.Controls.Add(this.mods_lab16);
+            this.Mods_Panel.Controls.Add(this.mods_lab15);
+            this.Mods_Panel.Controls.Add(this.mods_lab14);
+            this.Mods_Panel.Controls.Add(this.mods_lab13);
+            this.Mods_Panel.Controls.Add(this.mods_lab12);
+            this.Mods_Panel.Controls.Add(this.mods_lab11);
+            this.Mods_Panel.Controls.Add(this.nohats_checkb);
+            this.Mods_Panel.Controls.Add(this.mods_lab10);
+            this.Mods_Panel.Controls.Add(this.removesnioperscope_checkb);
+            this.Mods_Panel.Controls.Add(this.mods_lab7);
+            this.Mods_Panel.Controls.Add(this.realisticskybox_checkb);
+            this.Mods_Panel.Controls.Add(this.mods_lab6);
+            this.Mods_Panel.Controls.Add(this.uniquerockets_checkb);
+            this.Mods_Panel.Controls.Add(this.mods_lab5);
+            this.Mods_Panel.Controls.Add(this.transparentarms_checkb);
+            this.Mods_Panel.Controls.Add(this.mods_lab4);
+            this.Mods_Panel.Controls.Add(this.mods_lab3);
+            this.Mods_Panel.Controls.Add(this.ultimatevisualfix_checkb);
+            this.Mods_Panel.Controls.Add(this.flattextures_checkb);
+            this.Mods_Panel.Controls.Add(this.mods_lab2);
+            this.Mods_Panel.Controls.Add(this.mods_lab1);
+            this.Mods_Panel.Controls.Add(this.guna2VSeparator1);
+            this.Mods_Panel.Controls.Add(this.install_sel_mods);
+            resources.ApplyResources(this.Mods_Panel, "Mods_Panel");
+            this.Mods_Panel.Name = "Mods_Panel";
+            // 
+            // mods_lab16
+            // 
+            resources.ApplyResources(this.mods_lab16, "mods_lab16");
+            this.mods_lab16.Name = "mods_lab16";
+            // 
+            // mods_lab15
+            // 
+            resources.ApplyResources(this.mods_lab15, "mods_lab15");
+            this.mods_lab15.Name = "mods_lab15";
+            // 
+            // mods_lab14
+            // 
+            resources.ApplyResources(this.mods_lab14, "mods_lab14");
+            this.mods_lab14.Name = "mods_lab14";
+            // 
+            // mods_lab13
+            // 
+            resources.ApplyResources(this.mods_lab13, "mods_lab13");
+            this.mods_lab13.Name = "mods_lab13";
+            // 
+            // mods_lab12
+            // 
+            resources.ApplyResources(this.mods_lab12, "mods_lab12");
+            this.mods_lab12.Name = "mods_lab12";
+            // 
+            // mods_lab11
+            // 
+            resources.ApplyResources(this.mods_lab11, "mods_lab11");
+            this.mods_lab11.Name = "mods_lab11";
+            // 
+            // nohats_checkb
+            // 
+            this.nohats_checkb.Animated = true;
+            this.nohats_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.nohats_checkb.CheckedState.BorderRadius = 2;
+            this.nohats_checkb.CheckedState.BorderThickness = 2;
+            this.nohats_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.nohats_checkb, "nohats_checkb");
+            this.nohats_checkb.Name = "nohats_checkb";
+            this.nohats_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.nohats_checkb.UncheckedState.BorderRadius = 2;
+            this.nohats_checkb.UncheckedState.BorderThickness = 2;
+            this.nohats_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab10
+            // 
+            resources.ApplyResources(this.mods_lab10, "mods_lab10");
+            this.mods_lab10.Name = "mods_lab10";
+            // 
+            // removesnioperscope_checkb
+            // 
+            this.removesnioperscope_checkb.Animated = true;
+            this.removesnioperscope_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.removesnioperscope_checkb.CheckedState.BorderRadius = 2;
+            this.removesnioperscope_checkb.CheckedState.BorderThickness = 2;
+            this.removesnioperscope_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.removesnioperscope_checkb, "removesnioperscope_checkb");
+            this.removesnioperscope_checkb.Name = "removesnioperscope_checkb";
+            this.removesnioperscope_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.removesnioperscope_checkb.UncheckedState.BorderRadius = 2;
+            this.removesnioperscope_checkb.UncheckedState.BorderThickness = 2;
+            this.removesnioperscope_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab7
+            // 
+            resources.ApplyResources(this.mods_lab7, "mods_lab7");
+            this.mods_lab7.Name = "mods_lab7";
+            // 
+            // realisticskybox_checkb
+            // 
+            this.realisticskybox_checkb.Animated = true;
+            this.realisticskybox_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.realisticskybox_checkb.CheckedState.BorderRadius = 2;
+            this.realisticskybox_checkb.CheckedState.BorderThickness = 2;
+            this.realisticskybox_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.realisticskybox_checkb, "realisticskybox_checkb");
+            this.realisticskybox_checkb.Name = "realisticskybox_checkb";
+            this.realisticskybox_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.realisticskybox_checkb.UncheckedState.BorderRadius = 2;
+            this.realisticskybox_checkb.UncheckedState.BorderThickness = 2;
+            this.realisticskybox_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab6
+            // 
+            resources.ApplyResources(this.mods_lab6, "mods_lab6");
+            this.mods_lab6.Name = "mods_lab6";
+            // 
+            // uniquerockets_checkb
+            // 
+            this.uniquerockets_checkb.Animated = true;
+            this.uniquerockets_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.uniquerockets_checkb.CheckedState.BorderRadius = 2;
+            this.uniquerockets_checkb.CheckedState.BorderThickness = 2;
+            this.uniquerockets_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.uniquerockets_checkb, "uniquerockets_checkb");
+            this.uniquerockets_checkb.Name = "uniquerockets_checkb";
+            this.uniquerockets_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.uniquerockets_checkb.UncheckedState.BorderRadius = 2;
+            this.uniquerockets_checkb.UncheckedState.BorderThickness = 2;
+            this.uniquerockets_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab5
+            // 
+            resources.ApplyResources(this.mods_lab5, "mods_lab5");
+            this.mods_lab5.Name = "mods_lab5";
+            // 
+            // transparentarms_checkb
+            // 
+            this.transparentarms_checkb.Animated = true;
+            this.transparentarms_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.transparentarms_checkb.CheckedState.BorderRadius = 2;
+            this.transparentarms_checkb.CheckedState.BorderThickness = 2;
+            this.transparentarms_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.transparentarms_checkb, "transparentarms_checkb");
+            this.transparentarms_checkb.Name = "transparentarms_checkb";
+            this.transparentarms_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.transparentarms_checkb.UncheckedState.BorderRadius = 2;
+            this.transparentarms_checkb.UncheckedState.BorderThickness = 2;
+            this.transparentarms_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab4
+            // 
+            resources.ApplyResources(this.mods_lab4, "mods_lab4");
+            this.mods_lab4.Name = "mods_lab4";
+            // 
+            // mods_lab3
+            // 
+            resources.ApplyResources(this.mods_lab3, "mods_lab3");
+            this.mods_lab3.Name = "mods_lab3";
+            // 
+            // ultimatevisualfix_checkb
+            // 
+            this.ultimatevisualfix_checkb.Animated = true;
+            this.ultimatevisualfix_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.ultimatevisualfix_checkb.CheckedState.BorderRadius = 2;
+            this.ultimatevisualfix_checkb.CheckedState.BorderThickness = 2;
+            this.ultimatevisualfix_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.ultimatevisualfix_checkb, "ultimatevisualfix_checkb");
+            this.ultimatevisualfix_checkb.Name = "ultimatevisualfix_checkb";
+            this.ultimatevisualfix_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.ultimatevisualfix_checkb.UncheckedState.BorderRadius = 2;
+            this.ultimatevisualfix_checkb.UncheckedState.BorderThickness = 2;
+            this.ultimatevisualfix_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // flattextures_checkb
+            // 
+            this.flattextures_checkb.Animated = true;
+            this.flattextures_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.flattextures_checkb.CheckedState.BorderRadius = 2;
+            this.flattextures_checkb.CheckedState.BorderThickness = 2;
+            this.flattextures_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.flattextures_checkb, "flattextures_checkb");
+            this.flattextures_checkb.Name = "flattextures_checkb";
+            this.flattextures_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.flattextures_checkb.UncheckedState.BorderRadius = 2;
+            this.flattextures_checkb.UncheckedState.BorderThickness = 2;
+            this.flattextures_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab2
+            // 
+            resources.ApplyResources(this.mods_lab2, "mods_lab2");
+            this.mods_lab2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mods_lab2.Name = "mods_lab2";
+            // 
+            // mods_lab1
+            // 
+            this.mods_lab1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            resources.ApplyResources(this.mods_lab1, "mods_lab1");
+            this.mods_lab1.Name = "mods_lab1";
+            // 
+            // guna2VSeparator1
+            // 
+            resources.ApplyResources(this.guna2VSeparator1, "guna2VSeparator1");
+            this.guna2VSeparator1.Name = "guna2VSeparator1";
+            // 
+            // install_sel_mods
+            // 
+            this.install_sel_mods.Animated = true;
+            this.install_sel_mods.BorderColor = System.Drawing.Color.White;
+            this.install_sel_mods.BorderThickness = 1;
+            this.install_sel_mods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.install_sel_mods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.install_sel_mods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.install_sel_mods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.install_sel_mods, "install_sel_mods");
+            this.install_sel_mods.FillColor = System.Drawing.Color.Transparent;
+            this.install_sel_mods.ForeColor = System.Drawing.Color.White;
+            this.install_sel_mods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.install_sel_mods.ImageSize = new System.Drawing.Size(0, 0);
+            this.install_sel_mods.Name = "install_sel_mods";
+            this.install_sel_mods.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.install_sel_mods.PressedDepth = 1;
+            this.install_sel_mods.ShadowDecoration.BorderRadius = 0;
+            this.install_sel_mods.ShadowDecoration.Depth = 0;
+            this.install_sel_mods.Click += new System.EventHandler(this.install_sel_mods_Click);
             // 
             // About_Panel
             // 
@@ -776,39 +1022,6 @@
             this.renhud_pic.TabStop = false;
             this.renhud_pic.Click += new System.EventHandler(this.renhud_pic_Click);
             // 
-            // Mods_Panel
-            // 
-            this.Mods_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Mods_Panel.Controls.Add(this.install_sel_mods);
-            this.Mods_Panel.Controls.Add(this.label2);
-            resources.ApplyResources(this.Mods_Panel, "Mods_Panel");
-            this.Mods_Panel.Name = "Mods_Panel";
-            // 
-            // install_sel_mods
-            // 
-            this.install_sel_mods.Animated = true;
-            this.install_sel_mods.BorderColor = System.Drawing.Color.White;
-            this.install_sel_mods.BorderThickness = 1;
-            this.install_sel_mods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.install_sel_mods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.install_sel_mods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.install_sel_mods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.install_sel_mods, "install_sel_mods");
-            this.install_sel_mods.FillColor = System.Drawing.Color.Transparent;
-            this.install_sel_mods.ForeColor = System.Drawing.Color.White;
-            this.install_sel_mods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.install_sel_mods.ImageSize = new System.Drawing.Size(0, 0);
-            this.install_sel_mods.Name = "install_sel_mods";
-            this.install_sel_mods.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.install_sel_mods.PressedDepth = 1;
-            this.install_sel_mods.ShadowDecoration.BorderRadius = 0;
-            this.install_sel_mods.ShadowDecoration.Depth = 0;
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
-            // 
             // AnimateTF_Icon
             // 
             this.AnimateTF_Icon.Interval = 1;
@@ -868,6 +1081,8 @@
             this.Left_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).EndInit();
             this.Main_Panel.ResumeLayout(false);
+            this.Mods_Panel.ResumeLayout(false);
+            this.Mods_Panel.PerformLayout();
             this.About_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Discord_Link)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Github_Link)).EndInit();
@@ -887,7 +1102,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.warsawhud_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sunsethud_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.renhud_pic)).EndInit();
-            this.Mods_Panel.ResumeLayout(false);
             this.OptimizerContMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -957,12 +1171,33 @@
         private System.Windows.Forms.PictureBox flawhud_pic;
         private System.Windows.Forms.PictureBox hyphud_pic;
         private Guna.UI2.WinForms.Guna2Panel Mods_Panel;
-        private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button install_sel_mods;
         private System.Windows.Forms.NotifyIcon OptimizerNotifIcon;
         private Guna.UI2.WinForms.Guna2ContextMenuStrip OptimizerContMenuStrip;
         private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
+        private Guna.UI2.WinForms.Guna2VSeparator guna2VSeparator1;
+        private System.Windows.Forms.Label mods_lab1;
+        private System.Windows.Forms.Label mods_lab2;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox flattextures_checkb;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox ultimatevisualfix_checkb;
+        private System.Windows.Forms.Label mods_lab4;
+        private System.Windows.Forms.Label mods_lab3;
+        private System.Windows.Forms.Label mods_lab14;
+        private System.Windows.Forms.Label mods_lab13;
+        private System.Windows.Forms.Label mods_lab12;
+        private System.Windows.Forms.Label mods_lab11;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox nohats_checkb;
+        private System.Windows.Forms.Label mods_lab10;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox removesnioperscope_checkb;
+        private System.Windows.Forms.Label mods_lab7;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox realisticskybox_checkb;
+        private System.Windows.Forms.Label mods_lab6;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox uniquerockets_checkb;
+        private System.Windows.Forms.Label mods_lab5;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox transparentarms_checkb;
+        private System.Windows.Forms.Label mods_lab16;
+        private System.Windows.Forms.Label mods_lab15;
     }
 }
 

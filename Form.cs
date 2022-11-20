@@ -39,7 +39,6 @@ namespace TF2_Optimizer
         #region Strings
         //private static readonly string hitkillsounds = GetTF2Directory() + "\\tf\\custom\\hitsound\\sound\\ui\\";
         //private static readonly string cfg = GetTF2Directory() + "\\tf\\cfg\\";
-        private readonly string downloadstring = "https://gamebanana.com/dl/";
         private readonly bool isTF2Running = Process.GetProcessesByName("hl2.exe").Any();
         private readonly string ExecPath = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
         private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
@@ -57,12 +56,19 @@ namespace TF2_Optimizer
             "/mastercomfig-ultra-preset.vpk"
         };
 
-        private readonly string[] MasterComfigAddons =
+        private readonly string[] ModsList =
         {
             "/mastercomfig-lowmem-addon.vpk",
             "/mastercomfig-no-tutorial-addon.vpk",
             "/mastercomfig-no-soundscapes-addon.vpk",
-            "/mastercomfig-null-canceling-movement-addon.vpk"
+            "/mastercomfig-null-canceling-movement-addon.vpk",
+            "677961", // Flat Textures
+            "467630", // Remove Sniper Scope
+            "873049", // No Hats Mod (Pack)
+            "TF2UltimateVisualFix_000.vpk",
+            "629105", // Transparent Arms
+            "767925", // Unique Rockets
+            "37714" // Realistic Skybox
         };
 
         private readonly string[] HudGitRepoRelease =
@@ -72,12 +78,12 @@ namespace TF2_Optimizer
             "/TF2.Optimizer.exe"
         };
 
-        private string GetLatestMCRelease(string RepoOwner, string RepoName, byte MCFG)
+        private string GetLatestMCRelease(string RepoOwner, string RepoName, int MCFG)
         {
             return (client.Repository.Release.GetLatest(RepoOwner, RepoName).Result.HtmlUrl + MasterComfig[MCFG]).Replace("tag", "download");
         }
 
-        private string GetLatestGitRelease(string RepoOwner, string RepoName, byte GHRP)
+        private string GetLatestGitRelease(string RepoOwner, string RepoName, int GHRP)
         {
             return (client.Repository.Release.GetLatest(RepoOwner, RepoName).Result.HtmlUrl + HudGitRepoRelease[GHRP]).Replace("tag", "download");
         }
@@ -133,6 +139,21 @@ namespace TF2_Optimizer
             hud_lab8.Font = tf2_font_regular;
             hud_lab9.Font = tf2_font_regular;
             Mods_Button.Font = tf2_font_regular;
+            install_sel_mods.Font = tf2_font_regular;
+            mods_lab1.Font = tf2_font_regular;
+            mods_lab2.Font = tf2_font_regular;
+            mods_lab3.Font = tf2_font_small;
+            mods_lab4.Font = tf2_font_small;
+            mods_lab5.Font = tf2_font_small;
+            mods_lab6.Font = tf2_font_small;
+            mods_lab7.Font = tf2_font_small;
+            mods_lab10.Font = tf2_font_small;
+            mods_lab11.Font = tf2_font_small;
+            mods_lab12.Font = tf2_font_small;
+            mods_lab13.Font = tf2_font_small;
+            mods_lab14.Font = tf2_font_small;
+            mods_lab15.Font = tf2_font_small;
+            mods_lab16.Font = tf2_font_small;
             CustomMod_Button.Font = tf2_font_regular;
             ci_label1.Font = tf2_font_bold;
             ci_label2.Font = tf2_font_regular;
@@ -330,7 +351,7 @@ namespace TF2_Optimizer
                                     File.Delete(Custom + vpks.Replace("/", ""));
                                 }
                             }
-                            foreach (string item in MasterComfigAddons)
+                            foreach (string item in ModsList)
                             {
                                 WClient.DownloadFile((client.Repository.Release.GetLatest("mastercomfig", "mastercomfig").Result.HtmlUrl + item).Replace("tag", "download"), Custom + item);
                             }
@@ -668,6 +689,62 @@ namespace TF2_Optimizer
                     Environment.Exit(0);
                     break;
             }
+        }
+
+        private void installmod(int gamebananastr, string modname, bool fromgithub = false, bool sevenzip = false)
+        {
+            string downloadstring = "https://gamebanana.com/dl/";
+            WClient.DownloadFile(downloadstring + ModsList[gamebananastr], Custom + modname + ".zip");
+            ZipFile.ExtractToDirectory(Custom + modname + ".zip", Custom);
+            File.Delete(Custom + modname + ".zip");
+        }
+
+        private void install_sel_mods_Click(object sender, EventArgs e)
+        {
+            #region Performance
+            if (flattextures_checkb.Checked)
+            {
+                installmod(4, "FlatTextures");
+                Directory.Delete(Custom + "FlatTexturesV1", true);
+            }
+            if (removesnioperscope_checkb.Checked)
+            {
+                installmod(5, "NoSniperScope");
+            }
+            if (nohats_checkb.Checked)
+            {
+                installmod(6, "NoHats");
+                foreach (string file in Directory.EnumerateFiles(Custom + "no_hats_bgum_master"))
+                {
+                    string destFile = Path.Combine(Custom, Path.GetFileName(file));
+                    if (!File.Exists(destFile))
+                    {
+                        File.Move(file, destFile);
+                    }
+                }
+                File.Delete(Custom + "README.md");
+                Directory.Delete(Custom + "no_hats_bgum_master", true);
+            }
+            #endregion Performance
+
+            #region Quality
+            if (ultimatevisualfix_checkb.Checked)
+            {
+                WClient.DownloadFile(GetLatestGitRelease("agrastiOs", "Ultimate-TF2-Visual-Fix-Pack", 7), Custom + "TF2UltimateVisualFix_000.vpk");
+            }
+            if (transparentarms_checkb.Checked)
+            {
+                installmod(8, "TransparentArms");
+            }
+            if (uniquerockets_checkb.Checked)
+            {
+                installmod(9, "UniqueRockets");
+            }
+            if (realisticskybox_checkb.Checked)
+            {
+                installmod(9, "RealisticSkybox");
+            }
+            #endregion Quality
         }
     }
 }

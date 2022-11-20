@@ -485,6 +485,17 @@ namespace TF2_Optimizer
             UI();
         }
 
+        private void BackupHUDs()
+        {
+            foreach (string item in Directory.EnumerateDirectories(Custom))
+            {
+                if (item.Contains("hud"))
+                {
+                    Directory.Move(item, Custom + "HUD Backup\\");
+                }
+            }
+        }
+
         private void renhud_pic_Click(object sender, EventArgs e)
         {
             string HUDName = "RenHud-V2";
@@ -493,6 +504,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile(GetLatestGitRelease(User, HUDName, 0), Custom + HUDName + ".7z");
                     _ = Directory.CreateDirectory(Custom + "RenHUD-V2");
                     using (SevenZipArchive archive = new SevenZipArchive(Custom + HUDName + ".7z"))
@@ -513,6 +525,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");
@@ -528,6 +541,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile("https://github.com/p3tr1ch0r/warsawhud/archive/refs/heads/master.zip", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");
@@ -544,6 +558,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");
@@ -560,6 +575,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile(GetLatestGitRelease(User, HUDName, 1), Custom + HUDName + ".zip");
                     _ = Directory.CreateDirectory(Custom + HUDName);
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
@@ -577,6 +593,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");
@@ -592,6 +609,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile("https://gamebanana.com/dl/683760", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");
@@ -607,6 +625,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile("https://github.com/quickkennedy/quakehud/archive/refs/heads/master.zip", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");
@@ -623,6 +642,7 @@ namespace TF2_Optimizer
             {
                 try
                 {
+                    BackupHUDs();
                     WClient.DownloadFile(client.Repository.Release.GetLatest(User, HUDName).Result.HtmlUrl.Replace("tag", "tags").Replace("releases", "archive/refs") + ".zip", Custom + HUDName + ".zip");
                     ZipFile.ExtractToDirectory(Custom + HUDName + ".zip", Custom);
                     File.Delete(Custom + HUDName + ".zip");

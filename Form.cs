@@ -41,6 +41,7 @@ namespace TF2_Optimizer
         //private static readonly string cfg = GetTF2Directory() + "\\tf\\cfg\\";
         private readonly string downloadstring = "https://gamebanana.com/dl/";
         private readonly bool isTF2Running = Process.GetProcessesByName("hl2.exe").Any();
+        private readonly string ExecPath = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
         private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
         private readonly WebClient WClient = new WebClient();
         private string Custom => TF2_Location.Text + "\\tf\\custom\\";
@@ -67,7 +68,8 @@ namespace TF2_Optimizer
         private readonly string[] HudGitRepoRelease =
         {
             "/RenHUD.7z",
-            "/flawhud-centered.zip"
+            "/flawhud-centered.zip",
+            "/TF2.Optimizer.exe"
         };
 
         private string GetLatestMCRelease(string RepoOwner, string RepoName, byte MCFG)
@@ -83,6 +85,13 @@ namespace TF2_Optimizer
 
         private void Form_Load(object sender, EventArgs e)
         {
+            Process[] ps = Process.GetProcessesByName("TF2.Optimizer.exe");
+            File.Delete(ExecPath + "\\TF2.Optimizer.exe");
+            foreach (Process p in ps)
+            {
+                p.Kill();
+            }
+
             GetSteamDirectory();
             GetTF2Directory();
 
@@ -648,6 +657,34 @@ namespace TF2_Optimizer
                     File.Delete(Custom + HUDName + ".zip");
                 }
                 catch (Exception) { }
+            }
+        }
+
+        private void OptimizerNotifIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            OptimizerContMenuStrip.Show(Control.MousePosition);
+        }
+
+        private new void Update()
+        {
+            WClient.DownloadFile(GetLatestGitRelease("Gorkido", "TF2-Optimizer", 2), ExecPath + "\\TF2 Optimizer.exe");
+            _ = Process.Start(ExecPath + "\\TF2 Optimizer.exe");
+        }
+
+        private void OptimizerContMenuStrip_ItemClicked(object sender, ToolStripItemClickedEventArgs e)
+        {
+            string itemText = e.ClickedItem.Text;
+
+
+            switch (itemText)
+            {
+                case "Update":
+                    //do stuff
+                    break;
+
+                case "Exit":
+                    Environment.Exit(0);
+                    break;
             }
         }
     }

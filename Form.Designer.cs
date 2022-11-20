@@ -40,9 +40,6 @@
             this.About_Button = new Guna.UI2.WinForms.Guna2Button();
             this.MenuLabel = new System.Windows.Forms.Label();
             this.Main_Panel = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.Mods_Panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.install_sel_mods = new Guna.UI2.WinForms.Guna2Button();
-            this.label2 = new System.Windows.Forms.Label();
             this.About_Panel = new Guna.UI2.WinForms.Guna2Panel();
             this.Discord_Link = new System.Windows.Forms.PictureBox();
             this.Github_Link = new System.Windows.Forms.PictureBox();
@@ -92,13 +89,19 @@
             this.warsawhud_pic = new System.Windows.Forms.PictureBox();
             this.sunsethud_pic = new System.Windows.Forms.PictureBox();
             this.renhud_pic = new System.Windows.Forms.PictureBox();
+            this.Mods_Panel = new Guna.UI2.WinForms.Guna2Panel();
+            this.install_sel_mods = new Guna.UI2.WinForms.Guna2Button();
+            this.label2 = new System.Windows.Forms.Label();
             this.AnimateTF_Icon = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
+            this.OptimizerNotifIcon = new System.Windows.Forms.NotifyIcon(this.components);
+            this.OptimizerContMenuStrip = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).BeginInit();
             this.Main_Panel.SuspendLayout();
-            this.Mods_Panel.SuspendLayout();
             this.About_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Discord_Link)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Github_Link)).BeginInit();
@@ -116,6 +119,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.warsawhud_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.sunsethud_pic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.renhud_pic)).BeginInit();
+            this.Mods_Panel.SuspendLayout();
+            this.OptimizerContMenuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // Left_Panel
@@ -304,39 +309,6 @@
             this.Main_Panel.FillColor2 = System.Drawing.Color.Transparent;
             this.Main_Panel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
             this.Main_Panel.Name = "Main_Panel";
-            // 
-            // Mods_Panel
-            // 
-            this.Mods_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Mods_Panel.Controls.Add(this.install_sel_mods);
-            this.Mods_Panel.Controls.Add(this.label2);
-            resources.ApplyResources(this.Mods_Panel, "Mods_Panel");
-            this.Mods_Panel.Name = "Mods_Panel";
-            // 
-            // install_sel_mods
-            // 
-            this.install_sel_mods.Animated = true;
-            this.install_sel_mods.BorderColor = System.Drawing.Color.White;
-            this.install_sel_mods.BorderThickness = 1;
-            this.install_sel_mods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.install_sel_mods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.install_sel_mods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.install_sel_mods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.install_sel_mods, "install_sel_mods");
-            this.install_sel_mods.FillColor = System.Drawing.Color.Transparent;
-            this.install_sel_mods.ForeColor = System.Drawing.Color.White;
-            this.install_sel_mods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.install_sel_mods.ImageSize = new System.Drawing.Size(0, 0);
-            this.install_sel_mods.Name = "install_sel_mods";
-            this.install_sel_mods.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.install_sel_mods.PressedDepth = 1;
-            this.install_sel_mods.ShadowDecoration.BorderRadius = 0;
-            this.install_sel_mods.ShadowDecoration.Depth = 0;
-            // 
-            // label2
-            // 
-            resources.ApplyResources(this.label2, "label2");
-            this.label2.Name = "label2";
             // 
             // About_Panel
             // 
@@ -804,6 +776,39 @@
             this.renhud_pic.TabStop = false;
             this.renhud_pic.Click += new System.EventHandler(this.renhud_pic_Click);
             // 
+            // Mods_Panel
+            // 
+            this.Mods_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Mods_Panel.Controls.Add(this.install_sel_mods);
+            this.Mods_Panel.Controls.Add(this.label2);
+            resources.ApplyResources(this.Mods_Panel, "Mods_Panel");
+            this.Mods_Panel.Name = "Mods_Panel";
+            // 
+            // install_sel_mods
+            // 
+            this.install_sel_mods.Animated = true;
+            this.install_sel_mods.BorderColor = System.Drawing.Color.White;
+            this.install_sel_mods.BorderThickness = 1;
+            this.install_sel_mods.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.install_sel_mods.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.install_sel_mods.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.install_sel_mods.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            resources.ApplyResources(this.install_sel_mods, "install_sel_mods");
+            this.install_sel_mods.FillColor = System.Drawing.Color.Transparent;
+            this.install_sel_mods.ForeColor = System.Drawing.Color.White;
+            this.install_sel_mods.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.install_sel_mods.ImageSize = new System.Drawing.Size(0, 0);
+            this.install_sel_mods.Name = "install_sel_mods";
+            this.install_sel_mods.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.install_sel_mods.PressedDepth = 1;
+            this.install_sel_mods.ShadowDecoration.BorderRadius = 0;
+            this.install_sel_mods.ShadowDecoration.Depth = 0;
+            // 
+            // label2
+            // 
+            resources.ApplyResources(this.label2, "label2");
+            this.label2.Name = "label2";
+            // 
             // AnimateTF_Icon
             // 
             this.AnimateTF_Icon.Interval = 1;
@@ -812,6 +817,41 @@
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // OptimizerNotifIcon
+            // 
+            this.OptimizerNotifIcon.BalloonTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            this.OptimizerNotifIcon.ContextMenuStrip = this.OptimizerContMenuStrip;
+            resources.ApplyResources(this.OptimizerNotifIcon, "OptimizerNotifIcon");
+            this.OptimizerNotifIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.OptimizerNotifIcon_MouseClick);
+            // 
+            // OptimizerContMenuStrip
+            // 
+            this.OptimizerContMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.updateToolStripMenuItem,
+            this.exitToolStripMenuItem});
+            this.OptimizerContMenuStrip.Name = "OptimizerContMenuStrip";
+            this.OptimizerContMenuStrip.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.OptimizerContMenuStrip.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.OptimizerContMenuStrip.RenderStyle.ColorTable = null;
+            this.OptimizerContMenuStrip.RenderStyle.RoundedEdges = true;
+            this.OptimizerContMenuStrip.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.OptimizerContMenuStrip.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            this.OptimizerContMenuStrip.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.OptimizerContMenuStrip.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.OptimizerContMenuStrip.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            resources.ApplyResources(this.OptimizerContMenuStrip, "OptimizerContMenuStrip");
+            this.OptimizerContMenuStrip.ItemClicked += new System.Windows.Forms.ToolStripItemClickedEventHandler(this.OptimizerContMenuStrip_ItemClicked);
+            // 
+            // updateToolStripMenuItem
+            // 
+            this.updateToolStripMenuItem.Name = "updateToolStripMenuItem";
+            resources.ApplyResources(this.updateToolStripMenuItem, "updateToolStripMenuItem");
+            // 
+            // exitToolStripMenuItem
+            // 
+            this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
+            resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             // 
             // Form
             // 
@@ -828,7 +868,6 @@
             this.Left_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).EndInit();
             this.Main_Panel.ResumeLayout(false);
-            this.Mods_Panel.ResumeLayout(false);
             this.About_Panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Discord_Link)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Github_Link)).EndInit();
@@ -848,6 +887,8 @@
             ((System.ComponentModel.ISupportInitialize)(this.warsawhud_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.sunsethud_pic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.renhud_pic)).EndInit();
+            this.Mods_Panel.ResumeLayout(false);
+            this.OptimizerContMenuStrip.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -918,6 +959,10 @@
         private Guna.UI2.WinForms.Guna2Panel Mods_Panel;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button install_sel_mods;
+        private System.Windows.Forms.NotifyIcon OptimizerNotifIcon;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip OptimizerContMenuStrip;
+        private System.Windows.Forms.ToolStripMenuItem updateToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
     }
 }
 

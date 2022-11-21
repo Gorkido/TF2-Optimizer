@@ -403,30 +403,22 @@ namespace TF2_Optimizer
 
         private void DropInstall_DragDrop(object sender, DragEventArgs e)
         {
-            string[] files = (string[])e.Data.GetData(DataFormats.FileDrop);
-            foreach (string file in files)
-            {
-                _ = DropInstall.Items.Add(file);
-            }
+
         }
 
         private void DropInstall_DragEnter(object sender, DragEventArgs e)
         {
-            e.Effect = e.Data.GetDataPresent(DataFormats.FileDrop, false) ? DragDropEffects.All : DragDropEffects.None;
+
         }
 
         private void Custom_Install_Click(object sender, EventArgs e)
         {
-            foreach (object item in DropInstall.Items)
-            {
-                _ = MessageBox.Show(item.ToString());
-                //File.Copy(item.ToString(), custom);
-            }
+
         }
 
         private void OpenFileDI_Click(object sender, EventArgs e)
         {
-            _ = openFileDialog1.ShowDialog();
+
         }
 
         private void Steam_Location_Click(object sender, EventArgs e)
@@ -762,6 +754,7 @@ namespace TF2_Optimizer
             {
                 _ = Directory.CreateDirectory(Custom + "RealisticSkybox\\materials\\skybox");
                 installmod(6, "RealisticSkybox");
+                Thread.Sleep(1000);
                 foreach (string file in Directory.EnumerateFiles(Custom + "Team fortress 2\\tf\\custom\\my_custom_stuff\\materials\\skybox"))
                 {
                     string destFile = Path.Combine(Custom + "RealisticSkybox\\materials\\skybox", Path.GetFileName(file));

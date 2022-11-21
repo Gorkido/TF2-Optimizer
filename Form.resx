@@ -3607,819 +3607,6 @@
   <data name="&gt;&gt;Main_Panel.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="mods_lab16.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab16.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab16.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 245</value>
-  </data>
-  <data name="mods_lab16.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 21</value>
-  </data>
-  <data name="mods_lab16.TabIndex" type="System.Int32, mscorlib">
-    <value>79</value>
-  </data>
-  <data name="mods_lab16.Text" xml:space="preserve">
-    <value>No Robot Heads On Weapons</value>
-  </data>
-  <data name="&gt;&gt;mods_lab16.Name" xml:space="preserve">
-    <value>mods_lab16</value>
-  </data>
-  <data name="&gt;&gt;mods_lab16.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab16.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab16.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="mods_lab15.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab15.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab15.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 225</value>
-  </data>
-  <data name="mods_lab15.Size" type="System.Drawing.Size, System.Drawing">
-    <value>151, 21</value>
-  </data>
-  <data name="mods_lab15.TabIndex" type="System.Int32, mscorlib">
-    <value>77</value>
-  </data>
-  <data name="mods_lab15.Text" xml:space="preserve">
-    <value>No Christmas Lights</value>
-  </data>
-  <data name="&gt;&gt;mods_lab15.Name" xml:space="preserve">
-    <value>mods_lab15</value>
-  </data>
-  <data name="&gt;&gt;mods_lab15.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab15.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab15.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="mods_lab14.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab14.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab14.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 205</value>
-  </data>
-  <data name="mods_lab14.Size" type="System.Drawing.Size, System.Drawing">
-    <value>72, 21</value>
-  </data>
-  <data name="mods_lab14.TabIndex" type="System.Int32, mscorlib">
-    <value>75</value>
-  </data>
-  <data name="mods_lab14.Text" xml:space="preserve">
-    <value>No Skins</value>
-  </data>
-  <data name="&gt;&gt;mods_lab14.Name" xml:space="preserve">
-    <value>mods_lab14</value>
-  </data>
-  <data name="&gt;&gt;mods_lab14.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab14.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab14.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="mods_lab13.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab13.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 185</value>
-  </data>
-  <data name="mods_lab13.Size" type="System.Drawing.Size, System.Drawing">
-    <value>122, 21</value>
-  </data>
-  <data name="mods_lab13.TabIndex" type="System.Int32, mscorlib">
-    <value>73</value>
-  </data>
-  <data name="mods_lab13.Text" xml:space="preserve">
-    <value>No Zombie Skin</value>
-  </data>
-  <data name="&gt;&gt;mods_lab13.Name" xml:space="preserve">
-    <value>mods_lab13</value>
-  </data>
-  <data name="&gt;&gt;mods_lab13.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab13.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab13.ZOrder" xml:space="preserve">
-    <value>8</value>
-  </data>
-  <data name="mods_lab12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab12.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab12.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 165</value>
-  </data>
-  <data name="mods_lab12.Size" type="System.Drawing.Size, System.Drawing">
-    <value>99, 21</value>
-  </data>
-  <data name="mods_lab12.TabIndex" type="System.Int32, mscorlib">
-    <value>71</value>
-  </data>
-  <data name="mods_lab12.Text" xml:space="preserve">
-    <value>No Unusuals</value>
-  </data>
-  <data name="&gt;&gt;mods_lab12.Name" xml:space="preserve">
-    <value>mods_lab12</value>
-  </data>
-  <data name="&gt;&gt;mods_lab12.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab12.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab12.ZOrder" xml:space="preserve">
-    <value>9</value>
-  </data>
-  <data name="mods_lab11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 145</value>
-  </data>
-  <data name="mods_lab11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>66, 21</value>
-  </data>
-  <data name="mods_lab11.TabIndex" type="System.Int32, mscorlib">
-    <value>69</value>
-  </data>
-  <data name="mods_lab11.Text" xml:space="preserve">
-    <value>No Hats</value>
-  </data>
-  <data name="&gt;&gt;mods_lab11.Name" xml:space="preserve">
-    <value>mods_lab11</value>
-  </data>
-  <data name="&gt;&gt;mods_lab11.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab11.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab11.ZOrder" xml:space="preserve">
-    <value>10</value>
-  </data>
-  <data name="nohats_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 139</value>
-  </data>
-  <data name="nohats_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="nohats_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>68</value>
-  </data>
-  <data name="&gt;&gt;nohats_checkb.Name" xml:space="preserve">
-    <value>nohats_checkb</value>
-  </data>
-  <data name="&gt;&gt;nohats_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;nohats_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;nohats_checkb.ZOrder" xml:space="preserve">
-    <value>11</value>
-  </data>
-  <data name="mods_lab10.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 96</value>
-  </data>
-  <data name="mods_lab10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>162, 21</value>
-  </data>
-  <data name="mods_lab10.TabIndex" type="System.Int32, mscorlib">
-    <value>67</value>
-  </data>
-  <data name="mods_lab10.Text" xml:space="preserve">
-    <value>Remove Sniper Scope</value>
-  </data>
-  <data name="&gt;&gt;mods_lab10.Name" xml:space="preserve">
-    <value>mods_lab10</value>
-  </data>
-  <data name="&gt;&gt;mods_lab10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab10.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab10.ZOrder" xml:space="preserve">
-    <value>12</value>
-  </data>
-  <data name="removesnioperscope_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 90</value>
-  </data>
-  <data name="removesnioperscope_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="removesnioperscope_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>66</value>
-  </data>
-  <data name="&gt;&gt;removesnioperscope_checkb.Name" xml:space="preserve">
-    <value>removesnioperscope_checkb</value>
-  </data>
-  <data name="&gt;&gt;removesnioperscope_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;removesnioperscope_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;removesnioperscope_checkb.ZOrder" xml:space="preserve">
-    <value>13</value>
-  </data>
-  <data name="mods_lab7.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 199</value>
-  </data>
-  <data name="mods_lab7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>121, 21</value>
-  </data>
-  <data name="mods_lab7.TabIndex" type="System.Int32, mscorlib">
-    <value>61</value>
-  </data>
-  <data name="mods_lab7.Text" xml:space="preserve">
-    <value>Realistic Skybox</value>
-  </data>
-  <data name="&gt;&gt;mods_lab7.Name" xml:space="preserve">
-    <value>mods_lab7</value>
-  </data>
-  <data name="&gt;&gt;mods_lab7.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab7.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab7.ZOrder" xml:space="preserve">
-    <value>14</value>
-  </data>
-  <data name="realisticskybox_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 193</value>
-  </data>
-  <data name="realisticskybox_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="realisticskybox_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>60</value>
-  </data>
-  <data name="&gt;&gt;realisticskybox_checkb.Name" xml:space="preserve">
-    <value>realisticskybox_checkb</value>
-  </data>
-  <data name="&gt;&gt;realisticskybox_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;realisticskybox_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;realisticskybox_checkb.ZOrder" xml:space="preserve">
-    <value>15</value>
-  </data>
-  <data name="mods_lab6.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 149</value>
-  </data>
-  <data name="mods_lab6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 21</value>
-  </data>
-  <data name="mods_lab6.TabIndex" type="System.Int32, mscorlib">
-    <value>59</value>
-  </data>
-  <data name="mods_lab6.Text" xml:space="preserve">
-    <value>Unique Rockets</value>
-  </data>
-  <data name="&gt;&gt;mods_lab6.Name" xml:space="preserve">
-    <value>mods_lab6</value>
-  </data>
-  <data name="&gt;&gt;mods_lab6.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab6.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab6.ZOrder" xml:space="preserve">
-    <value>16</value>
-  </data>
-  <data name="uniquerockets_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 142</value>
-  </data>
-  <data name="uniquerockets_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="uniquerockets_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>58</value>
-  </data>
-  <data name="&gt;&gt;uniquerockets_checkb.Name" xml:space="preserve">
-    <value>uniquerockets_checkb</value>
-  </data>
-  <data name="&gt;&gt;uniquerockets_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;uniquerockets_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;uniquerockets_checkb.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="mods_lab5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 99</value>
-  </data>
-  <data name="mods_lab5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>133, 21</value>
-  </data>
-  <data name="mods_lab5.TabIndex" type="System.Int32, mscorlib">
-    <value>57</value>
-  </data>
-  <data name="mods_lab5.Text" xml:space="preserve">
-    <value>Transparent Arms</value>
-  </data>
-  <data name="&gt;&gt;mods_lab5.Name" xml:space="preserve">
-    <value>mods_lab5</value>
-  </data>
-  <data name="&gt;&gt;mods_lab5.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab5.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab5.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="transparentarms_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 93</value>
-  </data>
-  <data name="transparentarms_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="transparentarms_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;transparentarms_checkb.Name" xml:space="preserve">
-    <value>transparentarms_checkb</value>
-  </data>
-  <data name="&gt;&gt;transparentarms_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;transparentarms_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;transparentarms_checkb.ZOrder" xml:space="preserve">
-    <value>19</value>
-  </data>
-  <data name="mods_lab4.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 49</value>
-  </data>
-  <data name="mods_lab4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>138, 21</value>
-  </data>
-  <data name="mods_lab4.TabIndex" type="System.Int32, mscorlib">
-    <value>55</value>
-  </data>
-  <data name="mods_lab4.Text" xml:space="preserve">
-    <value>Ultimate Visual Fix</value>
-  </data>
-  <data name="&gt;&gt;mods_lab4.Name" xml:space="preserve">
-    <value>mods_lab4</value>
-  </data>
-  <data name="&gt;&gt;mods_lab4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab4.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab4.ZOrder" xml:space="preserve">
-    <value>20</value>
-  </data>
-  <data name="mods_lab3.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>74, 48</value>
-  </data>
-  <data name="mods_lab3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>95, 21</value>
-  </data>
-  <data name="mods_lab3.TabIndex" type="System.Int32, mscorlib">
-    <value>54</value>
-  </data>
-  <data name="mods_lab3.Text" xml:space="preserve">
-    <value>Flat Textures</value>
-  </data>
-  <data name="&gt;&gt;mods_lab3.Name" xml:space="preserve">
-    <value>mods_lab3</value>
-  </data>
-  <data name="&gt;&gt;mods_lab3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab3.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab3.ZOrder" xml:space="preserve">
-    <value>21</value>
-  </data>
-  <data name="ultimatevisualfix_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>491, 43</value>
-  </data>
-  <data name="ultimatevisualfix_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="ultimatevisualfix_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>53</value>
-  </data>
-  <data name="&gt;&gt;ultimatevisualfix_checkb.Name" xml:space="preserve">
-    <value>ultimatevisualfix_checkb</value>
-  </data>
-  <data name="&gt;&gt;ultimatevisualfix_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;ultimatevisualfix_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;ultimatevisualfix_checkb.ZOrder" xml:space="preserve">
-    <value>22</value>
-  </data>
-  <data name="flattextures_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 43</value>
-  </data>
-  <data name="flattextures_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="flattextures_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
-  </data>
-  <data name="&gt;&gt;flattextures_checkb.Name" xml:space="preserve">
-    <value>flattextures_checkb</value>
-  </data>
-  <data name="&gt;&gt;flattextures_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;flattextures_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;flattextures_checkb.ZOrder" xml:space="preserve">
-    <value>23</value>
-  </data>
-  <data name="mods_lab2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
-  </data>
-  <data name="mods_lab2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15.75pt</value>
-  </data>
-  <data name="mods_lab2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>452, 0</value>
-  </data>
-  <data name="mods_lab2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>451, 30</value>
-  </data>
-  <data name="mods_lab2.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
-  </data>
-  <data name="mods_lab2.Text" xml:space="preserve">
-    <value>Quality</value>
-  </data>
-  <data name="mods_lab2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;mods_lab2.Name" xml:space="preserve">
-    <value>mods_lab2</value>
-  </data>
-  <data name="&gt;&gt;mods_lab2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab2.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab2.ZOrder" xml:space="preserve">
-    <value>24</value>
-  </data>
-  <data name="mods_lab1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 15.75pt</value>
-  </data>
-  <data name="mods_lab1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="mods_lab1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>451, 31</value>
-  </data>
-  <data name="mods_lab1.TabIndex" type="System.Int32, mscorlib">
-    <value>50</value>
-  </data>
-  <data name="mods_lab1.Text" xml:space="preserve">
-    <value>Performance</value>
-  </data>
-  <data name="mods_lab1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;mods_lab1.Name" xml:space="preserve">
-    <value>mods_lab1</value>
-  </data>
-  <data name="&gt;&gt;mods_lab1.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab1.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab1.ZOrder" xml:space="preserve">
-    <value>25</value>
-  </data>
-  <data name="guna2VSeparator1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Bottom, Left, Right</value>
-  </data>
-  <data name="guna2VSeparator1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>446, 8</value>
-  </data>
-  <data name="guna2VSeparator1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>10, 640</value>
-  </data>
-  <data name="guna2VSeparator1.TabIndex" type="System.Int32, mscorlib">
-    <value>49</value>
-  </data>
-  <data name="&gt;&gt;guna2VSeparator1.Name" xml:space="preserve">
-    <value>guna2VSeparator1</value>
-  </data>
-  <data name="&gt;&gt;guna2VSeparator1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2VSeparator, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;guna2VSeparator1.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;guna2VSeparator1.ZOrder" xml:space="preserve">
-    <value>26</value>
-  </data>
-  <data name="install_sel_mods.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Bottom</value>
-  </data>
-  <data name="install_sel_mods.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Hack, 14.25pt</value>
-  </data>
-  <data name="install_sel_mods.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 654</value>
-  </data>
-  <data name="install_sel_mods.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>0, 0, 0, 0</value>
-  </data>
-  <data name="install_sel_mods.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 72</value>
-  </data>
-  <data name="install_sel_mods.TabIndex" type="System.Int32, mscorlib">
-    <value>46</value>
-  </data>
-  <data name="install_sel_mods.Text" xml:space="preserve">
-    <value>Install</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Name" xml:space="preserve">
-    <value>install_sel_mods</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;install_sel_mods.ZOrder" xml:space="preserve">
-    <value>27</value>
-  </data>
-  <data name="Discord_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="Discord_Link.Location" type="System.Drawing.Point, System.Drawing">
-    <value>742, 676</value>
-  </data>
-  <data name="Discord_Link.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="Discord_Link.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>Zoom</value>
-  </data>
-  <data name="Discord_Link.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.Name" xml:space="preserve">
-    <value>Discord_Link</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Discord_Link.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Github_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="Github_Link.Location" type="System.Drawing.Point, System.Drawing">
-    <value>852, 676</value>
-  </data>
-  <data name="Github_Link.Size" type="System.Drawing.Size, System.Drawing">
-    <value>50, 50</value>
-  </data>
-  <data name="Github_Link.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="Github_Link.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.Name" xml:space="preserve">
-    <value>Github_Link</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Github_Link.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="Youtube_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Bottom, Right</value>
-  </data>
-  <data name="Youtube_Link.Location" type="System.Drawing.Point, System.Drawing">
-    <value>789, 676</value>
-  </data>
-  <data name="Youtube_Link.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 50</value>
-  </data>
-  <data name="Youtube_Link.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
-  </data>
-  <data name="Youtube_Link.TabIndex" type="System.Int32, mscorlib">
-    <value>12</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.Name" xml:space="preserve">
-    <value>Youtube_Link</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Youtube_Link.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="SubTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="SubTitle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Hack, 11.25pt</value>
-  </data>
-  <data name="SubTitle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 30</value>
-  </data>
-  <data name="SubTitle.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 30</value>
-  </data>
-  <data name="SubTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="SubTitle.Text" xml:space="preserve">
-    <value>An application to optimize tf2 and install mods.</value>
-  </data>
-  <data name="SubTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.Name" xml:space="preserve">
-    <value>SubTitle</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;SubTitle.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="Title.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
-    <value>Top</value>
-  </data>
-  <data name="Title.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Hack, 14.25pt</value>
-  </data>
-  <data name="Title.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 0</value>
-  </data>
-  <data name="Title.Size" type="System.Drawing.Size, System.Drawing">
-    <value>902, 30</value>
-  </data>
-  <data name="Title.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="Title.Text" xml:space="preserve">
-    <value>TF2 Optimizer/Mod Installer</value>
-  </data>
-  <data name="Title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
-    <value>MiddleCenter</value>
-  </data>
-  <data name="&gt;&gt;Title.Name" xml:space="preserve">
-    <value>Title</value>
-  </data>
-  <data name="&gt;&gt;Title.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;Title.Parent" xml:space="preserve">
-    <value>About_Panel</value>
-  </data>
-  <data name="&gt;&gt;Title.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="progressBar.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Left, Right</value>
-  </data>
   <data name="progressBar.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 12pt</value>
   </data>
@@ -5686,6 +4873,969 @@
   <data name="&gt;&gt;renhud_pic.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="mods_lab20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 345</value>
+  </data>
+  <data name="mods_lab20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 21</value>
+  </data>
+  <data name="mods_lab20.TabIndex" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="mods_lab20.Text" xml:space="preserve">
+    <value>No Pyroland</value>
+  </data>
+  <data name="&gt;&gt;mods_lab20.Name" xml:space="preserve">
+    <value>mods_lab20</value>
+  </data>
+  <data name="&gt;&gt;mods_lab20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab20.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="mods_lab19.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 325</value>
+  </data>
+  <data name="mods_lab19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>192, 21</value>
+  </data>
+  <data name="mods_lab19.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="mods_lab19.Text" xml:space="preserve">
+    <value>Null-Canceling Movement</value>
+  </data>
+  <data name="&gt;&gt;mods_lab19.Name" xml:space="preserve">
+    <value>mods_lab19</value>
+  </data>
+  <data name="&gt;&gt;mods_lab19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab19.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab19.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="mods_lab18.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 305</value>
+  </data>
+  <data name="mods_lab18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 21</value>
+  </data>
+  <data name="mods_lab18.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="mods_lab18.Text" xml:space="preserve">
+    <value>No Soundscapes</value>
+  </data>
+  <data name="&gt;&gt;mods_lab18.Name" xml:space="preserve">
+    <value>mods_lab18</value>
+  </data>
+  <data name="&gt;&gt;mods_lab18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab18.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab18.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="mods_lab17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 285</value>
+  </data>
+  <data name="mods_lab17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>88, 21</value>
+  </data>
+  <data name="mods_lab17.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="mods_lab17.Text" xml:space="preserve">
+    <value>No Tutorial</value>
+  </data>
+  <data name="&gt;&gt;mods_lab17.Name" xml:space="preserve">
+    <value>mods_lab17</value>
+  </data>
+  <data name="&gt;&gt;mods_lab17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab17.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab17.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="mastercomfigextra_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 279</value>
+  </data>
+  <data name="mastercomfigextra_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="mastercomfigextra_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="&gt;&gt;mastercomfigextra_checkb.Name" xml:space="preserve">
+    <value>mastercomfigextra_checkb</value>
+  </data>
+  <data name="&gt;&gt;mastercomfigextra_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;mastercomfigextra_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mastercomfigextra_checkb.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="mods_lab16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab16.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 245</value>
+  </data>
+  <data name="mods_lab16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>217, 21</value>
+  </data>
+  <data name="mods_lab16.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="mods_lab16.Text" xml:space="preserve">
+    <value>No Robot Heads On Weapons</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.Name" xml:space="preserve">
+    <value>mods_lab16</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab16.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="mods_lab15.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab15.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 225</value>
+  </data>
+  <data name="mods_lab15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>151, 21</value>
+  </data>
+  <data name="mods_lab15.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="mods_lab15.Text" xml:space="preserve">
+    <value>No Christmas Lights</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.Name" xml:space="preserve">
+    <value>mods_lab15</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab15.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="mods_lab14.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab14.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 205</value>
+  </data>
+  <data name="mods_lab14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="mods_lab14.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="mods_lab14.Text" xml:space="preserve">
+    <value>No Skins</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.Name" xml:space="preserve">
+    <value>mods_lab14</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab14.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="mods_lab13.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab13.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab13.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 185</value>
+  </data>
+  <data name="mods_lab13.Size" type="System.Drawing.Size, System.Drawing">
+    <value>122, 21</value>
+  </data>
+  <data name="mods_lab13.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="mods_lab13.Text" xml:space="preserve">
+    <value>No Zombie Skin</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.Name" xml:space="preserve">
+    <value>mods_lab13</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab13.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="mods_lab12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab12.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 165</value>
+  </data>
+  <data name="mods_lab12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 21</value>
+  </data>
+  <data name="mods_lab12.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="mods_lab12.Text" xml:space="preserve">
+    <value>No Unusuals</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.Name" xml:space="preserve">
+    <value>mods_lab12</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="mods_lab11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab11.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 145</value>
+  </data>
+  <data name="mods_lab11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>66, 21</value>
+  </data>
+  <data name="mods_lab11.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="mods_lab11.Text" xml:space="preserve">
+    <value>No Hats</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.Name" xml:space="preserve">
+    <value>mods_lab11</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab11.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="nohats_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 139</value>
+  </data>
+  <data name="nohats_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="nohats_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.Name" xml:space="preserve">
+    <value>nohats_checkb</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;nohats_checkb.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="mods_lab10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab10.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 96</value>
+  </data>
+  <data name="mods_lab10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 21</value>
+  </data>
+  <data name="mods_lab10.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="mods_lab10.Text" xml:space="preserve">
+    <value>Remove Sniper Scope</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.Name" xml:space="preserve">
+    <value>mods_lab10</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab10.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="removesnioperscope_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 90</value>
+  </data>
+  <data name="removesnioperscope_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="removesnioperscope_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.Name" xml:space="preserve">
+    <value>removesnioperscope_checkb</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;removesnioperscope_checkb.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="mods_lab7.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 199</value>
+  </data>
+  <data name="mods_lab7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>121, 21</value>
+  </data>
+  <data name="mods_lab7.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="mods_lab7.Text" xml:space="preserve">
+    <value>Realistic Skybox</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.Name" xml:space="preserve">
+    <value>mods_lab7</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab7.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="realisticskybox_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 193</value>
+  </data>
+  <data name="realisticskybox_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="realisticskybox_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.Name" xml:space="preserve">
+    <value>realisticskybox_checkb</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;realisticskybox_checkb.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="mods_lab6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 149</value>
+  </data>
+  <data name="mods_lab6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 21</value>
+  </data>
+  <data name="mods_lab6.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="mods_lab6.Text" xml:space="preserve">
+    <value>Unique Rockets</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.Name" xml:space="preserve">
+    <value>mods_lab6</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab6.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="uniquerockets_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 142</value>
+  </data>
+  <data name="uniquerockets_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="uniquerockets_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.Name" xml:space="preserve">
+    <value>uniquerockets_checkb</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;uniquerockets_checkb.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="mods_lab5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 99</value>
+  </data>
+  <data name="mods_lab5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>133, 21</value>
+  </data>
+  <data name="mods_lab5.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="mods_lab5.Text" xml:space="preserve">
+    <value>Transparent Arms</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.Name" xml:space="preserve">
+    <value>mods_lab5</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab5.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="transparentarms_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 93</value>
+  </data>
+  <data name="transparentarms_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="transparentarms_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.Name" xml:space="preserve">
+    <value>transparentarms_checkb</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;transparentarms_checkb.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="mods_lab4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 49</value>
+  </data>
+  <data name="mods_lab4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>138, 21</value>
+  </data>
+  <data name="mods_lab4.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="mods_lab4.Text" xml:space="preserve">
+    <value>Ultimate Visual Fix</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.Name" xml:space="preserve">
+    <value>mods_lab4</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab4.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="mods_lab3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="mods_lab3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="mods_lab3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 48</value>
+  </data>
+  <data name="mods_lab3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 21</value>
+  </data>
+  <data name="mods_lab3.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="mods_lab3.Text" xml:space="preserve">
+    <value>Flat Textures</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.Name" xml:space="preserve">
+    <value>mods_lab3</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab3.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>491, 43</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="ultimatevisualfix_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.Name" xml:space="preserve">
+    <value>ultimatevisualfix_checkb</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;ultimatevisualfix_checkb.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="flattextures_checkb.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 43</value>
+  </data>
+  <data name="flattextures_checkb.Size" type="System.Drawing.Size, System.Drawing">
+    <value>30, 30</value>
+  </data>
+  <data name="flattextures_checkb.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.Name" xml:space="preserve">
+    <value>flattextures_checkb</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;flattextures_checkb.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="mods_lab2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
+  </data>
+  <data name="mods_lab2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="mods_lab2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="mods_lab2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>452, 0</value>
+  </data>
+  <data name="mods_lab2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 30</value>
+  </data>
+  <data name="mods_lab2.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="mods_lab2.Text" xml:space="preserve">
+    <value>Quality</value>
+  </data>
+  <data name="mods_lab2.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.Name" xml:space="preserve">
+    <value>mods_lab2</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab2.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="mods_lab1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 15.75pt</value>
+  </data>
+  <data name="mods_lab1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="mods_lab1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>451, 31</value>
+  </data>
+  <data name="mods_lab1.TabIndex" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="mods_lab1.Text" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="mods_lab1.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.Name" xml:space="preserve">
+    <value>mods_lab1</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;mods_lab1.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="guna2VSeparator1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="guna2VSeparator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>446, 8</value>
+  </data>
+  <data name="guna2VSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>10, 640</value>
+  </data>
+  <data name="guna2VSeparator1.TabIndex" type="System.Int32, mscorlib">
+    <value>49</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.Name" xml:space="preserve">
+    <value>guna2VSeparator1</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2VSeparator, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;guna2VSeparator1.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="install_sel_mods.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="install_sel_mods.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Hack, 14.25pt</value>
+  </data>
+  <data name="install_sel_mods.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 654</value>
+  </data>
+  <data name="install_sel_mods.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>0, 0, 0, 0</value>
+  </data>
+  <data name="install_sel_mods.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 72</value>
+  </data>
+  <data name="install_sel_mods.TabIndex" type="System.Int32, mscorlib">
+    <value>46</value>
+  </data>
+  <data name="install_sel_mods.Text" xml:space="preserve">
+    <value>Install</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.Name" xml:space="preserve">
+    <value>install_sel_mods</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.Parent" xml:space="preserve">
+    <value>Mods_Panel</value>
+  </data>
+  <data name="&gt;&gt;install_sel_mods.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="Discord_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Discord_Link.Location" type="System.Drawing.Point, System.Drawing">
+    <value>742, 676</value>
+  </data>
+  <data name="Discord_Link.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Discord_Link.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="Discord_Link.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;Discord_Link.Name" xml:space="preserve">
+    <value>Discord_Link</value>
+  </data>
+  <data name="&gt;&gt;Discord_Link.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Discord_Link.Parent" xml:space="preserve">
+    <value>About_Panel</value>
+  </data>
+  <data name="&gt;&gt;Discord_Link.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="Github_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Github_Link.Location" type="System.Drawing.Point, System.Drawing">
+    <value>852, 676</value>
+  </data>
+  <data name="Github_Link.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 50</value>
+  </data>
+  <data name="Github_Link.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Github_Link.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;Github_Link.Name" xml:space="preserve">
+    <value>Github_Link</value>
+  </data>
+  <data name="&gt;&gt;Github_Link.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Github_Link.Parent" xml:space="preserve">
+    <value>About_Panel</value>
+  </data>
+  <data name="&gt;&gt;Github_Link.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="Youtube_Link.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom, Right</value>
+  </data>
+  <data name="Youtube_Link.Location" type="System.Drawing.Point, System.Drawing">
+    <value>789, 676</value>
+  </data>
+  <data name="Youtube_Link.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 50</value>
+  </data>
+  <data name="Youtube_Link.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="Youtube_Link.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;Youtube_Link.Name" xml:space="preserve">
+    <value>Youtube_Link</value>
+  </data>
+  <data name="&gt;&gt;Youtube_Link.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Youtube_Link.Parent" xml:space="preserve">
+    <value>About_Panel</value>
+  </data>
+  <data name="&gt;&gt;Youtube_Link.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="SubTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="SubTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Hack, 11.25pt</value>
+  </data>
+  <data name="SubTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 30</value>
+  </data>
+  <data name="SubTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 30</value>
+  </data>
+  <data name="SubTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="SubTitle.Text" xml:space="preserve">
+    <value>An application to optimize tf2 and install mods.</value>
+  </data>
+  <data name="SubTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;SubTitle.Name" xml:space="preserve">
+    <value>SubTitle</value>
+  </data>
+  <data name="&gt;&gt;SubTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;SubTitle.Parent" xml:space="preserve">
+    <value>About_Panel</value>
+  </data>
+  <data name="&gt;&gt;SubTitle.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="Title.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="Title.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Hack, 14.25pt</value>
+  </data>
+  <data name="Title.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="Title.Size" type="System.Drawing.Size, System.Drawing">
+    <value>902, 30</value>
+  </data>
+  <data name="Title.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="Title.Text" xml:space="preserve">
+    <value>TF2 Optimizer/Mod Installer</value>
+  </data>
+  <data name="Title.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;Title.Name" xml:space="preserve">
+    <value>Title</value>
+  </data>
+  <data name="&gt;&gt;Title.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Title.Parent" xml:space="preserve">
+    <value>About_Panel</value>
+  </data>
+  <data name="&gt;&gt;Title.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <metadata name="AnimateTF_Icon.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>15, 17</value>
   </metadata>
@@ -6332,159 +6482,6 @@
   </data>
   <data name="exitToolStripMenuItem.Text" xml:space="preserve">
     <value>Exit</value>
-  </data>
-  <data name="mods_lab19.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab19.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab19.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab19.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 325</value>
-  </data>
-  <data name="mods_lab19.Size" type="System.Drawing.Size, System.Drawing">
-    <value>192, 21</value>
-  </data>
-  <data name="mods_lab19.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="mods_lab19.Text" xml:space="preserve">
-    <value>Null-Canceling Movement</value>
-  </data>
-  <data name="&gt;&gt;mods_lab19.Name" xml:space="preserve">
-    <value>mods_lab19</value>
-  </data>
-  <data name="&gt;&gt;mods_lab19.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab19.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab19.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="mods_lab18.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab18.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab18.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab18.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 305</value>
-  </data>
-  <data name="mods_lab18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>126, 21</value>
-  </data>
-  <data name="mods_lab18.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="mods_lab18.Text" xml:space="preserve">
-    <value>No Soundscapes</value>
-  </data>
-  <data name="&gt;&gt;mods_lab18.Name" xml:space="preserve">
-    <value>mods_lab18</value>
-  </data>
-  <data name="&gt;&gt;mods_lab18.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab18.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab18.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="mods_lab17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab17.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 285</value>
-  </data>
-  <data name="mods_lab17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 21</value>
-  </data>
-  <data name="mods_lab17.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="mods_lab17.Text" xml:space="preserve">
-    <value>No Tutorial</value>
-  </data>
-  <data name="&gt;&gt;mods_lab17.Name" xml:space="preserve">
-    <value>mods_lab17</value>
-  </data>
-  <data name="&gt;&gt;mods_lab17.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab17.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab17.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="mastercomfigextra_checkb.Location" type="System.Drawing.Point, System.Drawing">
-    <value>40, 279</value>
-  </data>
-  <data name="mastercomfigextra_checkb.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 30</value>
-  </data>
-  <data name="mastercomfigextra_checkb.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;mastercomfigextra_checkb.Name" xml:space="preserve">
-    <value>mastercomfigextra_checkb</value>
-  </data>
-  <data name="&gt;&gt;mastercomfigextra_checkb.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CustomCheckBox, Guna.UI2, Version=2.0.3.5, Culture=neutral, PublicKeyToken=4015e4865bda28a4</value>
-  </data>
-  <data name="&gt;&gt;mastercomfigextra_checkb.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mastercomfigextra_checkb.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="mods_lab20.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="mods_lab20.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 12pt</value>
-  </data>
-  <data name="mods_lab20.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="mods_lab20.Location" type="System.Drawing.Point, System.Drawing">
-    <value>73, 345</value>
-  </data>
-  <data name="mods_lab20.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 21</value>
-  </data>
-  <data name="mods_lab20.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="mods_lab20.Text" xml:space="preserve">
-    <value>No Pyroland</value>
-  </data>
-  <data name="&gt;&gt;mods_lab20.Name" xml:space="preserve">
-    <value>mods_lab20</value>
-  </data>
-  <data name="&gt;&gt;mods_lab20.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;mods_lab20.Parent" xml:space="preserve">
-    <value>Mods_Panel</value>
-  </data>
-  <data name="&gt;&gt;mods_lab20.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

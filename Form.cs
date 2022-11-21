@@ -164,9 +164,6 @@ namespace TF2_Optimizer
             CustomMod_Button.Font = tf2_font_regular;
             ci_label1.Font = tf2_font_bold;
             ci_label2.Font = tf2_font_regular;
-            OpenFileDI.Font = tf2_font_regular;
-            DropInstall.Font = tf2_font_regular;
-            Custom_Install.Font = tf2_font_regular;
             Settings_Button.Font = tf2_font_regular;
             set_label1.Font = tf2_font_bold;
             set_label2.Font = tf2_font_regular;
@@ -240,21 +237,6 @@ namespace TF2_Optimizer
                     _ = MessageBox.Show("No other steam libraries found.");
                 }
             }
-        }
-
-        private void AnimateTF_Icon_Tick(object sender, EventArgs e)
-        {
-            TF2_Icon.ImageRotate += 1;
-        }
-
-        private void TF2_Icon_MouseEnter(object sender, EventArgs e)
-        {
-            AnimateTF_Icon.Start();
-        }
-
-        private void TF2_Icon_MouseLeave(object sender, EventArgs e)
-        {
-            AnimateTF_Icon.Stop();
         }
 
         private void About_Button_Click(object sender, EventArgs e)

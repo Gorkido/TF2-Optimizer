@@ -46,9 +46,6 @@
             this.msconf_preset_combo = new Guna.UI2.WinForms.Guna2ComboBox();
             this.Configure_mastercomf = new Guna.UI2.WinForms.Guna2Button();
             this.Custom_Install_Panel = new Guna.UI2.WinForms.Guna2Panel();
-            this.OpenFileDI = new Guna.UI2.WinForms.Guna2Button();
-            this.DropInstall = new System.Windows.Forms.ListBox();
-            this.Custom_Install = new Guna.UI2.WinForms.Guna2Button();
             this.ci_label2 = new System.Windows.Forms.Label();
             this.ci_label1 = new System.Windows.Forms.Label();
             this.Settings_Panel = new Guna.UI2.WinForms.Guna2Panel();
@@ -118,7 +115,6 @@
             this.Youtube_Link = new System.Windows.Forms.PictureBox();
             this.SubTitle = new System.Windows.Forms.Label();
             this.Title = new System.Windows.Forms.Label();
-            this.AnimateTF_Icon = new System.Windows.Forms.Timer(this.components);
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.folderBrowserDialog1 = new System.Windows.Forms.FolderBrowserDialog();
             this.OptimizerNotifIcon = new System.Windows.Forms.NotifyIcon(this.components);
@@ -174,8 +170,6 @@
             this.TF2_Icon.Name = "TF2_Icon";
             this.TF2_Icon.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.TF2_Icon.TabStop = false;
-            this.TF2_Icon.MouseEnter += new System.EventHandler(this.TF2_Icon_MouseEnter);
-            this.TF2_Icon.MouseLeave += new System.EventHandler(this.TF2_Icon_MouseLeave);
             // 
             // Settings_Button
             // 
@@ -339,7 +333,6 @@
             // Mastercomfig_Panel
             // 
             this.Mastercomfig_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Mastercomfig_Panel.BackgroundImage = global::TF2_Optimizer.Properties.Resources.cp_badlands01;
             resources.ApplyResources(this.Mastercomfig_Panel, "Mastercomfig_Panel");
             this.Mastercomfig_Panel.Controls.Add(this.progressBar);
             this.Mastercomfig_Panel.Controls.Add(this.msconfig_pre_label);
@@ -411,67 +404,10 @@
             // Custom_Install_Panel
             // 
             this.Custom_Install_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Custom_Install_Panel.Controls.Add(this.OpenFileDI);
-            this.Custom_Install_Panel.Controls.Add(this.DropInstall);
-            this.Custom_Install_Panel.Controls.Add(this.Custom_Install);
             this.Custom_Install_Panel.Controls.Add(this.ci_label2);
             this.Custom_Install_Panel.Controls.Add(this.ci_label1);
             resources.ApplyResources(this.Custom_Install_Panel, "Custom_Install_Panel");
             this.Custom_Install_Panel.Name = "Custom_Install_Panel";
-            // 
-            // OpenFileDI
-            // 
-            resources.ApplyResources(this.OpenFileDI, "OpenFileDI");
-            this.OpenFileDI.Animated = true;
-            this.OpenFileDI.BorderColor = System.Drawing.Color.Transparent;
-            this.OpenFileDI.CustomBorderColor = System.Drawing.Color.White;
-            this.OpenFileDI.CustomBorderThickness = new System.Windows.Forms.Padding(1);
-            this.OpenFileDI.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.OpenFileDI.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.OpenFileDI.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.OpenFileDI.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.OpenFileDI.FillColor = System.Drawing.Color.Transparent;
-            this.OpenFileDI.ForeColor = System.Drawing.Color.White;
-            this.OpenFileDI.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.OpenFileDI.ImageSize = new System.Drawing.Size(0, 0);
-            this.OpenFileDI.Name = "OpenFileDI";
-            this.OpenFileDI.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.OpenFileDI.PressedDepth = 1;
-            this.OpenFileDI.ShadowDecoration.BorderRadius = 0;
-            this.OpenFileDI.ShadowDecoration.Depth = 0;
-            this.OpenFileDI.Click += new System.EventHandler(this.OpenFileDI_Click);
-            // 
-            // DropInstall
-            // 
-            this.DropInstall.AllowDrop = true;
-            this.DropInstall.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            resources.ApplyResources(this.DropInstall, "DropInstall");
-            this.DropInstall.ForeColor = System.Drawing.Color.DarkOrange;
-            this.DropInstall.FormattingEnabled = true;
-            this.DropInstall.Name = "DropInstall";
-            this.DropInstall.DragDrop += new System.Windows.Forms.DragEventHandler(this.DropInstall_DragDrop);
-            this.DropInstall.DragEnter += new System.Windows.Forms.DragEventHandler(this.DropInstall_DragEnter);
-            // 
-            // Custom_Install
-            // 
-            this.Custom_Install.Animated = true;
-            this.Custom_Install.BorderColor = System.Drawing.Color.White;
-            this.Custom_Install.BorderThickness = 1;
-            this.Custom_Install.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.Custom_Install.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.Custom_Install.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.Custom_Install.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            resources.ApplyResources(this.Custom_Install, "Custom_Install");
-            this.Custom_Install.FillColor = System.Drawing.Color.Transparent;
-            this.Custom_Install.ForeColor = System.Drawing.Color.White;
-            this.Custom_Install.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.Custom_Install.ImageSize = new System.Drawing.Size(0, 0);
-            this.Custom_Install.Name = "Custom_Install";
-            this.Custom_Install.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
-            this.Custom_Install.PressedDepth = 1;
-            this.Custom_Install.ShadowDecoration.BorderRadius = 0;
-            this.Custom_Install.ShadowDecoration.Depth = 0;
-            this.Custom_Install.Click += new System.EventHandler(this.Custom_Install_Click);
             // 
             // ci_label2
             // 
@@ -1067,11 +1003,6 @@
             resources.ApplyResources(this.Title, "Title");
             this.Title.Name = "Title";
             // 
-            // AnimateTF_Icon
-            // 
-            this.AnimateTF_Icon.Interval = 1;
-            this.AnimateTF_Icon.Tick += new System.EventHandler(this.AnimateTF_Icon_Tick);
-            // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
@@ -1168,17 +1099,13 @@
         private Guna.UI2.WinForms.Guna2CirclePictureBox TF2_Icon;
         private System.Windows.Forms.Label MenuLabel;
         private Guna.UI2.WinForms.Guna2Button Configure_mastercomf;
-        private System.Windows.Forms.Timer AnimateTF_Icon;
         private System.Windows.Forms.Label msconfig_pre_label;
         private Guna.UI2.WinForms.Guna2ComboBox msconf_preset_combo;
         private Guna.UI2.WinForms.Guna2Panel Custom_Install_Panel;
         private System.Windows.Forms.Label ci_label2;
         private System.Windows.Forms.Label ci_label1;
-        private Guna.UI2.WinForms.Guna2Button Custom_Install;
-        private System.Windows.Forms.ListBox DropInstall;
         private Guna.UI2.WinForms.Guna2Panel Settings_Panel;
         private System.Windows.Forms.Label set_label1;
-        private Guna.UI2.WinForms.Guna2Button OpenFileDI;
         private System.Windows.Forms.Label set_label3;
         private System.Windows.Forms.Label set_label2;
         private Guna.UI2.WinForms.Guna2TextBox TF2_Location;

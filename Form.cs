@@ -20,6 +20,7 @@ namespace TF2_Optimizer
 {
     public partial class Form : System.Windows.Forms.Form
     {
+        #region Declarations
         [DllImport("gdi32.dll")]
         private static extern IntPtr AddFontMemResourceEx(IntPtr pbFont, uint cbFont,
         IntPtr pdv, [In] ref uint pcFonts);
@@ -28,18 +29,10 @@ namespace TF2_Optimizer
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool GetPhysicallyInstalledSystemMemory(out long TotalMemoryInKilobytes);
 
-        private readonly PrivateFontCollection fonts = new PrivateFontCollection();
-
-        public Form()
-        {
-            InitializeComponent();
-            UI();
-        }
-
-        #region Strings
         //private static readonly string hitkillsounds = GetTF2Directory() + "\\tf\\custom\\hitsound\\sound\\ui\\";
         //private static readonly string cfg = GetTF2Directory() + "\\tf\\cfg\\";
-        private readonly bool isTF2Running = Process.GetProcessesByName("hl2.exe").Any();
+        private readonly bool isTF2Running = Process.GetProcessesByName("hl2").Any();
+        private readonly PrivateFontCollection fonts = new PrivateFontCollection();
         private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
         private readonly WebClient WClient = new WebClient();
 
@@ -92,6 +85,12 @@ namespace TF2_Optimizer
             return (client.Repository.Release.GetLatest(RepoOwner, RepoName).Result.HtmlUrl + HudGitRepoRelease[GHRP]).Replace("tag", "download");
         }
         #endregion
+
+        public Form()
+        {
+            InitializeComponent();
+            UI();
+        }
 
         private void Form_Load(object sender, EventArgs e)
         {
@@ -455,8 +454,8 @@ namespace TF2_Optimizer
                 {
                     if (isTF2Running == false)
                     { // https://docs.mastercomfig.com/latest/setup/clean_up/
-                        Directory.Delete(TF2_Location.Text + "\\tf\\custom", true);
                         Directory.Delete(TF2_Location.Text + "\\tf\\cfg", true);
+                        Directory.Delete(TF2_Location.Text + "\\tf\\custom", true);
                         _ = Process.Start(TF2_Location.Text + "\\hl2.exe", "-game tf -steam -novid -autoconfig -default +host_writeconfig config.cfg full +mat_savechanges +quit");
                     }
                     else
@@ -464,7 +463,10 @@ namespace TF2_Optimizer
                         _ = MessageBox.Show("Close Team Fortress 2 before you reset Team Fortress 2.");
                     }
                 }
-                catch (Exception) { }
+                catch (Exception)
+                {
+                    _ = Process.Start(TF2_Location.Text + "\\hl2.exe", "-game tf -steam -novid -autoconfig -default +host_writeconfig config.cfg full +mat_savechanges +quit");
+                }
             }
         }
 

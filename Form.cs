@@ -40,9 +40,9 @@ namespace TF2_Optimizer
         //private static readonly string hitkillsounds = GetTF2Directory() + "\\tf\\custom\\hitsound\\sound\\ui\\";
         //private static readonly string cfg = GetTF2Directory() + "\\tf\\cfg\\";
         private readonly bool isTF2Running = Process.GetProcessesByName("hl2.exe").Any();
-        private readonly string ExecPath = Path.GetDirectoryName(System.Windows.Forms.Application.ExecutablePath);
         private readonly GitHubClient client = new GitHubClient(new ProductHeaderValue("LatestRelease"));
         private readonly WebClient WClient = new WebClient();
+
         private string Custom => TF2_Location.Text + "\\tf\\custom\\";
 
         private readonly string[] MasterComfig =
@@ -53,19 +53,23 @@ namespace TF2_Optimizer
             "/mastercomfig-medium-preset.vpk",
             "/mastercomfig-medium-high-preset.vpk",
             "/mastercomfig-high-preset.vpk",
-            "/mastercomfig-ultra-preset.vpk"
+            "/mastercomfig-ultra-preset.vpk",
+            "/mastercomfig-lowmem-addon.vpk"
         };
-
-        private readonly string[] ModsList =
+        private readonly string[] AddonList =
         {
-            "/mastercomfig-lowmem-addon.vpk",
             "/mastercomfig-no-tutorial-addon.vpk",
             "/mastercomfig-no-soundscapes-addon.vpk",
             "/mastercomfig-null-canceling-movement-addon.vpk",
+            "/mastercomfig-disable-pyroland-addon.vpk"
+        };
+
+        private readonly string[] GamebananaStrs =
+        {
             "677961", // Flat Textures
             "467630", // Remove Sniper Scope
             "873049", // No Hats Mod (Pack)
-            "TF2UltimateVisualFix_000.vpk",
+            "/TF2UltimateVisualFix_000.vpk",
             "629105", // Transparent Arms
             "767925", // Unique Rockets
             "37714" // Realistic Skybox
@@ -154,6 +158,10 @@ namespace TF2_Optimizer
             mods_lab14.Font = tf2_font_small;
             mods_lab15.Font = tf2_font_small;
             mods_lab16.Font = tf2_font_small;
+            mods_lab17.Font = tf2_font_small;
+            mods_lab18.Font = tf2_font_small;
+            mods_lab19.Font = tf2_font_small;
+            mods_lab20.Font = tf2_font_small;
             CustomMod_Button.Font = tf2_font_regular;
             ci_label1.Font = tf2_font_bold;
             ci_label2.Font = tf2_font_regular;
@@ -300,11 +308,6 @@ namespace TF2_Optimizer
             Custom_Install_Panel.Show();
         }
 
-        private void Auto_Opti_Button_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Settings_Button_Click(object sender, EventArgs e)
         {
             Mastercomfig_Panel.Hide();
@@ -350,10 +353,6 @@ namespace TF2_Optimizer
                                 {
                                     File.Delete(Custom + vpks.Replace("/", ""));
                                 }
-                            }
-                            foreach (string item in ModsList)
-                            {
-                                WClient.DownloadFile((client.Repository.Release.GetLatest("mastercomfig", "mastercomfig").Result.HtmlUrl + item).Replace("tag", "download"), Custom + item);
                             }
                             if (msconf_preset_combo.SelectedIndex == 0) // Very Low
                             {
@@ -691,12 +690,30 @@ namespace TF2_Optimizer
             }
         }
 
-        private void installmod(int gamebananastr, string modname, bool fromgithub = false, bool sevenzip = false)
+        private void installmod(int gamebananastr, string modname, bool sevenzip = false)
         {
             string downloadstring = "https://gamebanana.com/dl/";
-            WClient.DownloadFile(downloadstring + ModsList[gamebananastr], Custom + modname + ".zip");
-            ZipFile.ExtractToDirectory(Custom + modname + ".zip", Custom);
-            File.Delete(Custom + modname + ".zip");
+            string mods = downloadstring + GamebananaStrs[gamebananastr];
+            string modsfileloc = Custom + modname;
+            try
+            {
+                if (sevenzip == true)
+                {
+                    WClient.DownloadFile(mods, modsfileloc + ".7z");
+                    using (SevenZipArchive archive = new SevenZipArchive(Custom + modname + ".7z"))
+                    {
+                        archive.ExtractToDirectory(Custom);
+                    }
+                    File.Delete(Custom + modname + ".7z");
+                }
+                else
+                {
+                    WClient.DownloadFile(mods, modsfileloc + ".zip");
+                    ZipFile.ExtractToDirectory(Custom + modname + ".zip", Custom);
+                    File.Delete(Custom + modname + ".zip");
+                }
+            }
+            catch (Exception) { }
         }
 
         private void install_sel_mods_Click(object sender, EventArgs e)
@@ -704,16 +721,16 @@ namespace TF2_Optimizer
             #region Performance
             if (flattextures_checkb.Checked)
             {
-                installmod(4, "FlatTextures");
+                installmod(0, "FlatTextures");
                 Directory.Delete(Custom + "FlatTexturesV1", true);
             }
             if (removesnioperscope_checkb.Checked)
             {
-                installmod(5, "NoSniperScope");
+                installmod(1, "NoSniperScope");
             }
             if (nohats_checkb.Checked)
             {
-                installmod(6, "NoHats");
+                installmod(2, "NoHats");
                 foreach (string file in Directory.EnumerateFiles(Custom + "no_hats_bgum_master"))
                 {
                     string destFile = Path.Combine(Custom, Path.GetFileName(file));
@@ -730,19 +747,38 @@ namespace TF2_Optimizer
             #region Quality
             if (ultimatevisualfix_checkb.Checked)
             {
-                WClient.DownloadFile(GetLatestGitRelease("agrastiOs", "Ultimate-TF2-Visual-Fix-Pack", 7), Custom + "TF2UltimateVisualFix_000.vpk");
+                // WClient.DownloadFile(GetLatestGitRelease("agrastiOs", "Ultimate-TF2-Visual-Fix-Pack", 7), Custom + ModsList[7]); Only pre-release is available so we don't use this.
+                WClient.DownloadFile("https://github.com/agrastiOs/Ultimate-TF2-Visual-Fix-Pack/releases/download/v1.0-rc3/TF2UltimateVisualFix_000.vpk", Custom + GamebananaStrs[3]);
             }
             if (transparentarms_checkb.Checked)
             {
-                installmod(8, "TransparentArms");
+                installmod(4, "TransparentArms", sevenzip: true);
             }
             if (uniquerockets_checkb.Checked)
             {
-                installmod(9, "UniqueRockets");
+                installmod(5, "UniqueRockets", sevenzip: true);
             }
             if (realisticskybox_checkb.Checked)
             {
-                installmod(9, "RealisticSkybox");
+                _ = Directory.CreateDirectory(Custom + "RealisticSkybox\\materials\\skybox");
+                installmod(6, "RealisticSkybox");
+                foreach (string file in Directory.EnumerateFiles(Custom + "Team fortress 2\\tf\\custom\\my_custom_stuff\\materials\\skybox"))
+                {
+                    string destFile = Path.Combine(Custom + "RealisticSkybox\\materials\\skybox", Path.GetFileName(file));
+                    if (!File.Exists(destFile))
+                    {
+                        File.Move(file, destFile);
+                    }
+                }
+                File.Delete(Custom + "RealisticSkybox.zip");
+                Directory.Delete(Custom + "Team fortress 2", true);
+            }
+            if (mastercomfigextra_checkb.Checked)
+            {
+                foreach (string item in AddonList)
+                {
+                    WClient.DownloadFile((client.Repository.Release.GetLatest("mastercomfig", "mastercomfig").Result.HtmlUrl + item).Replace("tag", "download"), Custom + item);
+                }
             }
             #endregion Quality
         }

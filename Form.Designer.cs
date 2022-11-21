@@ -120,6 +120,11 @@
             this.OptimizerContMenuStrip = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.mods_lab19 = new System.Windows.Forms.Label();
+            this.mods_lab18 = new System.Windows.Forms.Label();
+            this.mods_lab17 = new System.Windows.Forms.Label();
+            this.mastercomfigextra_checkb = new Guna.UI2.WinForms.Guna2CustomCheckBox();
+            this.mods_lab20 = new System.Windows.Forms.Label();
             this.Left_Panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TF2_Icon)).BeginInit();
             this.Main_Panel.SuspendLayout();
@@ -320,12 +325,12 @@
             // 
             resources.ApplyResources(this.Main_Panel, "Main_Panel");
             this.Main_Panel.BackColor = System.Drawing.Color.Transparent;
-            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.Controls.Add(this.About_Panel);
             this.Main_Panel.Controls.Add(this.Mastercomfig_Panel);
             this.Main_Panel.Controls.Add(this.Custom_Install_Panel);
             this.Main_Panel.Controls.Add(this.Settings_Panel);
             this.Main_Panel.Controls.Add(this.Huds_Panel);
+            this.Main_Panel.Controls.Add(this.Mods_Panel);
             this.Main_Panel.FillColor = System.Drawing.Color.DimGray;
             this.Main_Panel.FillColor2 = System.Drawing.Color.Transparent;
             this.Main_Panel.GradientMode = System.Drawing.Drawing2D.LinearGradientMode.Vertical;
@@ -334,6 +339,11 @@
             // Mods_Panel
             // 
             this.Mods_Panel.BackColor = System.Drawing.Color.Transparent;
+            this.Mods_Panel.Controls.Add(this.mods_lab20);
+            this.Mods_Panel.Controls.Add(this.mods_lab19);
+            this.Mods_Panel.Controls.Add(this.mods_lab18);
+            this.Mods_Panel.Controls.Add(this.mods_lab17);
+            this.Mods_Panel.Controls.Add(this.mastercomfigextra_checkb);
             this.Mods_Panel.Controls.Add(this.mods_lab16);
             this.Mods_Panel.Controls.Add(this.mods_lab15);
             this.Mods_Panel.Controls.Add(this.mods_lab14);
@@ -1066,6 +1076,40 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             resources.ApplyResources(this.exitToolStripMenuItem, "exitToolStripMenuItem");
             // 
+            // mods_lab19
+            // 
+            resources.ApplyResources(this.mods_lab19, "mods_lab19");
+            this.mods_lab19.Name = "mods_lab19";
+            // 
+            // mods_lab18
+            // 
+            resources.ApplyResources(this.mods_lab18, "mods_lab18");
+            this.mods_lab18.Name = "mods_lab18";
+            // 
+            // mods_lab17
+            // 
+            resources.ApplyResources(this.mods_lab17, "mods_lab17");
+            this.mods_lab17.Name = "mods_lab17";
+            // 
+            // mastercomfigextra_checkb
+            // 
+            this.mastercomfigextra_checkb.Animated = true;
+            this.mastercomfigextra_checkb.CheckedState.BorderColor = System.Drawing.Color.White;
+            this.mastercomfigextra_checkb.CheckedState.BorderRadius = 2;
+            this.mastercomfigextra_checkb.CheckedState.BorderThickness = 2;
+            this.mastercomfigextra_checkb.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            resources.ApplyResources(this.mastercomfigextra_checkb, "mastercomfigextra_checkb");
+            this.mastercomfigextra_checkb.Name = "mastercomfigextra_checkb";
+            this.mastercomfigextra_checkb.UncheckedState.BorderColor = System.Drawing.Color.White;
+            this.mastercomfigextra_checkb.UncheckedState.BorderRadius = 2;
+            this.mastercomfigextra_checkb.UncheckedState.BorderThickness = 2;
+            this.mastercomfigextra_checkb.UncheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(101)))), ((int)(((byte)(0)))));
+            // 
+            // mods_lab20
+            // 
+            resources.ApplyResources(this.mods_lab20, "mods_lab20");
+            this.mods_lab20.Name = "mods_lab20";
+            // 
             // Form
             // 
             resources.ApplyResources(this, "$this");
@@ -1198,6 +1242,11 @@
         private Guna.UI2.WinForms.Guna2CustomCheckBox transparentarms_checkb;
         private System.Windows.Forms.Label mods_lab16;
         private System.Windows.Forms.Label mods_lab15;
+        private System.Windows.Forms.Label mods_lab19;
+        private System.Windows.Forms.Label mods_lab18;
+        private System.Windows.Forms.Label mods_lab17;
+        private Guna.UI2.WinForms.Guna2CustomCheckBox mastercomfigextra_checkb;
+        private System.Windows.Forms.Label mods_lab20;
     }
 }
 
